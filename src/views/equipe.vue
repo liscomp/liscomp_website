@@ -1,5 +1,5 @@
 <template>
-  <div class="container my-5">
+  <b-container class="my-5">
     <Integrante
       v-for="integrante in equipe"
       v-bind:key="integrante.nome"
@@ -10,7 +10,7 @@
       v-bind:educacao="integrante.educacao"
       v-bind:pesquisas="integrante.pesquisas"
     />
-  </div>
+  </b-container>
 </template>
 
 <script>

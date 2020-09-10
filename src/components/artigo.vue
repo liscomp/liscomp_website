@@ -1,6 +1,8 @@
 <template>
   <div class="row d-block mb-2">
-    [<span class="posicao">{{ posicao }}</span>] {{ propriedades.author }}. {{ propriedades.title }}. {{ propriedades.journal }}, {{ propriedades.year }}.
+    [<span class="posicao">{{ posicao }}</span
+    >] {{ propriedades.author }}. {{ propriedades.title }}.
+    {{ propriedades.journal }}, {{ propriedades.year }}.
   </div>
 </template>
 
@@ -15,7 +17,7 @@ export default {
 </script>
 
 <style>
-.posicao{
-    font-weight: bold;
+.posicao {
+  font-weight: bold;
 }
 </style>

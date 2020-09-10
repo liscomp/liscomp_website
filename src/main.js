@@ -7,8 +7,6 @@ import "./plugins/academicons";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import Popper from "popper.js";
-global.Popper = Popper;
 
 Vue.config.productionTip = false;
 

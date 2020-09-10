@@ -1,12 +1,12 @@
 <template>
-  <div class="container my-5">
+  <b-container class="my-5">
     <Artigo
       v-for="(article, i) in citacoes"
       v-bind:key="article.label"
       v-bind:propriedades="article.properties"
-      v-bind:posicao="i+1"
+      v-bind:posicao="i + 1"
     />
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -25,6 +25,4 @@ export default {
   }
 };
 </script>
-<style>
-
-</style>
+<style></style>
