@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container my-5">
     <Integrante
       v-for="integrante in equipe"
       v-bind:key="integrante.nome"

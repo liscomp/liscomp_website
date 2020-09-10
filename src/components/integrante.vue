@@ -1,5 +1,5 @@
 <template>
-  <div class="row py-5">
+  <div class="row mb-4">
     <div class="col-12 col-lg-4">
       <div id="profile">
         <!-- eslint-disable vue/valid-v-bind -->
