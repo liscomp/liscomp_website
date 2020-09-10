@@ -1,7 +1,30 @@
 <template>
-  <div class="producao"></div>
+  <div class="container my-5">
+    <Artigo
+      v-for="(article, i) in citacoes"
+      v-bind:key="article.label"
+      v-bind:propriedades="article.properties"
+      v-bind:posicao="i+1"
+    />
+  </div>
 </template>
 
-<script></script>
+<script>
+import Artigo from "@/components/artigo.vue";
+import bib from "@/json/bib.json";
 
-<style></style>
+export default {
+  data: function() {
+    return {
+      citacoes: bib
+    };
+  },
+  name: "Producao",
+  components: {
+    Artigo
+  }
+};
+</script>
+<style>
+
+</style>

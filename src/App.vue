@@ -199,4 +199,3 @@ ul.navbar-nav span {
 }
 </style>
 
-<script></script>

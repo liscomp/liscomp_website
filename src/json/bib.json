@@ -1,0 +1,116 @@
+[
+    {
+        "label": "FERREIRA2020125146",
+        "type": "article",
+        "properties": {
+        "journal": "Physica A: Statistical Mechanics and its Applications",
+        "doi": "https://doi.org/10.1016/j.physa.2020.125146",
+        "issn": "0378-4371",
+        "title": "Long-range correlation studies in deep earthquakes global series",
+        "url": "http://www.sciencedirect.com/science/article/pii/S0378437120305999",
+        "volume": "560",
+        "author": "Ferreira, Douglas S.R. and Ribeiro, Jennifer and Oliveira, Paulo S.L. and Pimenta, André R. and Freitas, Renato P. and Papa, Andrés R.R.",
+        "pages": "125146",
+        "date": "2020",
+        "year": "2020"
+        }
+    },
+    {
+        "label": "ferreira2018towards",
+        "type": "article",
+        "properties": {
+        "journal": "EPL (Europhysics Letters)",
+        "number": "5",
+        "publisher": "IOP Publishing",
+        "title": "Towards evidence of long-range correlations in shallow seismic activities",
+        "volume": "121",
+        "author": "Ferreira, Douglas and Ribeiro, Jennifer and Papa, Andrés and Menezes, Ronaldo",
+        "pages": "58003",
+        "date": "2018",
+        "year": "2018"
+        }
+    },
+    {
+        "label": "pimenta2020finite",
+        "type": "article",
+        "properties": {
+        "journal": "Journal of Failure Analysis and Prevention",
+        "publisher": "Springer",
+        "title": "Finite Element Analysis of a Mechanical Fuse Failure",
+        "author": "Pimenta, AR and Tavares, SSM and Diniz, MG and Roco, RAA and Oliveira, MJ and Galiza, JAG and Gomes, AV and Ferreira, DSR and Freitas, RP",
+        "pages": "1--6",
+        "date": "2020",
+        "year": "2020"
+        }
+    },
+    {
+        "label": "pereira2020dose",
+        "type": "article",
+        "properties": {
+        "journal": "Radiation Physics and Chemistry",
+        "publisher": "Elsevier",
+        "title": "Dose distribution in boron neutron capture therapy for the treatment of brain cancer",
+        "volume": "168",
+        "author": "Pereira, Leandro O and Freitas, Renato P and Ferreira, Douglas S and Felix, Valter S and Gonçalves, Elicardo AS and Pimenta, André R and de Sousa Dutra, Rafael and da Silva, Ademir Xavier",
+        "pages": "108611",
+        "date": "2020",
+        "year": "2020"
+        }
+    },
+    {
+        "label": "freitas2019micro",
+        "type": "article",
+        "properties": {
+        "journal": "Microchemical Journal",
+        "publisher": "Elsevier",
+        "title": "Micro-XRF analysis of a Brazilian polychrome sculpture",
+        "volume": "149",
+        "author": "Freitas, Renato P and Felix, Valter S and Pereira, Marcelo O and Santos, Ramon S and Oliveira, Ana L and Gonçalves, Elicardo AS and Ferreira, Douglas S and Pimenta, André R and Pereira, Leandro O and Anjos, Marcelino J",
+        "pages": "104020",
+        "date": "2019",
+        "year": "2019"
+        }
+    },
+    {
+        "label": "dias2019analysis",
+        "type": "article",
+        "properties": {
+        "journal": "Physica A: Statistical Mechanics and its Applications",
+        "publisher": "Elsevier",
+        "title": "Analysis of temporal and spatial distributions between earthquakes in the region of California through Non-Extensive Statistical Mechanics and its limits of validity",
+        "volume": "529",
+        "author": "Dias, Vitor HA and Papa, Andrés RR and Ferreira, Douglas SR",
+        "pages": "121471",
+        "date": "2019",
+        "year": "2019"
+        }
+    },
+    {
+        "label": "felix2018analysis",
+        "type": "article",
+        "properties": {
+        "journal": "Radiation Physics and Chemistry",
+        "publisher": "Elsevier",
+        "title": "Analysis of a European cupboard by XRF, Raman and FT-IR",
+        "volume": "151",
+        "author": "Felix, Valter S and Mello, Ulisses L and Pereira, Marcelo O and Oliveira, Ana L and Ferreira, Douglas S and Carvalho, Cristiano S and Silva, Fabricio L and Pimenta, André R and Diniz, Marilia Garcia and Freitas, Renato P",
+        "pages": "198--204",
+        "date": "2018",
+        "year": "2018"
+        }
+    },
+    {
+        "label": "ribeiro2016analysis",
+        "type": "article",
+        "properties": {
+        "journal": "Vibrational Spectroscopy",
+        "publisher": "Elsevier",
+        "title": "Analysis by raman spectroscopy and XRF of glass beads from excavations in the harbor area of rio de janeiro, Brazil",
+        "volume": "87",
+        "author": "Ribeiro, IMN and Freitas, RP and Calza, C and Oliveira, ALC and Felix, VS and Ferreira, DS and Batista, RT and Goncalves, EAS and Pereira, MO and Brito, PCL and others",
+        "pages": "111--115",
+        "date": "2016",
+        "year": "2016"
+        }
+    }
+]
