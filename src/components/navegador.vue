@@ -1,6 +1,6 @@
 <template>
   <header>
-    <b-navbar toggleable="md" id="navbar-main" class=" justify-content-center">
+    <b-navbar toggleable="lg" id="navbar-main" class=" justify-content-center">
       <b-container fluid class="flex-wrap">
         <div
           class="align-items-center row flex-grow-1 flex-nowrap justify-content-center"
@@ -8,14 +8,20 @@
         >
           <b-navbar-brand href="/">
             <img
+              width="250px"
+              class="rounded mx-3 d-none d-md-flex"
+              :src="require('../assets/logo_liscomp.png')"
+              alt="Item"
+            />
+            <img
               width="200px"
-              class="rounded mx-3"
+              class="rounded mx-3 d-md-none d-sm-flex"
               :src="require('../assets/logo_liscomp.png')"
               alt="Item"
             />
           </b-navbar-brand>
           <b-navbar-brand
-            class="d-none d-md-block text-wrap text-center font-weight-bold text-dark"
+            class="d-none d-lg-block text-wrap text-center font-weight-bold text-dark"
             href="/"
           >
             Laboratório de Instrumentação e Simulação Computacional
@@ -106,7 +112,7 @@ export default {
 
 <style>
 .row .navbar-brand {
-  font-size: 28px;
+  font-size: 2.2rem;
 }
 .navbar-toggler {
   margin-top: 8px;
@@ -121,6 +127,11 @@ export default {
 }
 
 ul.navbar-nav span {
+  font-size: 1.2rem;
   color: #cbd3da !important;
+}
+
+ul.navbar-nav a {
+  font-size: 1.1rem;
 }
 </style>
