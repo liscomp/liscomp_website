@@ -93,6 +93,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: "history",
+  fallback: true,
   base: process.env.BASE_URL,
   routes
 });
