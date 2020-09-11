@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: "/",
   configureWebpack: {
     performance: {
       hints: false
@@ -9,6 +10,5 @@ module.exports = {
         maxSize: 250000
       }
     }
-  },
-  runtimeCompiler: true
+  }
 };

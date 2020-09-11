@@ -51,4 +51,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#footer {
+  color: rgb(0, 0, 0);
+}
+</style>

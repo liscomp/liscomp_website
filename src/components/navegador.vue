@@ -42,49 +42,53 @@
             class="flex-wrap justify-content-sm-center"
             id="nav-list"
           >
-            <router-link class="p-2" to="/">Home</router-link>
+            <router-link class="p-2" :to="{ name: 'home' }"> Home</router-link>
 
             <span class="py-2 d-md-flex d-none">/</span>
 
-            <router-link class="p-2" to="/labmovel"
+            <router-link class="p-2" :to="{ name: 'labmovel' }"
               >Laboratório Móvel</router-link
             >
 
             <span class="py-2 d-md-flex d-none">/</span>
 
-            <router-link class="p-2" to="/infraestrutura"
+            <router-link class="p-2" :to="{ name: 'infraestrutura' }"
               >Infraestrutura</router-link
             >
 
             <span class="py-2 d-md-flex d-none">/</span>
 
-            <router-link class="p-2" to="/prestacaoservico"
+            <router-link class="p-2" :to="{ name: 'prestacaoservico' }"
               >Prestação de Serviços</router-link
             >
 
             <span class="py-2 d-md-flex d-none">/</span>
 
-            <router-link class="p-2" to="/linhaspesquisa"
+            <router-link class="p-2" :to="{ name: 'linhaspesquisa' }"
               >Linhas de Pesquisa</router-link
             >
 
             <span class="py-2 d-md-flex d-none">/</span>
 
-            <router-link class="p-2" to="/equipe">Equipe</router-link>
+            <router-link class="p-2" :to="{ name: 'equipe' }"
+              >Equipe</router-link
+            >
 
             <span class="py-2 d-md-flex d-none">/</span>
 
-            <router-link class="p-2" to="/producao"
+            <router-link class="p-2" :to="{ name: 'producao' }"
               >Produção Científica</router-link
             >
 
             <span class="py-2 d-md-flex d-none">/</span>
 
-            <router-link class="p-2" to="/projetos">Projetos</router-link>
+            <router-link class="p-2" :to="{ name: 'projetos' }"
+              >Projetos</router-link
+            >
 
             <span class="py-2 d-md-flex d-none">/</span>
 
-            <router-link class="p-2" to="/parinternacionais"
+            <router-link class="p-2" :to="{ name: 'parinternacionais' }"
               >Parcerias Internacionais</router-link
             >
           </b-navbar-nav>
@@ -100,4 +104,23 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.row .navbar-brand {
+  font-size: 28px;
+}
+.navbar-toggler {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.navbar svg {
+  height: 1.5em;
+  fill: rgb(0, 0, 0);
+}
+
+ul.navbar-nav span {
+  color: #cbd3da !important;
+}
+</style>
