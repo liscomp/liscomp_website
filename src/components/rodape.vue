@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="py-3">
     <b-container fluid id="footer" class="d-lg-block d-none">
       <b-row cols="2" class="justify-content-center">
         <b-col sm="9" md="6" lg="3" class="text-center mb-md-4">
@@ -85,7 +85,7 @@
               <b-embed
                 frameborder="0"
                 style="border:0"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1095.0956257799342!2d-43.705751763775076!3d-22.599741912003495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f542531885d7689!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20do%20Rio%20de%20Janeiro%20-%20Campus%20Paracambi!5e0!3m2!1spt-BR!2sbr!4v1599720133504!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920.8605788407791!2d-43.7062984632813!3d-22.599952258177588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x994f0f7228eb8d%3A0xbbd191aec46227d2!2sLaborat%C3%B3rio%20de%20Instrumenta%C3%A7%C3%A3o%20e%20Simula%C3%A7%C3%A3o%20Computacional!5e0!3m2!1spt-BR!2sbr!4v1599832635461!5m2!1spt-BR!2sbr"
                 allowfullscreen
               ></b-embed>
             </div>
@@ -98,7 +98,7 @@
               <b-embed
                 frameborder="0"
                 style="border:0"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1095.0956257799342!2d-43.705751763775076!3d-22.599741912003495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f542531885d7689!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20do%20Rio%20de%20Janeiro%20-%20Campus%20Paracambi!5e0!3m2!1spt-BR!2sbr!4v1599720133504!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1841.7170420476384!2d-43.70693641823545!3d-22.60025984605562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x994f73e0c20393%3A0x9f542531885d7689!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20do%20Rio%20de%20Janeiro%20-%20Campus%20Paracambi!5e0!3m2!1spt-BR!2sbr!4v1599831691967!5m2!1spt-BR!2sbr"
                 allowfullscreen
               ></b-embed>
             </div>
@@ -168,5 +168,9 @@ export default {
 <style>
 #footer {
   color: rgb(0, 0, 0);
+}
+
+footer hr {
+  box-sizing: border-box;
 }
 </style>

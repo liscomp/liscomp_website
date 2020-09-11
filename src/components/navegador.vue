@@ -1,9 +1,9 @@
 <template>
   <header>
     <b-navbar toggleable="lg" id="navbar-main" class=" justify-content-center">
-      <b-container fluid class="flex-wrap">
+      <b-container fluid class="flex-wrap justify-content-center">
         <div
-          class="align-items-center row flex-grow-1 flex-nowrap justify-content-center"
+          class="align-items-center row flex-nowrap justify-content-center"
           id="navbar-header"
         >
           <b-navbar-brand href="/">
