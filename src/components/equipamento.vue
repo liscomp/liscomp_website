@@ -27,7 +27,7 @@ export default {
     return {
       foto_completa: require("../assets/" + this.foto)
     };
-  },
+  }
 };
 </script>
 

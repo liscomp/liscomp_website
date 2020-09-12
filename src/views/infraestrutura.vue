@@ -2,7 +2,7 @@
   <b-container class="py-5">
     <div class="sessao">
       Equipamentos
-      <hr>
+      <hr />
     </div>
     <Equipamento
       v-for="equipamento in equipamentoobjeto"
@@ -56,11 +56,11 @@ export default {
   margin: 30px 0px 20px 0px;
 }
 
-.descricao-text{
+.descricao-text {
   font-size: 1.1em;
 }
 
-.equipamento{
+.equipamento {
   margin-bottom: 30px;
 }
 

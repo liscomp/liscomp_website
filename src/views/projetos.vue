@@ -2,7 +2,7 @@
   <b-container class="my-5">
     <div class="sessao">
       Projetos
-      <hr>
+      <hr />
     </div>
     <b-card-group columns>
       <b-card

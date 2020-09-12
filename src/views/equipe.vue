@@ -2,7 +2,7 @@
   <b-container class="my-5">
     <div class="sessao">
       Equipe
-      <hr>
+      <hr />
     </div>
     <Integrante
       v-for="integrante in equipe"

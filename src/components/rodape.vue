@@ -86,7 +86,8 @@
                 frameborder="0"
                 style="border:0"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920.8623423314486!2d-43.70712097075841!3d-22.59968866094861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x994f0f7228eb8d%3A0xbbd191aec46227d2!2sLaborat%C3%B3rio%20de%20Instrumenta%C3%A7%C3%A3o%20e%20Simula%C3%A7%C3%A3o%20Computacional!5e0!3m2!1spt-BR!2sbr!4v1599833010790!5m2!1spt-BR!2sbr"
-                allowfullscreen></b-embed>
+                allowfullscreen
+              ></b-embed>
             </div>
           </div>
           <hr class="d-md-none" />
