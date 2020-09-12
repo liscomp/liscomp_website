@@ -1,6 +1,6 @@
 <template>
   <b-carousel
-    id="carousel-1"
+    id="carousel"
     v-model="slide"
     :interval="4000"
     controls
@@ -74,19 +74,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 50%;
-  position: relative;
-  height: 0;
-}
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-</style>

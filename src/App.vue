@@ -35,4 +35,11 @@ header,
 footer {
   background-color: #ececec;
 }
+
+.sessao {
+  font-size: 2.5em;
+  margin: 0px -15px 40px -15px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 </style>

@@ -1,12 +1,12 @@
 <template>
   <div class="row mb-4">
     <div class="col-12 col-lg-4">
-      <div id="profile">
+      <div class="profile">
         <!-- eslint-disable vue/valid-v-bind -->
         <img class="avatar avatar-circle" v-bind:src="foto_completa" />
         <div class="portrait-title">
-          <p id="name">{{ nome }}</p>
-          <p id="cargo">{{ cargo }}</p>
+          <p class="name">{{ nome }}</p>
+          <p class="cargo">{{ cargo }}</p>
         </div>
         <ul class="network-icon" aria-hidden="true">
           <li>
@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="col-12 col-lg-8">
-      <div class="row" id="about">
+      <div class="row about">
         <div class="col-md-5 mb-3">
           <h5>Educação</h5>
           <ul id="educacao" class="ul-edu fa-ul">
@@ -79,64 +79,5 @@ export default {
 </script>
 
 <style>
-.home-section:first-of-type {
-  padding-top: 50px;
-}
-.avatar-circle {
-  border-radius: 10%;
-}
-.avatar {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-  object-fit: cover;
-  background-color: gray;
-}
 
-ul.network-icon {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#profile {
-  text-align: center;
-  padding: 30px 0px 30px 0px;
-}
-
-#about {
-  padding: 30px 10px;
-}
-
-#name {
-  font-size: 1.5em;
-  color: #000000;
-  margin: 20px 0 10px 0;
-}
-
-#cargo {
-  color: rgba(0, 0, 0, 0.54);
-  margin: 0px 0 10px 0;
-}
-
-ul.ul-edu li .description p {
-  margin: 0;
-}
-
-ul.ul-edu li .description p.institution {
-  font-size: 0.9rem;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.network-icon li {
-  margin-right: 10px;
-}
-
-.big-icon {
-  font-size: 2.5rem;
-}
 </style>

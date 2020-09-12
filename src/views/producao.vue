@@ -1,5 +1,9 @@
 <template>
   <b-container class="my-5">
+    <div class="sessao">
+      Artigos
+      <hr>
+    </div>
     <Artigo
       v-for="(article, i) in citacoes"
       v-bind:key="article.label"

@@ -28,14 +28,7 @@
           </b-navbar-brand>
 
           <b-navbar-toggle target="navbar-content">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              focusable="false"
-            >
-              <title>menu</title>
-              <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"></path>
-            </svg>
+            <Botao />
           </b-navbar-toggle>
         </div>
 
@@ -70,11 +63,11 @@
 
             <span class="py-2 d-md-flex d-none">/</span>
 
-            <router-link class="p-2" :to="{ name: 'linhaspesquisa' }"
+            <!-- <router-link class="p-2" :to="{ name: 'linhaspesquisa' }"
               >Linhas de Pesquisa</router-link
             >
 
-            <span class="py-2 d-md-flex d-none">/</span>
+            <span class="py-2 d-md-flex d-none">/</span> -->
 
             <router-link class="p-2" :to="{ name: 'equipe' }"
               >Equipe</router-link
@@ -105,19 +98,25 @@
 </template>
 
 <script>
+import Botao from "@/components/botao.vue";
+
 export default {
-  name: "Navegador"
+  name: "Navegador",
+  components: {
+    Botao
+  }
 };
 </script>
 
 <style>
 .row .navbar-brand {
-  font-size: 2.2rem;
+  font-size: 2.2em;
 }
 .navbar-toggler {
   margin-top: 8px;
   margin-bottom: 8px;
   position: absolute;
+  border-style: none;
   top: 0;
   right: 0;
 }
@@ -127,11 +126,11 @@ export default {
 }
 
 ul.navbar-nav span {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: #cbd3da !important;
 }
 
 ul.navbar-nav a {
-  font-size: 1.1rem;
+  font-size: 1.1em;
 }
 </style>
