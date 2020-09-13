@@ -1,11 +1,26 @@
-import Vue from "vue";
-import Vuex from "vuex";
-
-Vue.use(Vuex);
-
-export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
-  modules: {}
+export default({
+  user: null,
+  projetos: [
+    {
+      nome: "Projeto1",
+      id: "projeto1",
+      foto: "projeto1.png",
+      abstract: "abstract",
+      descricao: "Descricao"
+    },
+    {
+      nome: "Projeto2",
+      id: "projeto2",
+      foto: "projeto2.png",
+      abstract: "abstract",
+      descricao: "Descricao"
+    },
+    {
+      nome: "Projeto3",
+      id: "projeto3",
+      foto: "projeto3.png",
+      abstract: "abstract",
+      descricao: "Descricao"
+    }
+  ]
 });

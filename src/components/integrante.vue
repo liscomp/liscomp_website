@@ -3,7 +3,7 @@
     <div class="col-12 col-lg-4">
       <div class="profile">
         <!-- eslint-disable vue/valid-v-bind -->
-        <img class="avatar avatar-circle" v-bind:src="foto_completa" />
+        <img class="avatar avatar-circle" v-bind:src="require(`@/assets/${foto}`)" />
         <div class="portrait-title">
           <p class="name">{{ nome }}</p>
           <p class="cargo">{{ cargo }}</p>
@@ -67,8 +67,7 @@ export default {
     return {
       linhasPesquisa: this.pesquisas,
       formacoes: this.educacao,
-      email_completo: "mailto:%" + this.contato.email,
-      foto_completa: require("../assets/" + this.foto)
+      email_completo: "mailto:%" + this.contato.email
     };
   },
   components: {

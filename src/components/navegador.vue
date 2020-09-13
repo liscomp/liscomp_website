@@ -1,6 +1,6 @@
 <template>
   <header>
-    <b-navbar toggleable="lg" id="navbar-main" class=" justify-content-center">
+    <b-navbar toggleable="md" id="navbar-main" class=" justify-content-center">
       <b-container fluid class="flex-wrap justify-content-center">
         <div
           class="align-items-center row flex-nowrap justify-content-center"
