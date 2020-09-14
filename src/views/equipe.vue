@@ -70,7 +70,6 @@
 // @ is an alias to /src
 import Pesquisador from "@/components/pesquisador.vue";
 import Aluno from "@/components/aluno.vue";
-import store from "@/store";
 
 export default {
   name: "Equipe",
@@ -80,52 +79,16 @@ export default {
   },
   computed: {
     pesquisadores() {
-      return store.pesquisadores.sort(function(a, b) {
-        if (a.nome > b.nome) {
-          return 1;
-        }
-        if (a.nome < b.nome) {
-          return -1;
-        }
-        // a must be equal to b
-        return 0;
-      });
+      return this.$store.getters.pesquisadoresOrdenados;
     },
     alunosDoutorado() {
-      return store.alunosDoutorado.sort(function(a, b) {
-        if (a.nome > b.nome) {
-          return 1;
-        }
-        if (a.nome < b.nome) {
-          return -1;
-        }
-        // a must be equal to b
-        return 0;
-      });
+      return this.$store.getters.alunosDoutoradoOrdenados;
     },
     alunosMestrado() {
-      return store.alunosMestrado.sort(function(a, b) {
-        if (a.nome > b.nome) {
-          return 1;
-        }
-        if (a.nome < b.nome) {
-          return -1;
-        }
-        // a must be equal to b
-        return 0;
-      });
+      return this.$store.getters.alunosMestradoOrdenados;
     },
     alunosInicicao() {
-      return store.alunosInicicao.sort(function(a, b) {
-        if (a.nome > b.nome) {
-          return 1;
-        }
-        if (a.nome < b.nome) {
-          return -1;
-        }
-        // a must be equal to b
-        return 0;
-      });
+      return this.$store.getters.alunosInicicaoOrdenados;
     }
   }
 };

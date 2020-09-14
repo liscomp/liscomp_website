@@ -5,7 +5,7 @@
       <hr />
     </div>
     <Equipamento
-      v-for="equipamento in equipamentoobjeto"
+      v-for="equipamento in equipamentos"
       v-bind:key="equipamento.nome"
       v-bind:nome="equipamento.nome"
       v-bind:descricao="equipamento.descricao"
@@ -17,17 +17,16 @@
 <script>
 // @ is an alias to /src
 import Equipamento from "@/components/equipamento.vue";
-import equipamentojson from "@/json/equipamento.json";
 
 export default {
-  data: function() {
-    return {
-      equipamentoobjeto: equipamentojson
-    };
-  },
   name: "Infraestrutura",
   components: {
     Equipamento
+  },
+  computed: {
+    equipamentos() {
+      return this.$store.state.equipamentos;
+    }
   }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="row d-block mb-2 px-3">
-    [<span class="posicao">{{ posicao }}</span
+    [<span class="pos">{{ posicao }}</span
     >] {{ propriedades.author }}.<span class="article-title">
       {{ propriedades.title }} </span
     >. {{ propriedades.journal }}, {{ propriedades.year }}.
@@ -17,9 +17,4 @@ export default {
 };
 </script>
 
-<style>
-.posicao,
-.article-title {
-  font-weight: bold;
-}
-</style>
+<style></style>

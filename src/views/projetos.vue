@@ -20,7 +20,6 @@
 
 <script>
 import ProjetoCards from "@/components/projetocards.vue";
-import store from "@/store";
 
 export default {
   name: "Projetos",
@@ -29,7 +28,7 @@ export default {
   },
   computed: {
     projetos() {
-      return store.projetos;
+      return this.$store.state.projetos;
     }
   }
 };

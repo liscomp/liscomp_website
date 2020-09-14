@@ -9,9 +9,7 @@
       <b-card-text>
         {{ abstract }}
       </b-card-text>
-      <router-link
-        :to="{ name: 'projetosdescricao', params: { id: identidade } }"
-        tag="button"
+      <router-link :to="'/projetos/' + identidade" tag="button"
         >Mais sobre nosso projeto</router-link
       >
     </b-card>
@@ -19,8 +17,6 @@
 </template>
 
 <script>
-
-
 export default {
   name: "ProjetoCards",
   props: ["nome", "foto", "abstract", "identidade"],

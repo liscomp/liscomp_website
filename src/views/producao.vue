@@ -5,9 +5,9 @@
       <hr />
     </div>
     <Artigo
-      v-for="(article, i) in citacoes"
-      v-bind:key="article.label"
-      v-bind:propriedades="article.properties"
+      v-for="(artigo, i) in artigos"
+      v-bind:key="artigo.label"
+      v-bind:propriedades="artigo.properties"
       v-bind:posicao="i + 1"
     />
   </b-container>
@@ -15,18 +15,22 @@
 
 <script>
 import Artigo from "@/components/artigo.vue";
-import bib from "@/json/bib.json";
 
 export default {
-  data: function() {
-    return {
-      citacoes: bib
-    };
-  },
   name: "Producao",
   components: {
     Artigo
+  },
+  computed: {
+    artigos() {
+      return this.$store.state.artigos;
+    }
   }
 };
 </script>
-<style></style>
+<style>
+.pos,
+.article-title {
+  font-weight: bold;
+}
+</style>

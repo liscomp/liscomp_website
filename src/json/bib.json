@@ -1,8 +1,8 @@
 [
     {
-        "label": "FERREIRA2020125146",
-        "type": "article",
-        "properties": {
+      "label": "FERREIRA2020125146",
+      "type": "article",
+      "properties": {
         "journal": "Physica A: Statistical Mechanics and its Applications",
         "doi": "https://doi.org/10.1016/j.physa.2020.125146",
         "issn": "0378-4371",
@@ -13,12 +13,12 @@
         "pages": "125146",
         "date": "2020",
         "year": "2020"
-        }
+      }
     },
     {
-        "label": "ferreira2018towards",
-        "type": "article",
-        "properties": {
+      "label": "ferreira2018towards",
+      "type": "article",
+      "properties": {
         "journal": "EPL (Europhysics Letters)",
         "number": "5",
         "publisher": "IOP Publishing",
@@ -28,12 +28,12 @@
         "pages": "58003",
         "date": "2018",
         "year": "2018"
-        }
+      }
     },
     {
-        "label": "pimenta2020finite",
-        "type": "article",
-        "properties": {
+      "label": "pimenta2020finite",
+      "type": "article",
+      "properties": {
         "journal": "Journal of Failure Analysis and Prevention",
         "publisher": "Springer",
         "title": "Finite Element Analysis of a Mechanical Fuse Failure",
@@ -41,12 +41,12 @@
         "pages": "1--6",
         "date": "2020",
         "year": "2020"
-        }
+      }
     },
     {
-        "label": "pereira2020dose",
-        "type": "article",
-        "properties": {
+      "label": "pereira2020dose",
+      "type": "article",
+      "properties": {
         "journal": "Radiation Physics and Chemistry",
         "publisher": "Elsevier",
         "title": "Dose distribution in boron neutron capture therapy for the treatment of brain cancer",
@@ -55,12 +55,12 @@
         "pages": "108611",
         "date": "2020",
         "year": "2020"
-        }
+      }
     },
     {
-        "label": "freitas2019micro",
-        "type": "article",
-        "properties": {
+      "label": "freitas2019micro",
+      "type": "article",
+      "properties": {
         "journal": "Microchemical Journal",
         "publisher": "Elsevier",
         "title": "Micro-XRF analysis of a Brazilian polychrome sculpture",
@@ -69,12 +69,12 @@
         "pages": "104020",
         "date": "2019",
         "year": "2019"
-        }
+      }
     },
     {
-        "label": "dias2019analysis",
-        "type": "article",
-        "properties": {
+      "label": "dias2019analysis",
+      "type": "article",
+      "properties": {
         "journal": "Physica A: Statistical Mechanics and its Applications",
         "publisher": "Elsevier",
         "title": "Analysis of temporal and spatial distributions between earthquakes in the region of California through Non-Extensive Statistical Mechanics and its limits of validity",
@@ -83,12 +83,12 @@
         "pages": "121471",
         "date": "2019",
         "year": "2019"
-        }
+      }
     },
     {
-        "label": "felix2018analysis",
-        "type": "article",
-        "properties": {
+      "label": "felix2018analysis",
+      "type": "article",
+      "properties": {
         "journal": "Radiation Physics and Chemistry",
         "publisher": "Elsevier",
         "title": "Analysis of a European cupboard by XRF, Raman and FT-IR",
@@ -97,12 +97,12 @@
         "pages": "198--204",
         "date": "2018",
         "year": "2018"
-        }
+      }
     },
     {
-        "label": "ribeiro2016analysis",
-        "type": "article",
-        "properties": {
+      "label": "ribeiro2016analysis",
+      "type": "article",
+      "properties": {
         "journal": "Vibrational Spectroscopy",
         "publisher": "Elsevier",
         "title": "Analysis by raman spectroscopy and XRF of glass beads from excavations in the harbor area of rio de janeiro, Brazil",
@@ -111,6 +111,6 @@
         "pages": "111--115",
         "date": "2016",
         "year": "2016"
-        }
+      }
     }
-]
+  ]
