@@ -53,7 +53,7 @@ export default {
 
 .descricao {
   font-size: 1.5em;
-  margin: 30px 0px 20px 0px;
+  margin-bottom: 10px;
 }
 
 .descricao-text {
@@ -61,7 +61,7 @@ export default {
 }
 
 .equipamento {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .name-equip {

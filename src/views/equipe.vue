@@ -4,33 +4,129 @@
       Equipe
       <hr />
     </div>
-    <Integrante
-      v-for="integrante in equipe"
-      v-bind:key="integrante.nome"
-      v-bind:nome="integrante.nome"
-      v-bind:contato="integrante.contato"
-      v-bind:foto="integrante.foto"
-      v-bind:cargo="integrante.cargo"
-      v-bind:educacao="integrante.educacao"
-      v-bind:pesquisas="integrante.pesquisas"
+    <div class="posicao">
+      Pesquisadores
+      <hr />
+    </div>
+    <Pesquisador
+      v-for="professor in pesquisadores"
+      v-bind:key="professor.nome"
+      v-bind:nome="professor.nome"
+      v-bind:contato="professor.contato"
+      v-bind:foto="professor.foto"
+      v-bind:cargo="professor.cargo"
+      v-bind:educacao="professor.educacao"
+      v-bind:pesquisas="professor.pesquisas"
     />
+    <div class="posicao">
+      Alunos de Doutorado
+      <hr />
+    </div>
+    <div class="row aluno">
+      <Aluno
+        v-for="aluno in alunosDoutorado"
+        v-bind:key="aluno.nome"
+        v-bind:nome="aluno.nome"
+        v-bind:contato="aluno.contato"
+        v-bind:foto="aluno.foto"
+        v-bind:cargo="aluno.cargo"
+        v-bind:faculdade="aluno.faculdade"
+      />
+    </div>
+    <div class="posicao">
+      Alunos de Mestrado
+      <hr />
+    </div>
+    <div class="row">
+      <Aluno
+        v-for="aluno in alunosMestrado"
+        v-bind:key="aluno.nome"
+        v-bind:nome="aluno.nome"
+        v-bind:contato="aluno.contato"
+        v-bind:foto="aluno.foto"
+        v-bind:cargo="aluno.cargo"
+        v-bind:faculdade="aluno.faculdade"
+      />
+    </div>
+    <div class="posicao">
+      Alunos de Iniciação Científica
+      <hr />
+    </div>
+    <div class="row aluno">
+      <Aluno
+        v-for="aluno in alunosInicicao"
+        v-bind:key="aluno.nome"
+        v-bind:nome="aluno.nome"
+        v-bind:contato="aluno.contato"
+        v-bind:foto="aluno.foto"
+        v-bind:cargo="aluno.cargo"
+        v-bind:faculdade="aluno.faculdade"
+      />
+    </div>
   </b-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import Integrante from "@/components/integrante.vue";
-import equipejson from "@/json/equipe.json";
+import Pesquisador from "@/components/pesquisador.vue";
+import Aluno from "@/components/aluno.vue";
+import store from "@/store";
 
 export default {
-  data: function() {
-    return {
-      equipe: equipejson
-    };
-  },
   name: "Equipe",
   components: {
-    Integrante
+    Pesquisador,
+    Aluno
+  },
+  computed: {
+    pesquisadores() {
+      return store.pesquisadores.sort(function(a, b) {
+        if (a.nome > b.nome) {
+          return 1;
+        }
+        if (a.nome < b.nome) {
+          return -1;
+        }
+        // a must be equal to b
+        return 0;
+      });
+    },
+    alunosDoutorado() {
+      return store.alunosDoutorado.sort(function(a, b) {
+        if (a.nome > b.nome) {
+          return 1;
+        }
+        if (a.nome < b.nome) {
+          return -1;
+        }
+        // a must be equal to b
+        return 0;
+      });
+    },
+    alunosMestrado() {
+      return store.alunosMestrado.sort(function(a, b) {
+        if (a.nome > b.nome) {
+          return 1;
+        }
+        if (a.nome < b.nome) {
+          return -1;
+        }
+        // a must be equal to b
+        return 0;
+      });
+    },
+    alunosInicicao() {
+      return store.alunosInicicao.sort(function(a, b) {
+        if (a.nome > b.nome) {
+          return 1;
+        }
+        if (a.nome < b.nome) {
+          return -1;
+        }
+        // a must be equal to b
+        return 0;
+      });
+    }
   }
 };
 </script>
@@ -65,7 +161,7 @@ ul.network-icon {
 }
 
 .about {
-  padding: 30px 10px;
+  padding-left: 10px;
 }
 
 .name {
@@ -94,5 +190,19 @@ ul.ul-edu li .description p.institution {
 
 .big-icon {
   font-size: 2.5rem;
+}
+
+.pesquisador {
+  margin-bottom: 50px;
+}
+.aluno {
+  margin-bottom: 50px;
+}
+
+.posicao {
+  font-size: 2em;
+  margin-bottom: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 </style>

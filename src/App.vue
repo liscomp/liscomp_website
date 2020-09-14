@@ -38,8 +38,6 @@ footer {
 
 .sessao {
   font-size: 2.5em;
-  margin: 0px -15px 40px -15px;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin: 0px -15px 50px -15px;
 }
 </style>

@@ -20,17 +20,17 @@
 
 <script>
 import ProjetoCards from "@/components/projetocards.vue";
-import projetosjson from "@/json/projetos.json";
+import store from "@/store";
 
 export default {
   name: "Projetos",
   components: {
     ProjetoCards
   },
-  data: function() {
-    return {
-      projetos: projetosjson
-    };
+  computed: {
+    projetos() {
+      return store.projetos;
+    }
   }
 };
 </script>

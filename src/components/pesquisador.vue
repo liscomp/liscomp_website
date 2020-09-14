@@ -1,12 +1,14 @@
 <template>
-  <div class="row mb-4">
+  <div class="row pesquisador">
     <div class="col-12 col-lg-4">
       <div class="profile">
         <!-- eslint-disable vue/valid-v-bind -->
-        <img class="avatar avatar-circle" v-bind:src="require(`@/assets/${foto}`)" />
+        <img
+          class="avatar avatar-circle"
+          v-bind:src="require(`@/assets/${foto}`)"
+        />
         <div class="portrait-title">
           <p class="name">{{ nome }}</p>
-          <p class="cargo">{{ cargo }}</p>
         </div>
         <ul class="network-icon" aria-hidden="true">
           <li>
@@ -27,8 +29,8 @@
     </div>
     <div class="col-12 col-lg-8">
       <div class="row about">
-        <div class="col-md-5 mb-3">
-          <h5>Educação</h5>
+        <div class="col-md-5">
+          <h5>Formação</h5>
           <ul id="educacao" class="ul-edu fa-ul">
             <Educacao
               v-for="formacao in formacoes"
@@ -42,7 +44,7 @@
           </ul>
         </div>
         <div class="col-md-7">
-          <h5>Linhas de Pesquisa</h5>
+          <h5>Experiência</h5>
           <div class="ul-interests">
             <Pesquisa
               v-for="linha in linhasPesquisa"
@@ -61,8 +63,8 @@ import Pesquisa from "@/components/pesquisa.vue";
 import Educacao from "@/components/educacao.vue";
 
 export default {
-  name: "Integrante",
-  props: ["nome", "cargo", "foto", "contato", "educacao", "pesquisas"],
+  name: "Pesquisador",
+  props: ["nome", "foto", "contato", "educacao", "pesquisas"],
   data: function() {
     return {
       linhasPesquisa: this.pesquisas,
