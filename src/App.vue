@@ -43,7 +43,7 @@ footer {
 .sessao {
   font-size: 2.5em;
   border-bottom: 2px solid black;
-  margin: 0px -15px 50px -15px;
+  margin-bottom: 50px;
 }
 
 .preview-image {
