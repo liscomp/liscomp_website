@@ -1,12 +1,10 @@
 <template>
   <b-container class="my-5">
-    <div class="sessao">
-      Artigos
-    </div>
+    <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
     <b-row>
       <b-col sm="12" md="9">
         <Artigo
-          v-for="artigo in artigosOrdenados"
+          v-for="artigo in artigosAno"
           v-bind:key="artigo.label"
           v-bind:propriedades="artigo.properties"
         />
@@ -34,6 +32,9 @@ export default {
     },
     anosPublicao() {
       return this.$store.getters.pegarAnos;
+    },
+    artigosAno() {
+      return this.$store.getters.artigosAnos(this.$route.params.id);
     }
   }
 };

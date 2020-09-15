@@ -3,19 +3,19 @@
     <b-container fluid id="footer">
       <b-container id="footer">
         <b-row class="justify-content-center">
-          <b-col md="12" lg="4">
+          <b-col md="12" lg="4" class="mb-3 mb-md-0">
             <span class="font-weight-bolder ">Contato:</span><br />
             <br />
             <br />
             <span class="font-weight-bolder ">Endereço:</span><br />
             <span
-              >IFRJ - Campus Paracambi (IFRJ-CPar). Laboratório de
-              Instrumentação e Simulação Computacional 28. R. Sebastião de
-              Lacerda, S/N - Fábrica, Paracambi - RJ, 26600-000.</span
+              ><font-awesome-icon icon="map-marker-alt" class="fas fa-1x" />
+              IFRJ - Campus Paracambi (IFRJ-CPar). Laboratório de Instrumentação
+              e Simulação Computacional 28. R. Sebastião de Lacerda, S/N -
+              Fábrica, Paracambi - RJ, 26600-000.</span
             >
-            <hr class="d-lg-none col-12" />
           </b-col>
-          <b-col md="12" lg="4" class="text-center p-0">
+          <b-col md="12" lg="4" class="text-center p-0 mb-3 mb-md-0">
             <b-container fluid class="p-0">
               <b-embed
                 frameborder="0"
@@ -25,7 +25,6 @@
                 allowfullscreen
               ></b-embed>
             </b-container>
-            <hr class="d-lg-none col-12" />
           </b-col>
 
           <b-col md="12" lg="4" id="IFRJ" class="text-center">
@@ -55,9 +54,8 @@
                 height="170px"
               />
             </a>
-            <hr class="col-sm-12 d-md-none" />
           </b-col>
-          <hr class="d-none d-md-block col-md-11" />
+          <hr class="col-md-11" />
           <b-col cols="12" class="text-center"
             >&copy; Copyright LISComp 2020</b-col
           >

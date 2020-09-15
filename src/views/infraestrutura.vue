@@ -2,7 +2,6 @@
   <b-container class="py-5">
     <div class="sessao">
       Equipamentos
-      <hr />
     </div>
     <Equipamento
       v-for="equipamento in equipamentos"

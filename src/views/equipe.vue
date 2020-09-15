@@ -2,7 +2,6 @@
   <b-container class="my-5">
     <div class="sessao">
       Equipe
-      <hr />
     </div>
     <div class="posicao">
       Pesquisadores
@@ -22,7 +21,7 @@
       Alunos de Doutorado
       <hr />
     </div>
-    <div class="row aluno">
+    <div class="row">
       <Aluno
         v-for="aluno in alunosDoutorado"
         v-bind:key="aluno.nome"
@@ -52,7 +51,7 @@
       Alunos de Iniciação Científica
       <hr />
     </div>
-    <div class="row aluno">
+    <div class="row">
       <Aluno
         v-for="aluno in alunosInicicao"
         v-bind:key="aluno.nome"

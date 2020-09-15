@@ -1,16 +1,20 @@
 <template>
-  <div class="row d-block mb-2 px-3">
-    [<span class="pos">{{ posicao }}</span
-    >] {{ propriedades.author }}.<span class="article-title">
-      {{ propriedades.title }} </span
-    >. {{ propriedades.journal }}, {{ propriedades.year }}.
-  </div>
+  <b-row class="mb-5">
+    <b-col sm="3">
+      <div class="preview-image" />
+    </b-col>
+    <b-col sm="9">
+      <div class="article-title">{{ propriedades.title }}</div>
+      <div class="article-autores">{{ propriedades.author }}.</div>
+      <div>{{ propriedades.journal }}, {{ propriedades.year }}.</div>
+    </b-col>
+  </b-row>
 </template>
 
 <script>
 export default {
   name: "Artigo",
-  props: ["propriedades", "posicao"]
+  props: ["propriedades"]
   /* data: function() {
     return {};
   } */

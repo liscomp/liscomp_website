@@ -234,6 +234,56 @@ export default new Vuex.Store({
               "Prestação de consultorias para empresas na área de microscopia"
           }
         ]
+      },
+      {
+        nome: "Elicardo Alves de Souza Gonçalves",
+        cargo: "Professor",
+        foto: "elicardo.jpg",
+        contato: {
+          email: "elicardo.goncalves@ifrj.edu.br",
+          lattes: "http://lattes.cnpq.br/7653565899894307"
+        },
+        educacao: [
+          {
+            curso: "Doutorado em Física",
+            termino: "2016",
+            instituicao: "Universidade do Estado do Rio de Janeiro",
+            sigla: "UERJ",
+            pais: "Brasil"
+          },
+          {
+            curso: "Mestrado em Engenharia Metalúrgica e de Materiais",
+            termino: "2010",
+            instituicao: "Universidade Federal do Rio de Janeiro",
+            sigla: "UFRJ",
+            pais: "Brasil"
+          },
+          {
+            curso: "Especialização em Radiodiagnóstico",
+            termino: "2011",
+            instituicao: "Instituto Nacional de Câncer",
+            sigla: "INCa",
+            pais: "Brasil"
+          },
+          {
+            curso: "Graduação em Física",
+            termino: "2007",
+            instituicao: "Universidade Federal do Rio de Janeiro",
+            sigla: "UFRJ",
+            pais: "Brasil"
+          }
+        ],
+        pesquisas: [
+          { pesquisa: "Instrumentação Nuclear aplicada" },
+          {
+            pesquisa: "Processamento de imagens e computação gráfica aplicadas"
+          },
+          {
+            pesquisa: "Modelagem computacional e computação numérica aplicadas"
+          },
+          { pesquisa: "Técnicas de imagem por radiação ionizante" },
+          { pesquisa: "Proteção radiológica" }
+        ]
       }
     ],
     alunosDoutorado: [
@@ -477,6 +527,24 @@ export default new Vuex.Store({
         // a must be equal to b
         return 0;
       });
+    },
+    artigosOrdenados: state => {
+      return state.artigos.sort(function(a, b) {
+        if (a.properties.year > b.properties.year) {
+          return -1;
+        }
+        if (a.properties.year < b.properties.year) {
+          return 1;
+        }
+        // a must be equal to b
+        return 0;
+      });
+    },
+    artigosAnos: state => year => {
+      return state.artigos.filter(artigos => artigos.properties.year === year);
+    },
+    pegarAnos: state => {
+      return new Set(state.artigos.map(artigos => artigos.properties.year));
     }
   },
   mutations: {},

@@ -13,10 +13,7 @@
         <ul class="network-icon" aria-hidden="true">
           <li>
             <a :href="email_completo">
-              <font-awesome-icon
-                icon="envelope"
-                class="fas big-icon"
-              ></font-awesome-icon>
+              <font-awesome-icon icon="envelope" class="fas big-icon" />
             </a>
           </li>
           <li>
