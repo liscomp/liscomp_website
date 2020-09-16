@@ -1,22 +1,38 @@
 <template>
-  <!-- eslint-disable vue/valid-v-for -->
   <div>
-    <div class="filtro-titulo">
-      Anos
+    <div class="categorias">
+      <div class="filtro-titulo">
+        Anos
+      </div>
+      <div
+        v-for="ano in anos"
+        v-bind:key="ano"
+        v-bind:ano="ano"
+        class="filtro-item"
+      >
+        <router-link :to="'/producao/' + ano">{{ ano }}</router-link>
+      </div>
     </div>
-    <Filtroano v-for="ano in anos" v-bind:key="ano" v-bind:ano="ano" />
+    <div class="categorias">
+      <div class="filtro-titulo">
+        Tópicos
+      </div>
+      <div
+        v-for="topico in topicos"
+        v-bind:key="topico"
+        v-bind:ano="topico"
+        class="filtro-item"
+      >
+        <router-link :to="'/producao/' + topico">{{ topico }}</router-link>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import Filtroano from "@/components/filtroano.vue";
-
 export default {
   name: "Filtro",
-  components: {
-    Filtroano
-  },
-  props: ["anos"]
+  props: ["anos", "topicos"]
 };
 </script>
 
@@ -32,5 +48,8 @@ export default {
   font-weight: 400;
   margin-bottom: 10px;
   padding-left: 10px;
+}
+.categorias {
+  margin-bottom: 40px;
 }
 </style>

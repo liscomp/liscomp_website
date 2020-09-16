@@ -360,10 +360,14 @@ export default new Vuex.Store({
             "http://www.sciencedirect.com/science/article/pii/S0378437120305999",
           volume: "560",
           author:
-            "Ferreira, Douglas S.R. and Ribeiro, Jennifer and Oliveira, Paulo S.L. and Pimenta, André R. and Freitas, Renato P. and Papa, Andrés R.R.",
+            "Douglas S. R. Ferreira, Jennifer Ribeiro, Paulo S. L. Oliveira, André R. Pimenta, Renato P. Freitas, Andrés R. R. Papa",
           pages: "125146",
-          date: "2020",
-          year: "2020"
+          date: "15 December 2020",
+          year: "2020",
+          topic: "Terremoto",
+          foto: "background-image.svg",
+          abstract:
+            "In the present paper we have conducted studies on seismological properties using worldwide data of deep earthquakes (depth larger than 70 km), considering events with magnitude greater than or equal to 4.5. This work is an extension of a previous study using a similar approach, for shallow events. We have addressed the problem under the perspective of complex networks, using a time window model to build the networks for deep earthquakes. These networks present scale-free and small-world features, contributing to strengthen the use of the time window model to construct epicenters networks. The results for deep events were analyzed using Nonextensive Statistical Mechanics and they corroborate with those found for the shallow ones, since the connectivity distribution for deep earthquakes also follows a q-exponential distribution and the scaling behavior is present. Our findings reinforce the idea of long-range correlations between earthquakes and the criticality of the seismological system."
         }
       },
       {
@@ -380,7 +384,9 @@ export default new Vuex.Store({
             "Ferreira, Douglas and Ribeiro, Jennifer and Papa, Andrés and Menezes, Ronaldo",
           pages: "58003",
           date: "2018",
-          year: "2018"
+          year: "2018",
+          topic: "SemTopico",
+          foto: "background-image.svg"
         }
       },
       {
@@ -394,7 +400,9 @@ export default new Vuex.Store({
             "Pimenta, AR and Tavares, SSM and Diniz, MG and Roco, RAA and Oliveira, MJ and Galiza, JAG and Gomes, AV and Ferreira, DSR and Freitas, RP",
           pages: "1--6",
           date: "2020",
-          year: "2020"
+          year: "2020",
+          topic: "SemTopico",
+          foto: "background-image.svg"
         }
       },
       {
@@ -410,7 +418,9 @@ export default new Vuex.Store({
             "Pereira, Leandro O and Freitas, Renato P and Ferreira, Douglas S and Felix, Valter S and Gonçalves, Elicardo AS and Pimenta, André R and de Sousa Dutra, Rafael and da Silva, Ademir Xavier",
           pages: "108611",
           date: "2020",
-          year: "2020"
+          year: "2020",
+          topic: "SemTopico",
+          foto: "background-image.svg"
         }
       },
       {
@@ -425,7 +435,9 @@ export default new Vuex.Store({
             "Freitas, Renato P and Felix, Valter S and Pereira, Marcelo O and Santos, Ramon S and Oliveira, Ana L and Gonçalves, Elicardo AS and Ferreira, Douglas S and Pimenta, André R and Pereira, Leandro O and Anjos, Marcelino J",
           pages: "104020",
           date: "2019",
-          year: "2019"
+          year: "2019",
+          topic: "SemTopico",
+          foto: "background-image.svg"
         }
       },
       {
@@ -440,7 +452,9 @@ export default new Vuex.Store({
           author: "Dias, Vitor HA and Papa, Andrés RR and Ferreira, Douglas SR",
           pages: "121471",
           date: "2019",
-          year: "2019"
+          year: "2019",
+          topic: "SemTopico",
+          foto: "background-image.svg"
         }
       },
       {
@@ -455,7 +469,9 @@ export default new Vuex.Store({
             "Felix, Valter S and Mello, Ulisses L and Pereira, Marcelo O and Oliveira, Ana L and Ferreira, Douglas S and Carvalho, Cristiano S and Silva, Fabricio L and Pimenta, André R and Diniz, Marilia Garcia and Freitas, Renato P",
           pages: "198--204",
           date: "2018",
-          year: "2018"
+          year: "2018",
+          topic: "SemTopico",
+          foto: "background-image.svg"
         }
       },
       {
@@ -471,7 +487,9 @@ export default new Vuex.Store({
             "Ribeiro, IMN and Freitas, RP and Calza, C and Oliveira, ALC and Felix, VS and Ferreira, DS and Batista, RT and Goncalves, EAS and Pereira, MO and Brito, PCL and others",
           pages: "111--115",
           date: "2016",
-          year: "2016"
+          year: "2016",
+          topic: "SemTopico",
+          foto: "background-image.svg"
         }
       }
     ]
@@ -479,6 +497,9 @@ export default new Vuex.Store({
   getters: {
     projetoEspecifico: state => identidade => {
       return state.projetos.find(projetos => projetos.id === identidade);
+    },
+    artigoEspecifico: state => label => {
+      return state.artigos.find(artigos => artigos.label === label);
     },
     pesquisadoresOrdenados: state => {
       return state.pesquisadores.sort(function(a, b) {
@@ -543,8 +564,16 @@ export default new Vuex.Store({
     artigosAnos: state => year => {
       return state.artigos.filter(artigos => artigos.properties.year === year);
     },
+    artigosTopico: state => topico => {
+      return state.artigos.filter(
+        artigos => artigos.properties.topic === topico
+      );
+    },
     pegarAnos: state => {
       return new Set(state.artigos.map(artigos => artigos.properties.year));
+    },
+    pegarTopicos: state => {
+      return new Set(state.artigos.map(artigos => artigos.properties.topic));
     }
   },
   mutations: {},

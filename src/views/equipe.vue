@@ -5,7 +5,6 @@
     </div>
     <div class="posicao">
       Pesquisadores
-      <hr />
     </div>
     <Pesquisador
       v-for="professor in pesquisadores"
@@ -19,7 +18,6 @@
     />
     <div class="posicao">
       Alunos de Doutorado
-      <hr />
     </div>
     <div class="row">
       <Aluno
@@ -34,7 +32,6 @@
     </div>
     <div class="posicao">
       Alunos de Mestrado
-      <hr />
     </div>
     <div class="row">
       <Aluno
@@ -49,7 +46,6 @@
     </div>
     <div class="posicao">
       Alunos de Iniciação Científica
-      <hr />
     </div>
     <div class="row">
       <Aluno
@@ -166,5 +162,7 @@ ul.ul-edu li .description p.institution {
   margin-bottom: 50px;
   padding-left: 16px;
   padding-right: 16px;
+  border-bottom: 2px solid black;
+  font-weight: 700;
 }
 </style>

@@ -31,8 +31,9 @@ a {
 
 a:hover,
 a:focus,
-#nav-list a.router-link-exact-active {
+navbar-nav a.router-link-exact-active {
   color: #cbd3da !important;
+  text-decoration: none;
 }
 
 header,
@@ -43,15 +44,13 @@ footer {
 .sessao {
   font-size: 2.5em;
   border-bottom: 2px solid black;
+  font-weight: 700;
   margin-bottom: 50px;
 }
 
 .preview-image {
+  width: 100%;
   height: 175px;
   min-height: 110px;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, auto;
-  background-repeat: repeat, no-repeat;
 }
 </style>

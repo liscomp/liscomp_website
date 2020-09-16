@@ -1,9 +1,8 @@
 <template>
   <div class="col-12 col-lg-4 aluno">
     <div class="profile">
-      <!-- eslint-disable vue/valid-v-bind -->
       <img
-        class="avatar avatar-circle"
+        class="avatar avatar-circle img-thumbnail"
         v-bind:src="require(`@/assets/${foto}`)"
       />
       <div class="portrait-title">

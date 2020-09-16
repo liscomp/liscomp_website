@@ -1,18 +1,21 @@
 <template>
-  <b-container class="my-5" v-if="nao_vazio">
+  <b-container class="my-5" v-if="nao_vazio_ano">
     <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
-    <Producaoconteudo :artigos="artigosAno" :anosPublicacao="anosPublicacao" />
+    <Producaoconteudo
+      :artigos="artigosAno"
+      :anosPublicacao="anosPublicacao"
+      :topicosPublicacao="topicosPublicacao"
+    />
   </b-container>
 
-  <!-- <b-container class="my-5" v-else-if="">
-    <div class="sessao">
-      Artigos: {{ this.$route.params.id }}
-    </div>
+  <b-container class="my-5" v-else-if="nao_vazio_topico">
+    <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
     <Producaoconteudo
-      :artigos="artigosOrdenados"
+      :artigos="artigosTopico"
       :anosPublicacao="anosPublicacao"
+      :topicosPublicacao="topicosPublicacao"
     />
-  </b-container> -->
+  </b-container>
 
   <b-container class="my-5" v-else>
     <div class="sessao">
@@ -21,6 +24,7 @@
     <Producaoconteudo
       :artigos="artigosOrdenados"
       :anosPublicacao="anosPublicacao"
+      :topicosPublicacao="topicosPublicacao"
     />
   </b-container>
 </template>
@@ -40,11 +44,24 @@ export default {
     anosPublicacao() {
       return this.$store.getters.pegarAnos;
     },
+    topicosPublicacao() {
+      return this.$store.getters.pegarTopicos;
+    },
     artigosAno() {
       return this.$store.getters.artigosAnos(this.$route.params.id);
     },
-    nao_vazio: function() {
+    artigosTopico() {
+      return this.$store.getters.artigosTopico(this.$route.params.id);
+    },
+    nao_vazio_ano: function() {
       if (this.artigosAno.length != 0) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+    nao_vazio_topico: function() {
+      if (this.artigosTopico.length != 0) {
         return true;
       } else {
         return false;

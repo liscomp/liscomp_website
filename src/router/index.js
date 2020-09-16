@@ -8,7 +8,7 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: () => import(/* webpackChunkName: "home" */ "../views/home.vue")
+    component: () => import(/* webpackChunkName: "home" */ "@/views/home.vue")
   },
   {
     path: "/labmovel",
@@ -17,7 +17,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "labmovel" */ "../views/labmovel.vue")
+      import(/* webpackChunkName: "labmovel" */ "@/views/labmovel.vue")
   },
   {
     path: "/infraestrutura",
@@ -27,7 +27,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "infraestrutura" */ "../views/infraestrutura.vue"
+        /* webpackChunkName: "infraestrutura" */ "@/views/infraestrutura.vue"
       )
   },
   {
@@ -38,7 +38,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "prestacaoservico" */ "../views/prestacaoservico.vue"
+        /* webpackChunkName: "prestacaoservico" */ "@/views/prestacaoservico.vue"
       )
   },
   {
@@ -49,7 +49,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "linhaspesquisa" */ "../views/linhaspesquisa.vue"
+        /* webpackChunkName: "linhaspesquisa" */ "@/views/linhaspesquisa.vue"
       )
   },
   {
@@ -59,7 +59,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "equipe" */ "../views/equipe.vue")
+      import(/* webpackChunkName: "equipe" */ "@/views/equipe.vue")
   },
   {
     path: "/producao",
@@ -68,7 +68,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "producao" */ "../views/producao.vue")
+      import(/* webpackChunkName: "producao" */ "@/views/producao.vue")
   },
   {
     path: "/producao/:id",
@@ -77,7 +77,16 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "producao" */ "../views/producao.vue")
+      import(/* webpackChunkName: "producao" */ "@/views/producao.vue")
+  },
+  {
+    path: "/producao/resumo/:id",
+    name: "producaoresumo",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "producao" */ "@/views/producaoresumo.vue")
   },
   {
     path: "/projetos",
@@ -86,7 +95,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "projetos" */ "../views/projetos.vue"),
+      import(/* webpackChunkName: "projetos" */ "@/views/projetos.vue"),
       children: [
         
       ]
@@ -98,7 +107,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "projetos" */ "../views/projetosdescricao.vue")
+      import(/* webpackChunkName: "projetos" */ "@/views/projetosdescricao.vue")
   },
   {
     path: "/parinternacionais",
@@ -108,7 +117,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "parinternacionais" */ "../views/parinternacionais.vue"
+        /* webpackChunkName: "parinternacionais" */ "@/views/parinternacionais.vue"
       )
   }
 ];

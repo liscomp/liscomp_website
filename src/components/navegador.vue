@@ -21,7 +21,7 @@
             />
           </b-navbar-brand>
           <b-navbar-brand
-            class="d-none d-lg-block text-wrap text-center font-weight-bold text-dark"
+            class="d-none d-lg-block text-wrap text-center font-weight-bolder"
             href="/"
           >
             Laboratório de Instrumentação e Simulação Computacional
@@ -43,49 +43,35 @@
           >
             <router-link class="p-2" :to="{ name: 'home' }"> Home</router-link>
 
-            <span class="py-2 d-md-flex d-none">/</span>
-
             <router-link class="p-2" :to="{ name: 'labmovel' }"
               >Laboratório Móvel</router-link
             >
-
-            <span class="py-2 d-md-flex d-none">/</span>
 
             <router-link class="p-2" :to="{ name: 'infraestrutura' }"
               >Infraestrutura</router-link
             >
 
-            <span class="py-2 d-md-flex d-none">/</span>
-
             <router-link class="p-2" :to="{ name: 'prestacaoservico' }"
               >Prestação de Serviços</router-link
             >
-
-            <span class="py-2 d-md-flex d-none">/</span>
 
             <!-- <router-link class="p-2" :to="{ name: 'linhaspesquisa' }"
               >Linhas de Pesquisa</router-link
             >
 
-            <span class="py-2 d-md-flex d-none">/</span> -->
+             -->
 
             <router-link class="p-2" :to="{ name: 'equipe' }"
               >Equipe</router-link
             >
 
-            <span class="py-2 d-md-flex d-none">/</span>
-
             <router-link class="p-2" :to="{ name: 'producao' }"
               >Produção Científica</router-link
             >
 
-            <span class="py-2 d-md-flex d-none">/</span>
-
             <router-link class="p-2" :to="{ name: 'projetos' }"
               >Projetos</router-link
             >
-
-            <span class="py-2 d-md-flex d-none">/</span>
 
             <router-link class="p-2" :to="{ name: 'parinternacionais' }"
               >Parcerias Internacionais</router-link
@@ -132,5 +118,7 @@ ul.navbar-nav span {
 
 ul.navbar-nav a {
   font-size: 1.1em;
+  font-weight: 700;
+  margin-right: 7px;
 }
 </style>

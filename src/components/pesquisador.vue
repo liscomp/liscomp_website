@@ -2,11 +2,12 @@
   <div class="row pesquisador">
     <div class="col-12 col-lg-4">
       <div class="profile">
-        <!-- eslint-disable vue/valid-v-bind -->
-        <img
-          class="avatar avatar-circle"
-          v-bind:src="require(`@/assets/${foto}`)"
-        />
+        <div>
+          <img
+            class="avatar avatar-circle img-thumbnail"
+            v-bind:src="require(`@/assets/${foto}`)"
+          />
+        </div>
         <div class="portrait-title">
           <p class="name">{{ nome }}</p>
         </div>

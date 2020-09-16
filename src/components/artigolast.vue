@@ -1,26 +1,30 @@
 <template>
-  <b-row class="mb-5">
-    <b-col sm="3" class="mb-3">
+  <b-row class="article-last">
+    <b-col sm="12" class="mb-3">
       <router-link :to="'/producao/resumo/' + label">
         <img
-          class="preview-image"
+          class="article-last-image"
           :src="require(`@/assets/${propriedades.foto}`)"
         />
       </router-link>
     </b-col>
-    <b-col sm="9">
+    <b-col sm="12">
       <router-link :to="'/producao/resumo/' + label">
-        <div class="article-title">{{ propriedades.title }}</div>
+        <div class="article-last-title">{{ propriedades.title }}</div>
       </router-link>
-      <div class="article-autores">{{ propriedades.author }}.</div>
-      <div>{{ propriedades.journal }}, {{ propriedades.year }}.</div>
+      <a :href="propriedades.url" target="_blank">
+        <div class="article-last-journal">
+          {{ propriedades.journal }}
+        </div>
+      </a>
+      <div>{{ propriedades.date }}</div>
     </b-col>
   </b-row>
 </template>
 
 <script>
 export default {
-  name: "Artigo",
+  name: "Artigolast",
   props: ["propriedades", "label"]
   /* data: function() {
     return {};
