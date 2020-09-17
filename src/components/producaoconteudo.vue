@@ -4,7 +4,6 @@
       <Artigo
         v-for="artigo in artigos"
         v-bind:key="artigo.label"
-        v-bind:label="artigo.label"
         v-bind:propriedades="artigo.properties"
       />
     </b-col>

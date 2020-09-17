@@ -109,8 +109,8 @@ export default new Vuex.Store({
           }
         ],
         pesquisas: [
-          { pesquisa: "Estudos de Sistemas Complexos aplicados à Geofísica" },
           { pesquisa: "Redes Complexas" },
+          { pesquisa: "Estudos de Sistemas Complexos aplicados à Geofísica" },
           {
             pesquisa:
               "Caracterizações sismológicas utilizando métodos de Física Estatística"
@@ -125,7 +125,7 @@ export default new Vuex.Store({
           },
           {
             pesquisa:
-              "Coordenador de Pesquisa e Inovação do IFRJ - campus Paracambi."
+              "Coordenador de Pesquisa e Inovação do IFRJ - campus Paracambi"
           }
         ]
       },
@@ -284,6 +284,67 @@ export default new Vuex.Store({
           { pesquisa: "Técnicas de imagem por radiação ionizante" },
           { pesquisa: "Proteção radiológica" }
         ]
+      },
+      {
+        nome: "Valter de Souza Felix",
+        cargo: "Pesquisador/Professor",
+        foto: "valter.jpg",
+        contato: {
+          email: "valter.felix@ifrj.edu.br",
+          lattes: "http://lattes.cnpq.br/6855296784759751"
+        },
+        educacao: [
+          {
+            curso: "Bacharel em Química",
+            termino: "2005",
+            instituicao: "Universidade Federal Fluminense",
+            sigla: "UFF",
+            pais: "Brasil"
+          },
+          {
+            curso: "Licenciatura em Química",
+            termino: "2005",
+            instituicao: "Universidade Federal Fluminense",
+            sigla: "UFF",
+            pais: "Brasil"
+          },
+          {
+            curso: "Especialização em Química",
+            termino: "2009",
+            instituicao: "Universidade do Estado do Rio de Janeiro",
+            sigla: "UERJ",
+            pais: "Brasil"
+          },
+          {
+            curso: "Mestrado em Química",
+            termino: "2011",
+            instituicao: "Universidade do Estado do Rio de Janeiro",
+            sigla: "UERJ",
+            pais: "Brasil"
+          },
+          {
+            curso: "Doutorado em Engenharia Nuclear",
+            "Previsão de termino": "Dez 2020",
+            instituicao: "Universidade Federal do Rio de Janeiro",
+            sigla: "UFRJ",
+            pais: "Brasil"
+          }
+        ],
+        pesquisas: [
+          {
+            pesquisa:
+              "Espectroscopia Raman e FTIR aplicada a análise de bens Culturias"
+          },
+          {
+            pesquisa:
+              "Fluorescência de Raios X aplicada a análise de bens culturais"
+          },
+          { pesquisa: "Mapeamento por Macro-XRF de bens culturais" },
+          {
+            pesquisa:
+              "Análise Estatística Multi-Variada aplicada ao estudo de bens Culturais"
+          }
+        ]
       }
     ],
     alunosDoutorado: [
@@ -323,7 +384,7 @@ export default new Vuex.Store({
       },
       {
         nome: "Jennifer R. S. da Conceição",
-        cargo: "Bolsista CNPq",
+        cargo: "Bolsista FAPERJ",
         foto: "jrsconceicao.png",
         contato: {
           email: "jennifer.@ifrj.edu.br",
@@ -499,7 +560,10 @@ export default new Vuex.Store({
       return state.projetos.find(projetos => projetos.id === identidade);
     },
     artigoEspecifico: state => label => {
-      return state.artigos.find(artigos => artigos.label === label);
+      return state.artigos.find(
+        artigos =>
+          artigos.properties.title.toLowerCase().replace(/\s/g, "-") === label
+      );
     },
     pesquisadoresOrdenados: state => {
       return state.pesquisadores.sort(function(a, b) {

@@ -1,5 +1,23 @@
 <template>
-  <b-container class="my-5">
+  <b-container>
+    <b-breadcrumb class="p-0">
+      <router-link :to="{ name: 'home' }">
+        <font-awesome-icon icon="house-user" class="fas" />
+        Home
+      </router-link>
+      <span class="divisoria">></span>
+      <router-link :to="{ name: 'producao' }">Produção Científica</router-link>
+      <span class="divisoria">></span>
+      <router-link
+        :to="
+          '/producao/resumo/' +
+            artigoEspecifico.properties.title.toLowerCase().replace(/\s/g, '-')
+        "
+        class="active"
+      >
+        {{ artigoEspecifico.properties.title }}
+      </router-link>
+    </b-breadcrumb>
     <div class="sessao">
       {{ artigoEspecifico.properties.title }}
     </div>
@@ -48,16 +66,34 @@
         </div>
       </b-col>
     </b-row>
+
+    <div class="about-us">Últimas publicações</div>
+    <b-row class="article-last">
+      <Artigolast
+        v-for="artigo in artigosOrdenados.slice(0, 3)"
+        v-bind:key="artigo.label"
+        v-bind:label="artigo.label"
+        v-bind:propriedades="artigo.properties"
+      />
+    </b-row>
   </b-container>
 </template>
 
 <script>
+import Artigolast from "@/components/artigolast.vue";
+
 export default {
   name: "ProducaoResumo",
   computed: {
     artigoEspecifico() {
       return this.$store.getters.artigoEspecifico(this.$route.params.id);
+    },
+    artigosOrdenados() {
+      return this.$store.getters.artigosOrdenados;
     }
+  },
+  components: {
+    Artigolast
   }
 };
 </script>
@@ -89,5 +125,29 @@ export default {
 .info-items .info-items-title {
   font-size: 1.2em;
   font-weight: 700;
+}
+.article-last-image {
+  width: 100%;
+  height: 110px;
+  margin-bottom: 10px;
+}
+.article-last-title {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.article-last-journal {
+  font-weight: 300;
+  color: #8f8f8f;
+}
+.article-last {
+  margin-bottom: 30px;
+}
+.about-us {
+  margin-top: 50px;
+  font-weight: 700px;
+  border-bottom: 2px solid black;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  padding-left: 7px;
 }
 </style>

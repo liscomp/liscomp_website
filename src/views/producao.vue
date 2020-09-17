@@ -1,5 +1,15 @@
 <template>
-  <b-container class="my-5" v-if="nao_vazio_ano">
+  <b-container v-if="nao_vazio_ano">
+    <b-breadcrumb class="p-0">
+      <router-link :to="{ name: 'home' }">
+        <font-awesome-icon icon="house-user" class="fas" />
+        Home
+      </router-link>
+      <span class="divisoria">></span>
+      <router-link class="active" :to="{ name: 'producao' }"
+        >Produção Científica</router-link
+      >
+    </b-breadcrumb>
     <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
     <Producaoconteudo
       :artigos="artigosAno"
@@ -8,7 +18,17 @@
     />
   </b-container>
 
-  <b-container class="my-5" v-else-if="nao_vazio_topico">
+  <b-container v-else-if="nao_vazio_topico">
+    <b-breadcrumb class="p-0">
+      <router-link :to="{ name: 'home' }">
+        <font-awesome-icon icon="house-user" class="fas" />
+        Home
+      </router-link>
+      <span class="divisoria">></span>
+      <router-link class="active" :to="{ name: 'producao' }"
+        >Produção Científica</router-link
+      >
+    </b-breadcrumb>
     <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
     <Producaoconteudo
       :artigos="artigosTopico"
@@ -17,7 +37,17 @@
     />
   </b-container>
 
-  <b-container class="my-5" v-else>
+  <b-container v-else>
+    <b-breadcrumb class="p-0">
+      <router-link :to="{ name: 'home' }">
+        <font-awesome-icon icon="house-user" class="fas" />
+        Home
+      </router-link>
+      <span class="divisoria">></span>
+      <router-link class="active" :to="{ name: 'producao' }"
+        >Produção Científica</router-link
+      >
+    </b-breadcrumb>
     <div class="sessao">
       Artigos
     </div>

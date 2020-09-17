@@ -1,16 +1,26 @@
 <template>
-  <b-row class="article-last">
-    <b-col sm="12" class="mb-3">
-      <router-link :to="'/producao/resumo/' + label">
-        <img
-          class="article-last-image"
-          :src="require(`@/assets/${propriedades.foto}`)"
-        />
-      </router-link>
-    </b-col>
+  <b-col sm="12" md="4" class="mb-3">
+    <router-link
+      :to="
+        '/producao/resumo/' +
+          propriedades.title.toLowerCase().replace(/\s/g, '-')
+      "
+    >
+      <img
+        class="article-last-image"
+        :src="require(`@/assets/${propriedades.foto}`)"
+      />
+    </router-link>
     <b-col sm="12">
-      <router-link :to="'/producao/resumo/' + label">
-        <div class="article-last-title">{{ propriedades.title }}</div>
+      <router-link
+        :to="
+          '/producao/resumo/' +
+            propriedades.title.toLowerCase().replace(/\s/g, '-')
+        "
+      >
+        <div class="article-last-title text-center">
+          {{ propriedades.title }}
+        </div>
       </router-link>
       <a :href="propriedades.url" target="_blank">
         <div class="article-last-journal">
@@ -19,7 +29,7 @@
       </a>
       <div>{{ propriedades.date }}</div>
     </b-col>
-  </b-row>
+  </b-col>
 </template>
 
 <script>

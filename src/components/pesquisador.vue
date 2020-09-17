@@ -46,12 +46,18 @@
         </div>
         <div class="col-md-7">
           <h5>Experiência</h5>
-          <div class="ul-interests">
-            <Pesquisa
-              v-for="linha in linhasPesquisa"
-              v-bind:key="linha.pesquisa"
-              v-bind:linha="linha.pesquisa"
-            />
+          <div class="text-justify">
+            <span v-for="linha in linhasPesquisa" v-bind:key="linha.pesquisa">
+              {{ linha.pesquisa
+              }}<span
+                v-if="
+                  linha.pesquisa ==
+                    linhasPesquisa[linhasPesquisa.length - 1].pesquisa
+                "
+                >.</span
+              >
+              <span v-else>;</span>
+            </span>
           </div>
         </div>
       </div>
@@ -60,7 +66,6 @@
 </template>
 
 <script>
-import Pesquisa from "@/components/pesquisa.vue";
 import Educacao from "@/components/educacao.vue";
 
 export default {
@@ -70,11 +75,10 @@ export default {
     return {
       linhasPesquisa: this.pesquisas,
       formacoes: this.educacao,
-      email_completo: "mailto:%" + this.contato.email
+      email_completo: "mailto:%20" + this.contato.email
     };
   },
   components: {
-    Pesquisa,
     Educacao
   }
 };

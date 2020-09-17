@@ -5,7 +5,10 @@
         <b-row class="justify-content-center">
           <b-col md="12" lg="4" class="mb-3 mb-md-0">
             <span class="font-weight-bolder ">Contato:</span><br />
-            <br />
+            <span
+              ><font-awesome-icon icon="envelope" class="far fa-1x" />
+              douglas.ferreira@ifrj.edu.br</span
+            ><br />
             <br />
             <span class="font-weight-bolder ">Endereço:</span><br />
             <span

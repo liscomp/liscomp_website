@@ -32,7 +32,7 @@ export default {
   props: ["nome", "cargo", "foto", "contato", "faculdade"],
   data: function() {
     return {
-      email_completo: "mailto:%" + this.contato.email
+      email_completo: "mailto:%20" + this.contato.email
     };
   }
 };

@@ -1,5 +1,13 @@
 <template>
-  <b-container class="my-5">
+  <b-container>
+    <b-breadcrumb class="p-0">
+      <router-link :to="{ name: 'home' }">
+        <font-awesome-icon icon="house-user" class="fas" />
+        Home
+      </router-link>
+      <span class="divisoria">></span>
+      <router-link class="active" :to="{ name: 'equipe' }">Equipe</router-link>
+    </b-breadcrumb>
     <div class="sessao">
       Equipe
     </div>
@@ -164,5 +172,8 @@ ul.ul-edu li .description p.institution {
   padding-right: 16px;
   border-bottom: 2px solid black;
   font-weight: 700;
+}
+.breadcrumb .active {
+  color: #6c757d;
 }
 </style>

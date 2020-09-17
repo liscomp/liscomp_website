@@ -1,5 +1,15 @@
 <template>
-  <b-container class="my-5">
+  <b-container>
+    <b-breadcrumb class="p-0">
+      <router-link :to="{ name: 'home' }">
+        <font-awesome-icon icon="house-user" class="fas" />
+        Home
+      </router-link>
+      <span class="divisoria">></span>
+      <router-link class="active" :to="{ name: 'projetos' }"
+        >Projetos</router-link
+      >
+    </b-breadcrumb>
     <div class="sessao">
       Projetos
     </div>

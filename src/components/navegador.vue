@@ -6,25 +6,26 @@
           class="align-items-center row flex-nowrap justify-content-center"
           id="navbar-header"
         >
-          <b-navbar-brand href="/">
+          <b-navbar-brand href="/" class="p-0 m-0">
             <img
               width="250px"
-              class="rounded mx-3 d-none d-md-flex"
+              class="rounded d-none d-md-flex"
               :src="require('../assets/logo_liscomp.png')"
               alt="Item"
             />
             <img
               width="200px"
-              class="rounded mx-3 d-md-none d-sm-flex"
+              class="rounded d-md-none d-sm-flex"
               :src="require('../assets/logo_liscomp.png')"
               alt="Item"
             />
           </b-navbar-brand>
           <b-navbar-brand
-            class="d-none d-lg-block text-wrap text-center font-weight-bolder"
+            class="d-none d-lg-block text-wrap text-center font-weight-bolder p-0 m-0"
             href="/"
           >
-            Laboratório de Instrumentação e Simulação Computacional
+            Laboratório de Instrumentação e Simulação Computacional Científicas
+            Aplicadas
           </b-navbar-brand>
 
           <b-navbar-toggle target="navbar-content">
@@ -41,28 +42,27 @@
             class="flex-wrap justify-content-sm-center"
             id="nav-list"
           >
-            <router-link class="p-2" :to="{ name: 'home' }"> Home</router-link>
+            <router-link class="p-2" :to="{ name: 'home' }"
+              ><font-awesome-icon icon="house-user" class="fas"
+            /></router-link>
+            <!-- <router-link class="p-2" :to="{ name: 'linhaspesquisa' }"
+              >Linhas de Pesquisa</router-link
+            > -->
 
-            <router-link class="p-2" :to="{ name: 'labmovel' }"
-              >Laboratório Móvel</router-link
+            <router-link class="p-2" :to="{ name: 'equipe' }"
+              >Equipe</router-link
             >
 
             <router-link class="p-2" :to="{ name: 'infraestrutura' }"
               >Infraestrutura</router-link
             >
 
-            <router-link class="p-2" :to="{ name: 'prestacaoservico' }"
-              >Prestação de Serviços</router-link
+            <router-link class="p-2" :to="{ name: 'labmovel' }"
+              >Laboratório Móvel</router-link
             >
 
-            <!-- <router-link class="p-2" :to="{ name: 'linhaspesquisa' }"
-              >Linhas de Pesquisa</router-link
-            >
-
-             -->
-
-            <router-link class="p-2" :to="{ name: 'equipe' }"
-              >Equipe</router-link
+            <router-link class="p-2" :to="{ name: 'noticias' }"
+              >Notícias</router-link
             >
 
             <router-link class="p-2" :to="{ name: 'producao' }"
@@ -71,6 +71,10 @@
 
             <router-link class="p-2" :to="{ name: 'projetos' }"
               >Projetos</router-link
+            >
+
+            <router-link class="p-2" :to="{ name: 'prestacaoservico' }"
+              >Prestação de Serviços</router-link
             >
 
             <router-link class="p-2" :to="{ name: 'parinternacionais' }"
@@ -96,7 +100,7 @@ export default {
 
 <style>
 .row .navbar-brand {
-  font-size: 2.2em;
+  font-size: 2.1em;
 }
 .navbar-toggler {
   margin-top: 8px;
@@ -110,7 +114,13 @@ export default {
   height: 1.5em;
   fill: rgb(0, 0, 0);
 }
-
+#navbar-header {
+  padding: 15px 0px 15px 0px;
+}
+#navbar-content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 ul.navbar-nav span {
   font-size: 1.2em;
   color: #cbd3da !important;
