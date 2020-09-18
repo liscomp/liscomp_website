@@ -156,5 +156,6 @@ export default {
   font-weight: 700;
   text-decoration: underline;
   font-size: 1.2em;
+  padding-left: 15px;
 }
 </style>
