@@ -60,7 +60,10 @@
           </b-col>
           <hr class="col-md-11" />
           <b-col cols="12" class="text-center"
-            >&copy; Copyright LISComp 2020</b-col
+            >&copy; 2016-2020 LISComp. Produzido por
+            <a href="https://psloliveirajr.github.io/" target="_blank" class="copyright"
+              >Paulinho</a
+            ></b-col
           >
         </b-row>
       </b-container>
@@ -77,6 +80,9 @@ export default {
 <style>
 #footer {
   color: rgb(0, 0, 0);
+}
+a.copyright{
+  color: #007bff!important;
 }
 
 footer hr {
