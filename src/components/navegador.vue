@@ -61,9 +61,9 @@
               >Laboratório Móvel</router-link
             >
 
-            <router-link class="p-2" :to="{ name: 'noticias' }"
+            <!-- <router-link class="p-2" :to="{ name: 'noticias' }"
               >Notícias</router-link
-            >
+            > -->
 
             <router-link class="p-2" :to="{ name: 'producao' }"
               >Produção Científica</router-link

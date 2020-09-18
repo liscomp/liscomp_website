@@ -58,6 +58,7 @@ footer {
 
 ol.breadcrumb {
   margin-top: 30px;
+  margin-bottom: 20px;
   background-color: #ffffff;
 }
 

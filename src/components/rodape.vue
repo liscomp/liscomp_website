@@ -14,8 +14,8 @@
             <span
               ><font-awesome-icon icon="map-marker-alt" class="fas fa-1x" />
               IFRJ - Campus Paracambi (IFRJ-CPar). Laboratório de Instrumentação
-              e Simulação Computacional 28. R. Sebastião de Lacerda, S/N -
-              Fábrica, Paracambi - RJ, 26600-000.</span
+              e Simulação Computacional Científicas Aplicadas 28. R. Sebastião
+              de Lacerda, S/N - Fábrica, Paracambi - RJ, 26600-000.</span
             >
           </b-col>
           <b-col md="12" lg="4" class="text-center p-0 mb-3 mb-md-0">

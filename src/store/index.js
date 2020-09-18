@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import moment from "moment";
 
 Vue.use(Vuex);
 
@@ -295,6 +296,27 @@ export default new Vuex.Store({
         },
         educacao: [
           {
+            curso: "Doutorado em Engenharia Nuclear",
+            termino: "Previsão de termino: Dez 2020",
+            instituicao: "Universidade Federal do Rio de Janeiro",
+            sigla: "UFRJ",
+            pais: "Brasil"
+          },
+          {
+            curso: "Mestrado em Química",
+            termino: "2011",
+            instituicao: "Universidade do Estado do Rio de Janeiro",
+            sigla: "UERJ",
+            pais: "Brasil"
+          },
+          {
+            curso: "Especialização em Química",
+            termino: "2009",
+            instituicao: "Universidade do Estado do Rio de Janeiro",
+            sigla: "UERJ",
+            pais: "Brasil"
+          },
+          {
             curso: "Bacharel em Química",
             termino: "2005",
             instituicao: "Universidade Federal Fluminense",
@@ -306,27 +328,6 @@ export default new Vuex.Store({
             termino: "2005",
             instituicao: "Universidade Federal Fluminense",
             sigla: "UFF",
-            pais: "Brasil"
-          },
-          {
-            curso: "Especialização em Química",
-            termino: "2009",
-            instituicao: "Universidade do Estado do Rio de Janeiro",
-            sigla: "UERJ",
-            pais: "Brasil"
-          },
-          {
-            curso: "Mestrado em Química",
-            termino: "2011",
-            instituicao: "Universidade do Estado do Rio de Janeiro",
-            sigla: "UERJ",
-            pais: "Brasil"
-          },
-          {
-            curso: "Doutorado em Engenharia Nuclear",
-            "Previsão de termino": "Dez 2020",
-            instituicao: "Universidade Federal do Rio de Janeiro",
-            sigla: "UFRJ",
             pais: "Brasil"
           }
         ],
@@ -345,6 +346,23 @@ export default new Vuex.Store({
               "Análise Estatística Multi-Variada aplicada ao estudo de bens Culturais"
           }
         ]
+      }
+    ],
+    noticias: [
+      {
+        titulo: "Aquele que tem um cabelo maravilhoso",
+        foto: "andre.png",
+        data: "05/09/2020"
+      },
+      {
+        titulo: "Aquela que coloca Forrest Gump no chinelo",
+        foto: "jrsconceicao.png",
+        data: "26/08/2020"
+      },
+      {
+        titulo: "O homem mais lindo do IFRJ",
+        foto: "Douglas.png",
+        data: "16/09/2020"
       }
     ],
     alunosDoutorado: [
@@ -564,6 +582,23 @@ export default new Vuex.Store({
         artigos =>
           artigos.properties.title.toLowerCase().replace(/\s/g, "-") === label
       );
+    },
+    noticiaEspecifico: state => label => {
+      return state.noticias.find(
+        noticias => noticias.titulo.toLowerCase().replace(/\s/g, "-") === label
+      );
+    },
+    noticiasOrdenados: state => {
+      return state.noticias.sort(function(a, b) {
+        if (moment(a.data, "DD MM YYYY") > moment(b.data, "DD MM YYYY")) {
+          return -1;
+        }
+        if (moment(a.data, "DD MM YYYY") < moment(b.data, "DD MM YYYY")) {
+          return 1;
+        }
+        // a must be equal to b
+        return 0;
+      });
     },
     pesquisadoresOrdenados: state => {
       return state.pesquisadores.sort(function(a, b) {

@@ -22,10 +22,21 @@
           pellentesque ut lacus vel interdum.
         </p>
       </b-carousel-slide>
+      <b-carousel-slide
+        caption="Blank Image"
+        img-src="https://picsum.photos/1024/480/?image=52"
+        img-alt="Blank image"
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          eros felis, tincidunt a tincidunt eget, convallis vel est. Ut
+          pellentesque ut lacus vel interdum.
+        </p>
+      </b-carousel-slide>
     </b-carousel>
     <b-container>
       <b-row class="home">
-        <b-col md="12" lg="6">
+        <b-col sm="12" md="7">
           <div class="about-us">Quem somos</div>
           <div class="text-justify about-us-text">
             <p>
@@ -42,14 +53,20 @@
             </p>
           </div>
         </b-col>
-        <b-col md="12" lg="6">
-          <div class="about-us">Destaques</div>
-          <Artigolast
-            v-for="artigo in artigosOrdenados.slice(0, 2)"
-            v-bind:key="artigo.label"
-            v-bind:label="artigo.label"
-            v-bind:propriedades="artigo.properties"
-          />
+        <b-col sm="12" md="5">
+          <b-row class="noticia">
+            <div class="about-us w-100">Notícias</div>
+            <Noticiaspainel
+              v-for="noticia in noticiasOrdenados.slice(0, 3)"
+              v-bind:key="noticia.titulo"
+              v-bind:titulo="noticia.titulo"
+              v-bind:foto="noticia.foto"
+              v-bind:data="noticia.data"
+            />
+            <router-link :to="'/noticias'" class="w-100 ver-mais">
+              Ver mais</router-link
+            >
+          </b-row>
         </b-col>
       </b-row>
     </b-container>
@@ -57,7 +74,7 @@
 </template>
 
 <script>
-import Artigolast from "@/components/artigolast.vue";
+import Noticiaspainel from "@/components/noticiaspainel.vue";
 
 export default {
   data() {
@@ -77,11 +94,14 @@ export default {
     }
   },
   components: {
-    Artigolast
+    Noticiaspainel
   },
   computed: {
     artigosOrdenados() {
       return this.$store.getters.artigosOrdenados;
+    },
+    noticiasOrdenados() {
+      return this.$store.getters.noticiasOrdenados;
     }
   }
 };
@@ -110,24 +130,31 @@ export default {
   padding-left: 10px;
   padding-right: 10px;
 }
-.article-last-image {
-  width: 100%;
-  height: 110px;
+.noticia-avatar-circle {
+  border-radius: 10%;
 }
-.article-last-title {
+.noticia-avatar {
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  object-fit: cover;
+  background-color: gray;
+}
+.noticia-titulo {
   font-weight: 700;
   font-size: 1.35em;
 }
-.article-last-journal {
-  font-weight: 300;
-  color: #8f8f8f;
-}
-.article-last {
+.noticia {
   margin-bottom: 20px;
 }
 #carousel .img-fluid {
   min-height: 400px;
   max-height: 600px;
   object-fit: cover;
+}
+.ver-mais {
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 1.2em;
 }
 </style>
