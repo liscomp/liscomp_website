@@ -1,13 +1,21 @@
 <template>
-  <b-container>
+  <b-container id="projetos-descricao">
     <b-breadcrumb class="p-0">
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
         Home
       </router-link>
       <span class="divisoria">></span>
-      <router-link class="active" :to="{ name: 'projetos' }"
-        >Projetos</router-link
+      <router-link :to="{ name: 'projetos' }">Projetos</router-link>
+      <span class="divisoria">></span>
+      <router-link :to="{
+          name: 'projetosdescricao',
+          params: {
+            id: projetoEspecifico.nome.toLowerCase().replace(/\s/g, '-'),
+            title: projetoEspecifico.nome
+          }
+        }"
+        >{{ this.projetoEspecifico.nome }}</router-link
       >
     </b-breadcrumb>
     <b-row>

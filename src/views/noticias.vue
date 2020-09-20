@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container class="noticias">
     <b-breadcrumb class="p-0">
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
@@ -36,9 +36,6 @@ export default {
     Noticiaspainel
   },
   computed: {
-    artigosOrdenados() {
-      return this.$store.getters.artigosOrdenados;
-    },
     noticiasOrdenados() {
       return this.$store.getters.noticiasOrdenados;
     }

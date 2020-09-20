@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container id="producao-resumo">
     <b-breadcrumb class="p-0">
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
@@ -28,7 +28,7 @@
           {{ artigoEspecifico.properties.abstract }}
         </div>
       </b-col>
-      <b-col sm="12" md="4">
+      <b-col class="info-quadro" sm="12" md="4">
         <div class="info">
           <div class="info-items">
             <div class="info-items-title">Autores</div>
@@ -111,6 +111,9 @@ export default {
   padding-left: 15px;
   padding-bottom: 10px;
   margin-bottom: 15px;
+}
+.info-quadro {
+  margin-top: 65px;
 }
 .info-items {
   border-bottom: 1px solid #e1e1e1;

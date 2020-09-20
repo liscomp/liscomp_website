@@ -2,10 +2,13 @@
   <b-row class="mb-5">
     <b-col sm="3" class="mb-3">
       <router-link
-        :to="
-          '/producao/resumo/' +
-            propriedades.title.toLowerCase().replace(/\s/g, '-')
-        "
+        :to="{
+          name: 'producaoresumo',
+          params: {
+            id: propriedades.title.toLowerCase().replace(/\s/g, '-'),
+            title: propriedades.title
+          }
+        }"
       >
         <img
           class="preview-image"
@@ -15,15 +18,18 @@
     </b-col>
     <b-col sm="9">
       <router-link
-        :to="
-          '/producao/resumo/' +
-            propriedades.title.toLowerCase().replace(/\s/g, '-')
-        "
+        :to="{
+          name: 'producaoresumo',
+          params: {
+            id: propriedades.title.toLowerCase().replace(/\s/g, '-'),
+            title: propriedades.title
+          }
+        }"
       >
         <div class="article-title">{{ propriedades.title }}</div>
       </router-link>
       <div class="article-autores">{{ propriedades.author }}.</div>
-      <div>{{ propriedades.journal }}, {{ propriedades.year }}.</div>
+      <div>{{ propriedades.journal }}, {{ propriedades.date }}.</div>
     </b-col>
   </b-row>
 </template>
@@ -31,10 +37,10 @@
 <script>
 export default {
   name: "Artigo",
-  props: ["propriedades", "label"]
-  /* data: function() {
-    return {};
-  } */
+  props: ["propriedades", "label"],
+  mounted() {
+    this.$route.meta.title = this.propriedades.title;
+  }
 };
 </script>
 

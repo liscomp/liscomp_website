@@ -1,6 +1,11 @@
 <template>
   <div class="noticia">
-    <router-link :to="'/noticias/' + titulo.toLowerCase().replace(/\s/g, '-')">
+    <router-link
+      :to="{
+        name: 'noticiasdescricao',
+        params: { id: titulo.toLowerCase().replace(/\s/g, '-'), title: titulo }
+      }"
+    >
       <b-col sm="12">
         <img
           :src="require('@/assets/' + foto)"

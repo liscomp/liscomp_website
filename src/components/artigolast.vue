@@ -1,10 +1,13 @@
 <template>
   <b-col sm="12" md="4" class="mb-3">
     <router-link
-      :to="
-        '/producao/resumo/' +
-          propriedades.title.toLowerCase().replace(/\s/g, '-')
-      "
+      :to="{
+        name: 'producaoresumo',
+        params: {
+          id: propriedades.title.toLowerCase().replace(/\s/g, '-'),
+          title: propriedades.title
+        }
+      }"
     >
       <img
         class="article-last-image"
@@ -13,10 +16,13 @@
     </router-link>
     <b-col sm="12">
       <router-link
-        :to="
-          '/producao/resumo/' +
-            propriedades.title.toLowerCase().replace(/\s/g, '-')
-        "
+        :to="{
+          name: 'producaoresumo',
+          params: {
+            id: propriedades.title.toLowerCase().replace(/\s/g, '-'),
+            title: propriedades.title
+          }
+        }"
       >
         <div class="article-last-title text-center">
           {{ propriedades.title }}

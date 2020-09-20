@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home">
     <b-carousel
       id="carousel"
       v-model="slide"

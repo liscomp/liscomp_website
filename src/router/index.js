@@ -8,23 +8,26 @@ const routes = [
   {
     path: "/",
     name: "home",
+    meta: {
+      title: "LISComp"
+    },
     component: () => import(/* webpackChunkName: "home" */ "@/views/home.vue")
   },
   {
     path: "/labmovel",
     name: "labmovel",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    meta: {
+      title: "Laboratório Móvel"
+    },
     component: () =>
       import(/* webpackChunkName: "labmovel" */ "@/views/labmovel.vue")
   },
   {
     path: "/infraestrutura",
     name: "infraestrutura",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    meta: {
+      title: "Infraestrutura"
+    },
     component: () =>
       import(
         /* webpackChunkName: "infraestrutura" */ "@/views/infraestrutura.vue"
@@ -33,9 +36,9 @@ const routes = [
   {
     path: "/prestacaoservico",
     name: "prestacaoservico",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    meta: {
+      title: "Prestação de Serviços"
+    },
     component: () =>
       import(
         /* webpackChunkName: "prestacaoservico" */ "@/views/prestacaoservico.vue"
@@ -44,9 +47,9 @@ const routes = [
   {
     path: "/linhaspesquisa",
     name: "linhaspesquisa",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    meta: {
+      title: "LISComp"
+    },
     component: () =>
       import(
         /* webpackChunkName: "linhaspesquisa" */ "@/views/linhaspesquisa.vue"
@@ -55,45 +58,39 @@ const routes = [
   {
     path: "/equipe",
     name: "equipe",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    meta: {
+      title: "Equipe"
+    },
     component: () =>
       import(/* webpackChunkName: "equipe" */ "@/views/equipe.vue")
   },
   {
     path: "/producao",
     name: "producao",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    meta: {
+      title: "Produções"
+    },
     component: () =>
       import(/* webpackChunkName: "producao" */ "@/views/producao.vue")
   },
   {
     path: "/producao/:id",
     name: "producaofiltro",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "producao" */ "@/views/producao.vue")
   },
   {
     path: "/producao/resumo/:id",
     name: "producaoresumo",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "producao" */ "@/views/producaoresumo.vue")
   },
   {
     path: "/projetos",
     name: "projetos",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    meta: {
+      title: "Projetos"
+    },
     component: () =>
       import(/* webpackChunkName: "projetos" */ "@/views/projetos.vue"),
       children: [
@@ -101,20 +98,17 @@ const routes = [
       ]
   },
   {
-    path: "/projetos/:id",
+    path: ":id",
     name: "projetosdescricao",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "projetos" */ "@/views/projetosdescricao.vue")
   },
   {
     path: "/parinternacionais",
     name: "parinternacionais",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    meta: {
+      title: "Parcerias Internacionais"
+    },
     component: () =>
       import(
         /* webpackChunkName: "parinternacionais" */ "@/views/parinternacionais.vue"
@@ -123,9 +117,9 @@ const routes = [
   {
     path: "/noticias",
     name: "noticias",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    meta: {
+      title: "Notícias"
+    },
     component: () =>
       import(
         /* webpackChunkName: "destaques" */ "@/views/noticias.vue"
@@ -134,12 +128,20 @@ const routes = [
   {
     path: "/noticias/:id",
     name: "noticiasdescricao",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
         /* webpackChunkName: "noticiasdescricao" */ "@/views/noticiasdescricao.vue"
+      )
+  },
+  {
+    path: "*",
+    name: "pagenotfound",
+    meta: {
+      title: "Página Não Encontra"
+    },
+    component: () =>
+      import(
+        /* webpackChunkName: "pagenotfound" */ "@/views/pagenotfound.vue"
       )
   }
 ];

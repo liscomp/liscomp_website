@@ -1,5 +1,5 @@
 <template>
-  <b-container v-if="nao_vazio_ano">
+  <b-container id="producao-ano" v-if="nao_vazio_ano">
     <b-breadcrumb class="p-0">
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
@@ -9,6 +9,10 @@
       <router-link class="active" :to="{ name: 'producao' }"
         >Produção Científica</router-link
       >
+      <span class="divisoria">></span>
+      <router-link :to="'/producao/' + this.$route.params.id">
+        {{ this.$route.params.id }}
+      </router-link>
     </b-breadcrumb>
     <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
     <Producaoconteudo
@@ -18,7 +22,7 @@
     />
   </b-container>
 
-  <b-container v-else-if="nao_vazio_topico">
+  <b-container id="producao-topico" v-else-if="nao_vazio_topico">
     <b-breadcrumb class="p-0">
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
@@ -28,6 +32,10 @@
       <router-link class="active" :to="{ name: 'producao' }"
         >Produção Científica</router-link
       >
+      <span class="divisoria">></span>
+      <router-link :to="'/producao/' + this.$route.params.id">
+        {{ this.$route.params.id }}
+      </router-link>
     </b-breadcrumb>
     <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
     <Producaoconteudo
@@ -37,7 +45,7 @@
     />
   </b-container>
 
-  <b-container v-else>
+  <b-container id="producao" v-else>
     <b-breadcrumb class="p-0">
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />

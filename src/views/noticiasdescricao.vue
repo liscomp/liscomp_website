@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container id="noticias-descricao">
     <b-breadcrumb class="p-0">
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
@@ -60,6 +60,9 @@ export default {
     componentFile() {
       return () => import(`@/components/noticias/${this.$route.params.id}.vue`);
     }
+  },
+  mounted() {
+    this.$route.meta.title = this.$route.params.title;
   }
 };
 </script>

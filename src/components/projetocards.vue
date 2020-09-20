@@ -9,7 +9,13 @@
       <b-card-text>
         {{ abstract }}
       </b-card-text>
-      <router-link :to="'/projetos/' + identidade" tag="button"
+      <router-link :to="{
+          name: 'projetosdescricao',
+          params: {
+            id: identidade.toLowerCase().replace(/\s/g, '-'),
+            title: titulo
+          }
+        }" tag="button"
         >Mais sobre nosso projeto</router-link
       >
     </b-card>

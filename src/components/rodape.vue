@@ -3,7 +3,7 @@
     <b-container fluid id="footer">
       <b-container id="footer">
         <b-row class="justify-content-center">
-          <b-col md="12" lg="4" class="mb-3 mb-md-0">
+          <b-col sm="12" md="6" lg="4" class="mb-4 mb-lg-0">
             <span class="font-weight-bolder ">Contato:</span><br />
             <span
               ><font-awesome-icon icon="envelope" class="far fa-1x" />
@@ -18,7 +18,41 @@
               de Lacerda, S/N - Fábrica, Paracambi - RJ, 26600-000.</span
             >
           </b-col>
-          <b-col md="12" lg="4" class="text-center p-0 mb-3 mb-md-0">
+          <b-col
+            sm="12"
+            md="6"
+            lg="4"
+            id="IFRJ"
+            class="align-items-center d-flex mb-4 mb-lg-0"
+          >
+            <a
+              href="https://ifrj.edu.br"
+              id="logo-img"
+              target="_blank"
+              class="d-block-md d-none mx-auto"
+            >
+              <img
+                class="rounded"
+                :src="require('../assets/logo-ifrj.png')"
+                alt="Item"
+                height="200px"
+              />
+            </a>
+            <a
+              href="https://ifrj.edu.br"
+              id="logo-img"
+              target="_blank"
+              class="d-none-md d-block mx-auto"
+            >
+              <img
+                class="rounded"
+                :src="require('../assets/logo-ifrj.png')"
+                alt="Item"
+                height="170px"
+              />
+            </a>
+          </b-col>
+          <b-col md="12" lg="4" class="text-center p-0 ">
             <b-container fluid class="p-0">
               <b-embed
                 frameborder="0"
@@ -29,36 +63,7 @@
               ></b-embed>
             </b-container>
           </b-col>
-
-          <b-col md="12" lg="4" id="IFRJ" class="text-center">
-            <a
-              href="https://ifrj.edu.br"
-              id="logo-img"
-              target="_blank"
-              class="d-block-md d-none"
-            >
-              <img
-                class="rounded m-3 "
-                :src="require('../assets/logo-ifrj.png')"
-                alt="Item"
-                height="200px"
-              />
-            </a>
-            <a
-              href="https://ifrj.edu.br"
-              id="logo-img"
-              target="_blank"
-              class="d-none-md d-block"
-            >
-              <img
-                class="rounded m-3 "
-                :src="require('../assets/logo-ifrj.png')"
-                alt="Item"
-                height="170px"
-              />
-            </a>
-          </b-col>
-          <hr class="col-md-11" />
+          <hr class="col-md-12" />
           <b-col cols="12" class="text-center"
             >&copy; 2016-2020 LISComp. Produzido por
             <a

@@ -2,9 +2,9 @@
   <div id="app">
     <go-top :size="50" :bottom="50" :bg-color="'black'" />
     <Navegador />
-    <span>
+    <div id="conteudo">
       <router-view />
-    </span>
+    </div>
     <Rodape />
   </div>
 </template>

@@ -1,0 +1,801 @@
+TY  - JOUR
+TI  - Analysis of temporal and spatial distributions between earthquakes in the region of California through Non-Extensive Statistical Mechanics and its limits of validity
+AU  - Dias, Vitor H.A.
+AU  - Papa, Andrés R.R.
+AU  - Ferreira, Douglas S.R.
+JO  - Physica A: Statistical Mechanics and its Applications
+VL  - 529
+SP  - 121471
+PY  - 2019
+DA  - 2019/09/01/
+SN  - 0378-4371
+DO  - https://doi.org/10.1016/j.physa.2019.121471
+UR  - http://www.sciencedirect.com/science/article/pii/S0378437119308568
+KW  - Earthquakes
+KW  - Non-extensive statistical mechanics
+KW  - Complex systems
+KW  - Long-range interactions
+AB  - In this work we study the influence of considering partial sets of earthquakes data has on the temporal and spatial probability distributions of earthquakes, using data from the California region between 2003 and 2016, with different thresholds for magnitude and depth of hypocenters. For this we have considered sequences of earthquakes where we have “jump”, or pulled, a given fixed number of actually sequential earthquakes. Through the concepts of Non-Extensive Statistical Mechanics for the time interval between earthquakes, we have found that the increase of the jump between earthquakes forming the sequence, affects the non-extensive characteristic of the system in the temporal probability distribution, denoted by a change in the value of the entropic index q, for relatively small jump sizes. However, for the distance between earthquakes, we observe that the increase of jumps lets untouched the non-extensive characteristic of the system, keeping the entropic index values q approximately constant. This analysis allows not just to show the robustness of the Non-Extensive Statistical Mechanics treatments for the study of earthquakes, but also their limits of applicability with respect to jumps or data loss. At the same time, it is a very useful test for memory effects and long-range interactions.
+ER  - 
+
+TY  - JOUR
+TI  - Long-range correlation studies in deep earthquakes global series
+AU  - Ferreira, Douglas S.R.
+AU  - Ribeiro, Jennifer
+AU  - Oliveira, Paulo S.L.
+AU  - Pimenta, André R.
+AU  - Freitas, Renato P.
+AU  - Papa, Andrés R.R.
+JO  - Physica A: Statistical Mechanics and its Applications
+VL  - 560
+SP  - 125146
+PY  - 2020
+DA  - 2020/12/15/
+SN  - 0378-4371
+DO  - https://doi.org/10.1016/j.physa.2020.125146
+UR  - http://www.sciencedirect.com/science/article/pii/S0378437120305999
+KW  - Earthquakes
+KW  - Complex networks
+KW  - Nonextensive statistical mechanics
+KW  - Long-range correlations
+AB  - In the present paper we have conducted studies on seismological properties using worldwide data of deep earthquakes (depth larger than 70 km), considering events with magnitude greater than or equal to 4.5. This work is an extension of a previous study using a similar approach, for shallow events. We have addressed the problem under the perspective of complex networks, using a time window model to build the networks for deep earthquakes. These networks present scale-free and small-world features, contributing to strengthen the use of the time window model to construct epicenters networks. The results for deep events were analyzed using Nonextensive Statistical Mechanics and they corroborate with those found for the shallow ones, since the connectivity distribution for deep earthquakes also follows a q-exponential distribution and the scaling behavior is present. Our findings reinforce the idea of long-range correlations between earthquakes and the criticality of the seismological system.
+ER  - 
+
+TY  - JOUR
+DO  - http://dx.doi.org/10.1209/0295-5075/121/58003
+UR  - https://iopscience.iop.org/article/10.1209/0295-5075/121/58003
+TI  - Towards evidence of long-range correlations in shallow seismic activities
+T2  - EPL (Europhysics Letters)
+AU  - Ferreira, Douglas
+AU  - Ribeiro, Jennifer
+AU  - Papa, Andrés
+AU  - Menezes, Ronaldo
+PY  - 2018
+DA  - 2018/03/01
+PB  - IOP Publishing
+SP  - 58003
+IS  - 5
+VL  - 121
+SN  - 0295-5075
+SN  - 1286-4854
+AB  - In this work, we introduce a new methodology to construct a network of epicenters that avoids problems found in well-established methodologies when they are applied to global catalogs of earthquakes located in shallow zones. The new methodology involves essentially the introduction of a time window which works as a temporal filter. Our approach is more generic and for small regions the results coincide with previous findings. The network constructed with that model has small-world properties and the distribution of node connectivity follows a non-traditional function, namely a q-exponential, where scale-free properties are present. The vertices with larger connectivity in the network correspond to the areas with very intense seismic activities in the period considered. These new results strengthen the hypothesis of long spatial and temporal correlations between earthquakes.
+ER  - 
+
+TY  - JOUR
+TI  - On the agreement between small-world-like OFC model and real earthquakes
+AU  - Ferreira, Douglas S.R.
+AU  - Papa, Andrés R.R.
+AU  - Menezes, Ronaldo
+JO  - Physics Letters A
+VL  - 379
+IS  - 7
+SP  - 669
+EP  - 675
+PY  - 2015
+DA  - 2015/03/20/
+SN  - 0375-9601
+DO  - https://doi.org/10.1016/j.physleta.2014.12.023
+UR  - http://www.sciencedirect.com/science/article/pii/S0375960114012432
+KW  - OFC model
+KW  - Earthquakes
+KW  - Complex networks
+KW  - Non-extensive statistics
+AB  - In this article we implemented simulations of the OFC model for earthquakes for two different topologies: regular and small-world, where in the latter the links are randomly rewired with probability p. In both topologies, we have studied the distribution of time intervals between consecutive earthquakes and the border effects present in each one. In addition, we also have characterized the influence that the probability p produces in certain characteristics of the lattice and in the intensity of border effects. From the two topologies, networks of consecutive epicenters were constructed, that allowed us to analyze the distribution of connectivities of each one. In our results distributions arise belonging to a family of non-traditional distributions functions, which agrees with previous studies using data from actual earthquakes. Our results reinforce the idea that the Earth is in a critical self-organized state and furthermore point towards temporal and spatial correlations between earthquakes in different places.
+ER  - 
+
+TY  - JOUR
+TI  - Small world picture of worldwide seismic events
+AU  - Ferreira, Douglas S.R.
+AU  - Papa, Andrés R.R.
+AU  - Menezes, Ronaldo
+JO  - Physica A: Statistical Mechanics and its Applications
+VL  - 408
+SP  - 170
+EP  - 180
+PY  - 2014
+DA  - 2014/08/15/
+SN  - 0378-4371
+DO  - https://doi.org/10.1016/j.physa.2014.04.024
+UR  - http://www.sciencedirect.com/science/article/pii/S0378437114003355
+KW  - Small-world networks
+KW  - Seismic networks
+KW  - -exponential distributions
+AB  - The understanding of long-distance relations between seismic activities has for long been of interest to seismologists and geologists. In this paper we have used data from the worldwide earthquake catalog for the period between 1972 and 2011 to generate a network of sites around the world for earthquakes with magnitude m≥4.5 in the Richter scale. After the network construction, we have analyzed the results under two viewpoints. First, in contrast to previous works, which have considered just small areas, we showed that the best fitting for networks of seismic events is not a pure power law, but a power law with exponential cutoff; we also have found that the global network presents small-world properties. Second, we have found that the time intervals between successive earthquakes have a cumulative probability distribution well fitted by nontraditional functional forms. The implications of our results are significant because they seem to indicate that seisms around the world are not independent. In this paper we provide evidence to support this argument.
+ER  - 
+
+TY  - CONF
+AU  - Ferreira, Douglas S. R.
+AU  - Papa, Andrés R. R.
+AU  - Menezes, Ronaldo
+ED  - Contucci, Pierluigi
+ED  - Menezes, Ronaldo
+ED  - Omicini, Andrea
+ED  - Poncela-Casasnovas, Julia
+PY  - 2016
+DA  - 2016/11/25/
+TI  - The Small World of Seismic Events
+BT  - Complex Networks V
+SP  - 97
+EP  - 105
+VL  - 549
+PB  - Springer International Publishing
+CY  - Cham
+UR  - https://link.springer.com/chapter/10.1007/978-3-319-05401-8_10
+DO  - https://doi.org/10.1007/978-3-319-05401-8_10
+AB  - The understanding of long-distance relations between seismic activities has for long been of interest to seismologists and geologists. In this paper we have used data from the world-wide earthquake catalog for the period between 1972 and 2011, to generate a network of sites around the world for earthquakes with magnitude m ≥ 4.5 on the Richter scale. After the network construction, we have analyzed the results under two viewpoints. Firstly, in contrast to previous works, which have considered just small areas, we showed that the best fitting for networks of seismic events is not a pure power law, but a power law with an exponential cutoff. We also have found that the global network presents small-world properties. The implications of our results are discussed.
+SN  - 978-3-319-05401-8
+ID  - 10.1007/978-3-319-05401-8_10
+ER  - 
+
+TY  - JOUR
+AU  - Santo, Marco Aurélio do Espírito
+AU  - Ferreira, Douglas Santos Rodrigues
+AU  - da Ponte Neto, Cosme Ferreira
+AU  - Papa, Andrés Reinaldo Rodriguez
+DA  - 2013/09/01/
+PY  - 2013
+TI  - A STATISTICAL STUDY OF EARTH’S MAGNETIC FIELD REVERSALS SEQUENCES
+JF  - Brazilian Journal of Geophysics; v. 31, n. 3 (2013)DO  - 10.22564/rbgf.v31i3.319
+SP  - 533
+EP  - 540
+KW  - Geomagnetic reversals
+KW  - Power law
+KW  - Self-organized criticality
+AB  - This paper presents an analysis of the distribution of periods between consecutive reversals of the Earth’s magnetic ﬁeld through a non-parametric statistics. The study analyzes whether data in different periods of reversal belong to the same distribution, the distribution type and whether the polarity states are equivalent. This analysis was performed for periods from 0 to 40 Ma, 40 to 80 Ma and 120 to 160 Ma. It was found that the data from the three periods show identical statistical characteristics which leads to the symmetry between the states of polarity and to a distribution compatible with a power law, which shows the possibility of a critical phenomenon acting on the geodynamo. The fact that the data obey a power law distribution prompted a comparison with synthetic data generated using two models based on criticality of reversals (one of them self-organized). These simple models reproduce some features of reversals as its temporal evolution and distribution of polarity intervals, and show a similarity with paleomagnetic data.   Keywords : geomagnetic reversals, power law, self-organized criticality.      RESUMO . Este artigo apresenta uma análise da distribuição de períodos entre reversões consecutivas do campo magnético da Terra através de uma estatística não-paramétrica. O estudo analisa se os dados dos diferentes períodos de reversão pertencem a uma mesma distribuição, o tipo de distribuição que eles obedecem e se os estados de polaridade são equivalentes. Esta análise foi realizada nos períodos de 0 a 40 Ma, de 40 a 80 Ma e de 120 a 160 Ma. Encontrou-se que os dados dos três períodos apresentam características estatísticas idênticas, o que leva à simetria entre os estados de polaridade e a uma distribuição compatível com uma lei de potência, o que mostra a possibilidade de um fenômeno crítico atuando no geodínamo. O fato dos dados obedecerem a uma distribuição de lei de potências motivou uma comparação com dados sintéticos gerados através de dois modelos de reversões baseados em criticalidade (um deles auto-organizado). Estes modelos simples reproduzem algumas características das reversões, como sua evolução temporal e a distribuição de intervalo de polaridade, e mostram uma similaridade com dados paleomagnéticos.   Palavras-chave:  reversões geomagnéticas, lei de potências, criticalidade auto-organizada. 
+UR  - https://www.sbgf.org.br/revista/index.php/rbgf/article/view/319
+ER  - 
+
+TY  - JOUR
+TI  - Statistical analysis of geomagnetic field reversals and their consequences
+AU  - Barbosa, Cleiton S.
+AU  - Ferreira, Douglas S.R.
+AU  - do Espírito Santo, Marco A.
+AU  - Papa, Andrés R.R.
+JO  - Physica A: Statistical Mechanics and its Applications
+VL  - 392
+IS  - 24
+SP  - 6554
+EP  - 6560
+PY  - 2013
+DA  - 2013/12/15/
+SN  - 0378-4371
+DO  - https://doi.org/10.1016/j.physa.2013.08.025
+UR  - http://www.sciencedirect.com/science/article/pii/S0378437113007541
+KW  - Geomagnetic reversals
+KW  - Tsallis statistics
+KW  - Statistical distributions
+KW  - Detrended fluctuation analysis
+AB  - In this paper we focus on the statistical distribution of time intervals between geomagnetic reversals. Recently the Tsallis distribution was pointed out as a possible alternative to previous proposals. We have performed statistical tests to further prove this and find the parameters of the Tsallis distribution that better fit the data. Additionally we have analyzed the correlation of time intervals between consecutive reversals to show the presence of memory effects on the mechanism that generates them, as could be expected for some Tsallis systems.
+ER  - 
+
+TY  - JOUR
+TI  - Analysis of a European cupboard by XRF, Raman and FT-IR
+AU  - Felix, Valter S.
+AU  - Mello, Ulisses L.
+AU  - Pereira, Marcelo O.
+AU  - Oliveira, Ana L.
+AU  - Ferreira, Douglas S.
+AU  - Carvalho, Cristiano S.
+AU  - Silva, Fabricio L.
+AU  - Pimenta, André R.
+AU  - Diniz, Marilia Garcia
+AU  - Freitas, Renato P.
+JO  - Radiation Physics and Chemistry
+VL  - 151
+SP  - 198
+EP  - 204
+PY  - 2018
+DA  - 2018/10/01/
+SN  - 0969-806X
+DO  - https://doi.org/10.1016/j.radphyschem.2018.06.036
+UR  - http://www.sciencedirect.com/science/article/pii/S0969806X18301877
+KW  - XRF
+KW  - Raman
+KW  - FT-IR
+KW  - Pigments
+KW  - Black 
+AB  - In this paper, a European black Japanned piece of furniture (dated to approximately 1860) was analyzed by XRF, Raman spectroscopy and FT-IR techniques. The analyses detected pigments such as vermilion/cinnabar [HgS], Massicot [PbO], lamp black [C] and green earth [K[(Al,FeIII),(FeII,Mg)](AlSi3,Si4)O10(OH)2], which were possibly dissolved in gum arabic. The analyses also determined that the metallic ornaments consist of a brass alloy with traces of gold and that gold was also used in some golden regions of the polychrome. The results obtained assisted restorers in choosing suitable intervening procedures and contributed to a better understanding of the cupboard manufacturing process.
+ER  - 
+
+TY  - JOUR
+TI  - Analysis by raman spectroscopy and XRF of glass beads from excavations in the harbor area of rio de janeiro, Brazil
+AU  - Ribeiro, I.M.N.
+AU  - Freitas, R.P.
+AU  - Calza, C.
+AU  - Oliveira, A.L.C.
+AU  - Felix, V.S.
+AU  - Ferreira, D.S.
+AU  - Batista, R.T.
+AU  - Gonçalves, E.A.S.
+AU  - Pereira, M.O.
+AU  - Brito, P.C.L.
+AU  - Lima, T.A.
+AU  - Pimenta, A.R.
+AU  - Anjos, M.J.
+AU  - Lopes, R.T.
+JO  - Vibrational Spectroscopy
+VL  - 87
+SP  - 111
+EP  - 115
+PY  - 2016
+DA  - 2016/11/01/
+SN  - 0924-2031
+DO  - https://doi.org/10.1016/j.vibspec.2016.09.021
+UR  - http://www.sciencedirect.com/science/article/pii/S0924203116302727
+KW  - Glass beads
+KW  - Raman spectroscopy
+KW  - XRF
+AB  - In this paper, nine beads from excavations in the Valongo Wharf, located in the harbor area of Rio de Janeiro, Brazil that were utilized as ornaments by Africans and Afrodescendants during the 19th century were analyzed by Raman and X-Ray Fluorescence (XRF) spectroscopy. All samples in the analysis showed Raman spectra with two bands of maximum intensity around 1000 and 500cm−1 related to the maximum stretching (νmax) and bending mode (δ), respectively, of the tetrahedral network of the SiO4 present in the glass matrix. However, there is variation in the intensity and position of the bands that are directly associated with the burning process and the raw material utilized in the manufacture of the beads. Based on the polymerization index (Ip=A500/AU000), it is possible to relate these two parameters. By establishing a correlation among the Ip and the νmax band, the beads were classified into groups. The results reveal that the beads’ base paste exhibits differences, allowing their classification into groups according to the manufacturing process. Based on the combination of the elemental characterization and Raman spectroscopy results, it was also possible to conclude that European and Asian countries are the possible origins of the beads.
+ER  - 
+
+
+TY  - JOUR
+TI  - Uso de Fluorescência de Raios X (XRF) para fins de comparação entre a composição elementar da barba de timão [Stryphnodendron adstringens (Mart.) Coville] com outras pomadas cicatrizantes
+AU  - Leandro da Conceição Luiz
+AU  - Rafaela Tavares Batista
+AU  - Deborah Demarque Martins da Silva
+AU  - Juliana Fernandes Rezende
+AU  - Lays Cordeiro de Jesus
+AU  - Marcela da Silva Teodoro de Faria
+AU  - Renato Pereira de Freitas
+AU  - Valter de Souza Felix
+JO  - Revista Brasileira de Ciências da Saúde
+VL  - 23
+SP  - 173
+EP  - 178
+PY  - 2019
+DA  - 2019/07/05/
+DO  - https://doi.org/10.22478/ufpb.2317-6032.2019v23n2.37537
+UR  - https://periodicos.ufpb.br/index.php/rbcs/article/view/37537-p7
+AB  - Introdução: A Barba de timão é uma planta de origem do cerrado brasileiro, que vem sendo estudada por suas propriedades medicinais, tais como: antibacteriana, cicatrizante, coagulante sanguíneo, dentre outras. A cicatrização é um processo pelo qual o organismo tende a reparar uma lesão ou perda de tecido. Objetivo: Este trabalho compara a composição química da barba de timão com algumas pomadas cicatrizantes de origem farmacêuticas já presentes e disponíveis no mercado. Assim, pode-se relacionar a propriedade cicatrizante desta planta por meio de seus componentes químicos. Materiais e Métodos: Para realizar tal comparação, foi utilizada com amostra a planta barba de timão comercializada em mercados especializados e as pomadas, sulfato de neomicina e a sulfadiazina de prata. Para a análise multielementar, foi utilizada a espectroscopia por fluorescência de raios X (XRF). Com o espectro fornecido pela XRF foi possível comparar os elementos químicos das amostras. Conclusão: O espectro mostrou que a barba de timão tem propriedades químicas semelhantes, assemelhando-se com os componentes químicos encontrados na amostra de sulfato de neomicina, adicionada de três compostos químicos, K, Ca e Br, que também são importantes no processo de cicatrização. Ao comparar com a sulfadiazina de prata, o único elemento que se difere do fitoterápico, além do três já citados, é a Ag.Descritores: Barba de Timão. Cicatrização Pomada. Fármaco. Fluorescência de Raios X.
+ER  - 
+
+TY  - JOUR
+TI  - Analysis of silver coins from colonial Brazil by hand held XRF and micro-XRF
+AU  - Felix, Valter S.
+AU  - Pereira, Marcelo O.
+AU  - Freitas, Renato P.
+AU  - Aranha, PaulaJ.M.
+AU  - Henrique, PedroC.S.
+AU  - Anjos, Marcelino J.
+AU  - Lopes, Ricardo T.
+JO  - Applied Radiation and Isotopes
+SP  - 109409
+PY  - 2020
+DA  - 2020/09/06/
+SN  - 0969-8043
+VL  - 
+SP  - 
+EP  - 
+DO  - https://doi.org/10.1016/j.apradiso.2020.109409
+UR  - http://www.sciencedirect.com/science/article/pii/S0969804320305558
+KW  - XRF
+KW  - Micro-XRF
+KW  - ROBPCA
+KW  - Historical coins
+KW  - Ag enrichment
+KW  - 960  coins
+AB  - In this work, 960 réis coins from the period when Brazil was a colony of Portugal were analyzed using the x-ray fluorescence (XRF) spectrometry. The history of these coins, dated between the end of the 17th century and the beginning of the 19th century, had a great influence on the immigration of the Portuguese Prince Regent D. João to Brazil, who arrived in 1808. Bearing in mind the need to expand the timid Brazilian monetary system, the Portuguese crown decided to collect Spanish silver pesos of 8 reales, recoined with a value of 960 réis. The recoinage procedure was carried out using a stamp; therefore, in many cases, it is possible to check the base currency. In this work, were investigated 17 samples of 960 réis coins by XRF, in which the base coin was 8 reales manufactured with raw materials from Mexican mines. In addition to characterizing the elemental composition of the coins, the XRF data were evaluated using multivariate statistical method of Robust Principal Component Analysis (ROBPCA), which was used to classify the coins based on their elemental composition. However, with XRF, elementary information is obtained for a depth of only a few micrometers. One of the essential issues in Ag–Cu metal alloys is the Ag enrichment, which can cause changes to the elemental composition of the surface. Therefore, initially, a study was carried out to verify whether the surface compositions of the coins were altered by the Ag enrichment.
+ER  - 
+
+TY  - JOUR 
+TI  - Efeitos do vento solar na magnetosfera terrestre: uma abordagem didática dos cinturões de Van Allen 
+JO  - Revista Brasileira de Ensino de Física 
+AU  - Dutra, R. S. 
+AU  - Ferreira, D. S. R. 
+AU  - Gonçalves, A. S. M. 
+AU  - Carvalho, G. M. 
+SN  - 1806-1117 
+VL  - 42 
+Y1  - 2020 
+PB  - scielo
+SN  - 1806-9126
+DA  - 2020/01/24/
+UR  - http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1806-11172020000100425&nrm=iso
+DO  - http://dx.doi.org/10.1590/1806-9126-rbef-2019-0164 
+KW  - Geomagnetismo
+KW  - Cinturões de Van Allen
+KW  - Vento solar
+AB  - Neste trabalho realizamos uma abordagem didática de aspectos relacionados ao geomagnetismo e como esses aspectos podem ser influenciados pela ação do vento solar. A carência de textos didáticos que promovam explicações em termos de conceitos de física básica foi a principal motivação para esse trabalho. Iniciamos com uma discussão histórica sobre o estudo do magnetismo que culminou na conhecida teoria do dínamo para explicar a origem do campo magnético terrestre, na qual mostramos a possiblidade de abordar este assunto em cursos de eletricidade e magnetismo. Apresentamos também dois cenários para a magnetosfera terrestre, com o intuito de modelar a interação do vento solar com a magnetosfera, em que representamos tal interação por meio da superposição dos campos de dois dipolos magnéticos. A seguir mostramos a possiblidade de discutir o movimento das cargas provenientes do vento solar ao redor da Terra, na região da magnetosfera, utilizando a segunda lei de Newton e a força de Lorentz, discutindo assim a formação de anéis de cargas em movimento e dos cinturões de Van Allen. Finalmente apresentamos um simples argumento, baseado no modelo apresentado, para a deformação da magnetosfera, para explicar a limitação na quantidade de anéis e cinturões que envolvem o nosso planeta.
+ER  - 
+
+TY  - JOUR
+T1  - Enantioselective manipulation of single chiral nanoparticles using optical tweezers
+A1  - Ali, Rfaqat
+A1  - Pinheiro, Felipe A.
+A1  - Dutra, Rafael S.
+A1  - Rosa, Felipe S. S.
+A1  - Maia Neto, Paulo A.
+Y1  - 2020
+DA  - 2020/02/11/
+SP  - 5031
+EP  - 5037
+JF  - Nanoscale
+JO  - Nanoscale
+VL  - 12
+IS  - 8
+PB  - The Royal Society of Chemistry
+SN  - 2040-3364
+DO  - 10.1039/C9NR09736H
+M3  - 10.1039/C9NR09736H
+UR  - http://dx.doi.org/10.1039/C9NR09736H
+N2  - We put forward an enantioselective method for chiral nanoparticles using optical tweezers. We demonstrate that the optical trapping force in a typical, realistic optical tweezing setup with circularly-polarized trapping beams is sensitive to the chirality of core–shell nanoparticles, allowing for efficient enantioselection. It turns out that the handedness of the trapped particles can be selected by choosing the appropriate circular polarization of the trapping beam. The chirality of each individual trapped nanoparticle can be characterized by measuring the rotation of the equilibrium position under the effect of a transverse Stokes drag force. We show that the chirality of the shell gives rise to an additional twist, leading to a strong enhancement of the optical torque driving the rotation. Both methods are shown to be robust against variations of size and material parameters, demonstrating that they are particularly useful in (but not restricted to) several situations of practical interest in chiral plasmonics, where enantioselection and characterization of single chiral nanoparticles, each and every one with its unique handedness and optical properties, are in order. In particular, our method could be employed to unveil the chiral response arising from disorder in individual plasmonic raspberries, synthesized by close-packing a large number of metallic nanospheres around a dielectric core.
+ER  - 
+
+TY  - JOUR
+DO  - 10.1088/1361-6552/ab921a
+UR  - http://dx.doi.org/10.1088/1361-6552/ab921a
+TI  - Studying the Oobleck with video-analysis
+T2  - Physics Education
+AU  - Lima, E A
+AU  - Dutra, R S
+AU  - Souza, P V S
+PY  - 2020
+DA  - 2020/06/08
+PB  - IOP Publishing
+SP  - 045021
+IS  - 4
+VL  - 55
+SN  - 0031-9120
+SN  - 1361-6552
+AB  - We propose a semiquantitative experiment that associates video-analysis and ordinary procedures of experimental physics whose objective is to investigate the dual character of Oobleck, a mixture of cornstarch in water, which appears thicker or thinner depending on how it is physically manipulated. The results are presented and interpreted taking into account a macroscopic model present in the literature. The experiment is easily replicable in the most diverse school realities and it may be useful do discuss many fundamental physics concepts.
+ER  - 
+
+TY  - JOUR
+TI  - Negative optical torque on a microsphere in optical tweezers
+AB  - We show that the optical force field in optical tweezers with elliptically polarized beams has the opposite handedness for a wide range of particle sizes and for the most common configurations. Our method is based on the direct observation of the particle equilibrium position under the effect of a transverse Stokes drag force, and its rotation around the optical axis by the mechanical effect of the optical torque. We find overall agreement with theory, with no fitting, provided that astigmatism, which is characterized separately, is included in the theoretical description. Our work opens the way for characterization of the trapping parameters, such as the microsphere complex refractive index and the astigmatism of the optical system, from measurements of the microsphere rotation angle. 
+AU  - Diniz, K.
+AU  - Dutra, R. S.
+AU  - Pires, L. B.
+AU  - Viana, N. B.
+AU  - Nussenzveig, H. M.
+AU  - Maia Neto, P. A.
+PB  - OSA
+DA  - 2019/03/04
+PY  - 2019
+T2  - Optics Express
+J2  - Opt. Express
+JF  - Optics Express
+JO  - Opt. Express
+JA  - Opt. Express
+VL  - 27
+IS  - 5
+SP  - 5905
+EP  - 5917
+KW  - Beam scattering
+KW  - Optical angular momentum
+KW  - Optical force
+KW  - Optical tweezers
+KW  - Transverse effects
+KW  - Vortex beams
+UR  - http://www.opticsexpress.org/abstract.cfm?URI=oe-27-5-5905
+DO  - https://doi.org/10.1364/OE.27.005905
+ER  -
+
+TY  - JOUR
+T1  - Dose distribution in boron neutron capture therapy for the treatment of brain cancer
+AU  - Pereira, Leandro O.
+AU  - Freitas, Renato P.
+AU  - Ferreira, Douglas S.
+AU  - Felix, Valter S.
+AU  - Gonçalves, Elicardo A.S.
+AU  - Pimenta, André R.
+AU  - de Sousa Dutra, Rafael
+AU  - Xavier da Silva, Ademir
+JO  - Radiation Physics and Chemistry
+VL  - 168
+SP  - 108611
+PY  - 2020
+DA  - 2020/03/01/
+SN  - 0969-806X
+DO  - https://doi.org/10.1016/j.radphyschem.2019.108611
+UR  - http://www.sciencedirect.com/science/article/pii/S0969806X19303561
+KW  - BNCT treatment
+KW  - MCNP
+KW  - Epithermal neutron
+AB  - This work presents a study of the influence of the field size of an epithermal neutron beam on the dose distribution in treatments with boron neutron capture therapy using an anthropomorphic voxel-based simulator. To calculate the doses in the tissues and organs of the head, the Monte Carlo N-Particle radiation transport code is used. The results suggest the possibility of using a beam of 6 cm in diameter for the treatment of tumours in the frontal lobe and parietal regions. With a beam of 10 cm in diameter, we could treat tumours located in the frontal lobe, parietal lobe and thalamus. The work also shows that the contribution of the secondary components (gamma rays, fast and thermal neutrons) in the calculation of the total dose can result in up to 15% of the dose in the tumour tissue, 68% of the dose in the healthy brain tissue and 87% of the dose in the non-cephalic regions.
+ER  - 
+
+TY  - JOUR 
+T1  - Oscilador forçado por um pente de Dirac: uma aplicação da transformada de Fourier-Mellin 
+JO  - Revista Brasileira de Ensino de Física 
+A1  - Dutra, Rafael de Sousa 
+A1  - Ribeiro, Laercio Costa 
+A1  - Porto, Claudio Maia 
+SN  - 1806-9126
+UL  - http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1806-11172019000100407&nrm=iso 
+DO  - https://doi.org/10.1590/1806-9126-rbef-2018-0137 
+DA  - 2020/06/30/
+VL  - 41 
+Y1  - 2019 
+PB  - scielo 
+AB  - Neste trabalho exploramos a técnica da transformada de Laplace inversa, conhecida como transformada de Fourier-Mellin, para solucionar, de forma direta e rigorosa, o problema de um sistema que oscila sob a ação de uma força externa periódica. Também propomos um modelo em que essa força externa é descrita por uma sucessão de deltas de Dirac, uma estrutura conhecida na literatura como pente de Dirac. Esse modelo é adequado para descrever o problema clássico de uma criança sendo impulsionada em um balanço, usualmente descrito em termos de uma força externa senoidal. Indicamos nosso modelo de oscilador forçado como mais realista na descrição desse tipo de problema por considerar a atuação da força externa apenas no intervalo que corresponde ao tempo de contato entre a criança e o agente externo que realiza a força, intervalo esse que tende a zero. O principal resultado deste trabalho foi obtido no regime de ressonância, no qual a potência média transferida ao sistema apresentou uma série de picos, associados aos múltiplos inteiros da frequência natural de oscilação, diferente do que ocorre no caso ordinário, em que a força externa é descrita por uma função trigonométrica.
+ER  - 
+
+TY  - JOUR 
+T1  - Uma aplicação da dinâmica de uma partícula em uma trajetória predeterminada: o problema do iglu elipsoidal 
+JO  - Revista Brasileira de Ensino de Física 
+A1  - Dutra, R.S. 
+A1  - Ribeiro, L.C. 
+A1  - Porto, C.M. 
+SN  - 1806-1117 
+DA  - 2018/10/18/
+UL  - http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1806-11172019000200403&nrm=iso 
+DO  - https://doi.org/10.1590/1806-9126-rbef-2018-0185 
+VL  - 41 
+Y1  - 2019 
+PB  - scielo 
+AB  - Neste trabalho o problema clássico de uma partícula que descreve um arco de círculo ao deslizar pela superfície polida de um iglu esférico é estendido para o caso de um iglu elipsoidal. Neste caso, a altura na qual a partícula perde contato com a superfície do iglu passa a obedecer a uma equação cúbica com coeficientes que dependem dos parâmetros que determinam a trajetória elíptica. A solução analítica dessa equação é então obtida a partir do método de Cardano-Tartaglia.
+ER  - 
+
+TY  - JOUR
+PB  - American Physical Society
+ID  - 10.1103/PhysRevA.98.053804
+DO  - 10.1103/PhysRevA.98.053804
+TI  - Optimizing optical tweezing with directional scattering in composite microspheres
+DA - 2018/11/05/
+PY - 2018
+UR  - https://link.aps.org/doi/10.1103/PhysRevA.98.053804
+JF  - Physical Review A
+JA  - Phys. Rev. A
+J1  - PRA
+VL  - 98
+IS  - 5
+SP  - 053804
+EP  - 
+A1  - Ali, R.
+AU  - Pinheiro, F. A.
+AU  - Rosa, F. S. S.
+AU  - Dutra, R. S.
+AU  - Neto, P. A. Maia
+AB  - We demonstrate that achieving zero backward scattering (ZBS), i.e., the first Kerker condition, allows for optical tweezing of high-index microspheres, which cannot be trapped using standard techniques. For this purpose, we propose an alternative material platform based on composite metamaterials. By tuning the volume filling fraction of inclusions and the microsphere radius, stable trapping can be achieved provided that ZBS is combined with the condition for destructive interference between the fields reflected at the external and internal interfaces of the microsphere when located at the focal point. By using the Mie-Debye-spherical aberration theory, we also show that the ZBS condition is even more useful in realistic, standard optical tweezer setups, in which spherical aberration is unavoidable due to refraction at the interface between the glass slide and the water-filled sample. Altogether, our findings not only pave the way for possible new trapping designs and applications but also unveil the role of backscattering in the physics of optical tweezers.
+ER  - 
+
+TY  - CHAP
+AU  - Dutra, Rafael S.
+AU  - Viana, Nathan B.
+AU  - Neto, Paulo A. Maia
+AU  - Nussenzveig, H. Moysés
+ED  - Gennerich, Arne
+PY  - 2017
+DA  - 2016/11/15/
+TI  - Exact Theory of Optical Tweezers and Its Application to Absolute Calibration
+BT  - Optical Tweezers: Methods and Protocols
+SP  - 25
+EP  - 39
+PB  - Springer New York
+CY  - New York, NY
+AB  - Optical tweezers have become a powerful tool for basic and applied research in cell biology. Here, we describe an experimentally verified theory for the trapping forces generated by optical tweezers based on first principles that allows absolute calibration. For pedagogical reasons, the steps that led to the development of the theory over the past 15 years are outlined. The results are applicable to a broad range of microsphere radii, from the Rayleigh regime to the ray optics one, for different polarizations and trapping heights, including all commonly employed parameter domains. Protocols for implementing absolute calibration are given, explaining how to measure all required experimental parameters, and including a link to an applet for stiffness calculations.
+SN  - 978-1-4939-6421-5
+UR  - https://link.springer.com/protocol/10.1007/978-1-4939-6421-5_2
+DO  - https://doi.org/10.1007/978-1-4939-6421-5_2
+ID  - Dutra2017
+ER  - 
+
+TY  - JOUR
+PB  - American Physical Society
+ID  - 10.1103/PhysRevA.94.053848
+DO  - 10.1103/PhysRevA.94.053848
+TI  - Theory of optical-tweezers forces near a plane interface
+DA  - 2016/11/28/
+PY  - 2016
+UR  - https://link.aps.org/doi/10.1103/PhysRevA.94.053848
+JF  - Physical Review A
+JA  - Phys. Rev. A
+J1  - PRA
+VL  - 94
+IS  - 5
+SP  - 053848
+EP  - 
+A1  - Dutra, R. S.
+AU  - Neto, P. A. Maia
+AU  - Nussenzveig, H. M.
+AU  - Flyvbjerg, H.
+AB  - Optical-tweezers experiments in molecular and cell biology often take place near the surface of the microscope slide that defines the bottom of the sample chamber. There, as elsewhere, force measurements require force-calibrated tweezers. In bulk, one can calculate the tweezers force from first principles, as recently demonstrated. Near the surface of the microscope slide, this absolute calibration method fails because it does not account for reverberations from the slide of the laser beam scattered by the trapped microsphere. Nor does it account for evanescent waves arising from total internal reflection of wide-angle components of the strongly focused beam. In the present work we account for both of these phenomena. We employ Weyl's angular spectrum representation of spherical waves in terms of real and complex rays and derive a fast-converging recursive series of multiple reflections that describes the reverberations, including also evanescent waves. Numerical simulations for typical setup parameters evaluate these effects on the optical force and trap stiffness, with emphasis on axial trapping. Results are in good agreement with available experimental data. Thus, absolute calibration now applies to all situations encountered in practice.
+ER  - 
+
+TY  - CONF
+TI  - Absolute calibration of optical tweezers: the MDSA+ theory
+AU  - R. S. Dutra
+AU  - N. B. Viana
+AU  - P. A. Maia Neto
+AU  - H. M. Nussenzveig
+T2  - Proc.SPIE
+VL  - 9922
+AB  - In this paper will be reported the principal results about absolute calibration of optical tweezers that we have
+published at reference.
+DO  - https://doi.org/10.1117/12.2230139
+UR  - https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9922/1/Absolute-calibration-of-optical-tweezers-the-MDSA-theory/10.1117/12.2230139.short
+DA  - 2016/9/16/
+PY  - 2016
+DO  - 10.1117/12.2230139
+ER  - 
+
+TY  - JOUR
+PB  - American Physical Society
+ID  - 10.1103/PhysRevA.90.013825
+DO  -  https://doi.org/10.1103/PhysRevA.90.013825
+TI  - Absolute calibration of forces in optical tweezers
+DA  - 2014/07/21/
+PY  - 2017
+UR  - https://link.aps.org/doi/10.1103/PhysRevA.90.013825
+JF  - Physical Review A
+JA  - Phys. Rev. A
+J1  - PRA
+VL  - 90
+IS  - 1
+SP  - 013825
+EP  - 
+A1  - Dutra, R. S.
+AU  - Viana, N. B.
+AU  - Maia Neto, P. A.
+AU  - Nussenzveig, H. M.
+AB  - Optical tweezers are highly versatile laser traps for neutral microparticles, with fundamental applications in physics and in single molecule cell biology. Force measurements are performed by converting the stiffness response to displacement of trapped transparent microspheres, employed as force transducers. Usually, calibration is indirect, by comparison with fluid drag forces. This can lead to discrepancies by sizable factors. Progress achieved in a program aiming at absolute calibration, conducted over the past 15 years, is briefly reviewed. Here we overcome its last major obstacle, a theoretical overestimation of the peak stiffness, within the most employed range for applications, and we perform experimental validation. The discrepancy is traced to the effect of primary aberrations of the optical system, which are now included in the theory. All required experimental parameters are readily accessible. Astigmatism, the dominant effect, is measured by analyzing reflected images of the focused laser spot, adapting frequently employed video microscopy techniques. Combined with interface spherical aberration, it reveals a previously unknown window of instability for trapping. Comparison with experimental data leads to an overall agreement within error bars, with no fitting, for a broad range of microsphere radii, from the Rayleigh regime to the ray optics one, for different polarizations and trapping heights, including all commonly employed parameter domains. Besides signaling full first-principles theoretical understanding of optical tweezers operation, the results may lead to improved instrument design and control over experiments, as well as to an extended domain of applicability, allowing reliable force measurements, in principle, from femtonewtons to nanonewtons.
+ER  - 
+
+TY  - CONF
+TI  - Absolute calibration of optical tweezers: astigmatism effects
+AB  - We extend [1] a previous proposal for absolute calibration of optical tweezers by including optical setup aberrations into the first-principles theory, with no fitting parameters. Astigmatism, the dominant term, is determined from images of the focused laser spot. Correcting it can substantially increase stiffness. Comparison with experimental results yields agreement within error bars for a broad range of bead sizes and trap heights, as well as different polarizations. Absolute calibration is established as a reliable and practical method for applications and design of optical tweezers systems. 
+AU  - Dutra, R.S.
+AU  - Viana, N.B.
+AU  - Neto, P.A. Maia
+AU  - Nussenzveig, H.M. 
+PB  - Optical Society of America
+DA  - 2012/10/14/
+PY  - 2012
+JO  - Frontiers in Optics 2012/Laser Science XXVIII
+JF  - Frontiers in Optics 2012/Laser Science XXVIII
+T2  - Frontiers in Optics 2012/Laser Science XXVIII
+J2  - FiO
+T3  - OSA Technical Digest (online)
+VL  - 
+SP  - FTu3A.34
+CY  - Rochester, New York
+KW  - Mie theory
+KW  - Aberration expansions 
+KW  - Optical tweezers or optical manipulation
+KW  - Astigmatism
+KW  - Calibration
+KW  - Geometric optics
+KW  - Optical aberrations
+KW  - Optical tweezers
+KW  - Polarization control
+UR  - http://www.osapublishing.org/abstract.cfm?URI=FiO-2012-FTu3A.34
+DO  -  https://doi.org/10.1364/FIO.2012.FTu3A.34
+ER  -
+
+TY  - JOUR
+T1  - Absolute calibration of optical tweezers including aberrations
+AU  - Dutra,R. S. 
+AU  - Viana,N. B. 
+AU  - Maia Neto,P. A. 
+AU  - Nussenzveig,H. M. 
+Y1  - 2012/03/26
+PY  - 2012
+DA  - 2012/03/26
+N1  - doi: 10.1063/1.3699273
+DO  - https://doi.org/10.1063/1.3699273
+T2  - Applied Physics Letters
+JF  - Applied Physics Letters
+JO  - Appl. Phys. Lett.
+SP  - 131115
+VL  - 100
+IS  - 13
+PB  - American Institute of Physics
+SN  - 0003-6951
+M3  - doi: 10.1063/1.3699273
+UR  - https://aip.scitation.org/doi/10.1063/1.3699273
+Y2  - 2020/09/19
+AB  - ABSTRACT
+We extend a previous proposal for absolute calibration of optical tweezers by including optical setup aberrations into the first-principles theory, with no fitting parameters. Astigmatism, the dominant term, is determined from images of the focused laser spot. Correcting it can substantially increase stiffness. Comparison with experimental results yields agreement within error bars for a broad range of bead sizes and trap heights, as well as different polarizations. Absolute calibration is established as a reliable and practical method for applications and design of optical tweezers systems.
+ER  - 
+
+TY  - JOUR
+DO  - http://dx.doi.org/10.1088/1464-4258/9/8/S15
+UR  - https://iopscience.iop.org/article/10.1088/1464-4258/9/8/S15/meta
+TI  - Polarization effects in optical tweezers
+T2  - Journal of Optics A: Pure and Applied Optics
+AU  - Dutra, R S
+AU  - Viana, N B
+AU  - Neto, P A Maia
+AU  - Nussenzveig, H M
+PY  - 2007
+DA  - 2007/07/24
+PB  - IOP Publishing
+SP  - S221-S227
+IS  - 8
+VL  - 9
+SN  - 1464-4258
+SN  - 1741-3567
+AB  - We extend the MDSA (Mie–Debye spherical aberration) theory of trapping forces in optical
+tweezers, previously developed for circularly polarized trapping beams, to linear
+polarization. Although it does not significantly affect the trap stiffness, linear polarization
+may introduce a strong axial asymmetry of the optical forces near the edge of a trapped
+microsphere, arising from Mie resonance effects.
+ER  - 
+
+TY  - JOUR
+AN  - 26846039
+DB  - PubMed
+TI  - Evaluation of two disinfection/sterilization methods on silicon rubber-based composite finishing instruments
+AU  - Lacerda, Vánia A
+AU  - Pereira, Leandro O
+AU  - Hirata JUNIOR, Raphael
+AU  - Perez, Cesar R
+IS  - 6
+VL  - 28
+DA  - 2015/12/01/
+PY  - 2015
+JO  - American journal of dentistry
+J2  - Am J Dent
+SN  - 0894-8275
+SP  - 337
+EP  - 341
+LA  - eng
+UR  - http://europepmc.org/abstract/MED/26846039
+DO  - 
+AB  - To evaluate the effectiveness of disinfection/sterilization methods and their effects on polishing capacity, micomorphology, and composition of two different composite fiishing and polishing instruments.Two brands of finishing and polishing instruments (Jiffy and Optimize), were analyzed. For the antimicrobial test, 60 points (30 of each brand) were used for polishing composite restorations and submitted to three different groups of disinfection/sterilization methods: none (control), autoclaving, and immersion in peracetic acid for 60 minutes. The in vitro tests were performed to evaluate the polishing performance on resin composite disks (Amelogen) using a 3D scanner (Talyscan) and to evaluate the effects on the points' surface composition (XRF) and micromorphology (MEV) after completing a polishing and sterilizing routine five times.Both sterilization/disinfection methods were efficient against oral cultivable organisms and no deleterious modification was observed to point surface
+ER  - 
+
+TY  - JOUR
+T1  - Visualization method for radiographic films through silver intensity mapping using X-ray fluorescence
+AU  - Gonçalves, E.A.S.
+AU  - Oliveira, D.F.
+AU  - Anjos, M.J.
+AU  - Assis, J.T.
+AU  - Oliveira, L.F.
+AU  - Lopes, R.T.
+Y1  - 2017/09/01
+PY  - 2017
+DA  - 2017/09/01/
+N1  - doi: 10.1002/xrs.2759
+DO  - https://doi.org/10.1002/xrs.2759
+T2  - X-Ray Spectrometry
+JF  - X-Ray Spectrometry
+JO  - X-Ray Spectrometry
+JA  - X‐Ray Spectrom.
+SP  - 361
+EP  - 366
+VL  - 46
+IS  - 5
+KW  - radiographic films
+KW  - optical density
+KW  - silver concentration
+KW  - μ-XRF imaging
+PB  - John Wiley & Sons, Ltd
+SN  - 0049-8246
+M3  - doi: 10.1002/xrs.2759
+UR  - https://onlinelibrary.wiley.com/action/showCitFormats?doi=10.1002%2Fxrs.2759
+Y2  - 2020/09/19
+N2  - Radiographic films have a large range of applications. In many of these applications, the behavior of characteristic curves is very important for assessing the image quality and radiography setup. Radiographic film digitization and visualization are always performed by light transmission, and the characteristic curve is known as a behavior of optical density as a function of the radiation exposure. Because optical density is a function of metallic silver generated by chemical development in silver halides, when an image is visualized by light transmission, a silver amount map is indirectly seen. However, this measurement is limited by the optical instrument, and a very weak light signal cannot be distinguished from background light or background noise. In this way, highly exposed films can contain areas with different silver concentrations, but this cannot be seen because the optical density measurement is limited. One of the ways through which it is possible to overcome such limitation is to use a different method for ascertaining the quantity of silver remaining on the developed films, and one of the quantitative techniques that suit this purpose is X-ray fluorescence (XRF). The purpose of this paper is applying ?-XRF so as to obtain a point-by-point silver intensity map to detect objects with low optical contrast on conventional radiographic films. The results of this work have shown a higher linear range in measurement using XRF, and as consequence, small objects and details in low-contrast or overexposed radiographic images could be visualized by the silver mapping technique, and the same results could not be achieved using light transmission methods. A first approach about spatial resolution and contrast was made showing strong and weak points of this way to scan radiographic films. Copyright ? 2017 John Wiley & Sons, Ltd.
+ER  - 
+
+TY  - JOUR
+T1  - Visualization method for radiographic films through silver intensity mapping using X-ray fluorescence
+AU  - Gonçalves, E.A.S.
+AU  - Oliveira, D.F.
+AU  - Anjos, M.J.
+AU  - Assis, J.T.
+AU  - Oliveira, L.F.
+AU  - Lopes, R.T.
+Y1  - 2017/09/01
+PY  - 2017
+DA  - 2017/09/01
+N1  - doi: 10.1002/xrs.2759
+DO  - https://doi.org/10.1002/xrs.2759
+T2  - X-Ray Spectrometry
+JF  - X-Ray Spectrometry
+JO  - X-Ray Spectrometry
+JA  - X‐Ray Spectrom.
+SP  - 361
+EP  - 366
+VL  - 46
+IS  - 5
+KW  - radiographic films
+KW  - optical density
+KW  - silver concentration
+KW  - μ-XRF imaging
+PB  - John Wiley & Sons, Ltd
+SN  - 0049-8246
+M3  - doi: 10.1002/xrs.2759
+UR  - https://onlinelibrary.wiley.com/doi/full/10.1002/xrs.2759
+Y2  - 2020/09/19
+N2  - Radiographic films have a large range of applications. In many of these applications, the behavior of characteristic curves is very important for assessing the image quality and radiography setup. Radiographic film digitization and visualization are always performed by light transmission, and the characteristic curve is known as a behavior of optical density as a function of the radiation exposure. Because optical density is a function of metallic silver generated by chemical development in silver halides, when an image is visualized by light transmission, a silver amount map is indirectly seen. However, this measurement is limited by the optical instrument, and a very weak light signal cannot be distinguished from background light or background noise. In this way, highly exposed films can contain areas with different silver concentrations, but this cannot be seen because the optical density measurement is limited. One of the ways through which it is possible to overcome such limitation is to use a different method for ascertaining the quantity of silver remaining on the developed films, and one of the quantitative techniques that suit this purpose is X-ray fluorescence (XRF). The purpose of this paper is applying ?-XRF so as to obtain a point-by-point silver intensity map to detect objects with low optical contrast on conventional radiographic films. The results of this work have shown a higher linear range in measurement using XRF, and as consequence, small objects and details in low-contrast or overexposed radiographic images could be visualized by the silver mapping technique, and the same results could not be achieved using light transmission methods. A first approach about spatial resolution and contrast was made showing strong and weak points of this way to scan radiographic films. Copyright ? 2017 John Wiley & Sons, Ltd.
+ER  - 
+
+TY  - JOUR
+DO  - 10.1088/1742-6596/975/1/012037
+UR  - http://dx.doi.org/10.1088/1742-6596/975/1/012037
+TI  - Sensitometric curve of radiographic films by X-ray fluorescence
+T2  - Journal of Physics: Conference Series
+AU  - Gonçalves, E A S
+AU  - Oliveira, D F
+AU  - Anjos, M J
+AU  - Oliveira, L F
+AU  - Lopes, R T
+PY  - 2017
+DA  - 2017/11/29
+PB  - IOP Publishing
+SP  - 012037
+VL  - 975
+SN  - 1742-6588
+SN  - 1742-6596
+AB  - Radiographic film exposure is traditionally measured by the transmittance of a beam of light through the film. There are many mathematical and computational models to characterize the curve behaviour and its properties, but almost none of them considers the limitations caused by the equipment used. As long as exposure in film increases, light intensity measured after the film decreases in a way that from a certain exposure, light couldn’t be distinguished from any kind of noise. This work aims to propose x-ray fluorescence as a solution for better measure high exposed films and show how it could be modelled mathematically.
+ER  - 
+
+TY  - JOUR
+AU  - Gonçalves, Elicardo A. de S.
+AU  - Gomes, Celio S.
+AU  - Lopes, Ricardo T.
+AU  - Oliveira, Luis F. de
+AU  - Anjos, Marcelino J. dos
+AU  - Oliveira, Davi F.
+TI  - Interpolation methods for creating a scatter radiation exposure map
+AB  - A well know way for best understanding of radiation scattering and radiation exposure rate during a procedure using ionizing radiation is to map exposure over the space around the source and sample. This map is done measuring exposure in points regularly spaced, it means, measurement will be placed in localization chosen by increasing a regular steps from a starting point, along the x, y and z axes or, in more efficient way, radial and angular coordinates. However, it is not always possible to maintain the accuracy of the steps throughout the entire space, or there will be regions of difficult access where the regularity of the steps will be impaired. In this work we use a high energy radiation source to simulate a common radiography setup and construct its exposure map. The arrangement of the points and the interpolation were used considering polar coordinates. Then with the same data, an interpolation using the Delaunay triangulation was made. The results show the advantages and disadvantages of each other besides the high coherence for the same data. To simulate the impossibility of regular points, the same procedures were performed in the absence of any point and compared. The results show a lower total variation when the map is calculated by triangulation. The computational and graphic treatment was performed with GNU OCTAVE software and its image processing package. The data were acquired from a bunker where a 6MeV betatron was used as a primary source. 
+A well know way for best understanding of radiation scattering and radiation exposure rate during a procedure using ionizing radiation is to map exposure over the space around the source and sample. This map is done measuring exposure in points regularly spaced, it means, measurement will be placed in localization chosen by increasing a regular steps from a starting point, along the x, y and z axes or, in more efficient way, radial and angular coordinates. However, it is not always possible to maintain the accuracy of the steps throughout the entire space, or there will be regions of difficult access where the regularity of the steps will be impaired. In this work we use a high energy radiation source to simulate a common radiography setup and construct its exposure map. The arrangement of the points and the interpolation were used considering polar coordinates. Then with the same data, an interpolation using the Delaunay triangulation was made. The results show the advantages and disadvantages of each other besides the high coherence for the same data. To simulate the impossibility of regular points, the same procedures were performed in the absence of any point and compared. The results show a lower total variation when the map is calculated by triangulation. The computational and graphic treatment was performed with GNU OCTAVE software and its image processing package. The data were acquired from a bunker where a 6MeV betatron was used as a primary source.
+KW  - Radiation Scattering
+KW  - Betatron
+KW  - Radiation Exposure Control
+VL  - 7
+IS  - 2A
+SN  - 2319-0612
+Y1  - 2019
+PY  - 2019
+CY  - Brazil
+U1  - RADIATION PROTECTION AND DOSIMETRY
+UR  - http://inis.iaea.org/search/search.aspx?orig_q=RN:49023332
+DO  - https://doi.org/10.15392/bjrs.v7i2A.596
+ER  - 
+
+TY  - JOUR
+T1  - Computed tomography x-ray characterization: A Monte Carlo study
+AU  - Tourinho Campos, Luciana
+AU  - Machado de Jesus, Fillipe
+AU  - Alves de Souza Gonçalves, Elicardo
+AU  - Alexandre Gonçalves Magalhães, Luís
+JO  - Radiation Physics and Chemistry
+VL  - 167
+SP  - 108359
+PY  - 2020
+DA  - 2020/02/01/
+T2  - Special issue dedicated to the 14th International Symposium on Radiation Physics
+SN  - 0969-806X
+DO  - https://doi.org/10.1016/j.radphyschem.2019.108359
+UR  - http://www.sciencedirect.com/science/article/pii/S0969806X18313252
+KW  - Monte Carlo
+KW  - Computed tomography
+KW  - HVL
+AB  - The Monte Carlo method is a powerful tool for investigating the characteristics of x-ray beams in diagnostic radiology. An accurate CT MC simulation typically requires a detailed description of the scanner under investigation, including specifications of the photon energy spectrum, the bowtie and inherent filtration design, and the geometry of the scanner (focal spot to isocenter distance, fan angle). Modern CT dosimetry is substantially informed by data produced using Monte Carlo radiation transport techniques. In order to achieve desired levels of accuracy, methods require a good model of the x-ray spectrum used. It has been shown that x-ray spectrum modeling can produce adequate spectra if both the tube potential and the HVL of the x-ray beam are known [1]. Therefore, for accurate CT dosimetry, characterization of the HVL of the CT scanner is necessary. In this work the Phillps® provided the spectrum of Brilliance 64 scanner. The purpose of this work is evaluating all data send by the manufacturer in the way to obtain a spectrum that can be used in Monte Carlo simulations to estimate organ dose or other dosimetric quantities. The EGSnrc MC code was used to evaluate the HVL obtained with the spectrum provided by the manufacturer. The cavity code was used for these simulations and variance reduction techniques were used. The HVL of our MC models were benchmarked against experimental data. The authors found that the HVL of the MC simulations agreed well with the manufacturer-specified data within 1–5% on average for the scanner. This study may be useful to establish a patient-specific dosimetry for the Phillips Brilliance 64 CT systems.
+ER  - 
+
+TY  - JOUR
+T1  - Characterization of a sacred statuette replica of “Nossa Senhora da Conceição Aparecida” using X-ray spectrometry techniques
+AU  - Sanches, Francis A.C.R. de A.
+AU  - Nardes, Raysa C.
+AU  - Filho, Hamilton S.G.
+AU  - dos Santos, Ramon S.
+AU  - de Araújo, Olga M.O.
+AU  - Machado, Alessandra Silveira
+AU  - Calgam, Teresa
+AU  - Bueno, Regina
+AU  - Canellas, Catarine
+AU  - Gonçalves, Elicardo A.S.
+AU  - Assis, Joaquim T.
+AU  - de Freitas, Renato P.
+AU  - de Oliveira, Davi F.
+AU  - Lopes, Ricardo T.
+AU  - dos Anjos, Marcelino J.
+JO  - Radiation Physics and Chemistry
+VL  - 167
+SP  - 108266
+PY  - 2020
+DA  - 2020/02/01/
+T2  - Special issue dedicated to the 14th International Symposium on Radiation Physics
+SN  - 0969-806X
+DO  - https://doi.org/10.1016/j.radphyschem.2019.04.016
+UR  - http://www.sciencedirect.com/science/article/pii/S0969806X18314506
+KW  - Archaeometry
+KW  - X-ray spectrometry techniques
+KW  - Pigments
+AB  - The pigments characterization in artwork and cultural heritage is important since it allows to reveal many information like the period characteristics in which the object was made, its provenance and its manufacturing technique. Furthermore, it can support in the identification of forgeries and in the evaluation of conservation and restoration interventions. In this work, it was used XRF, μXRF, XRD and Raman spectroscopy techniques in the characterization of a statuette of the “Nossa Senhora da Conceição Aparecida”. The X-ray fluorescence analysis were performed in 66 points distributed throughout the piece, like in the wood structure, in the ground layer and on the pigment layer. In addition, elemental mapping was performed using the X-ray micro fluorescence (μXRF) technique in a small fragment, containing both the pigment and the ground layer. The X-ray diffraction analyzes were performed on the ground layer material and the Raman spectroscopy was performed in order to improve the evaluation of the data and assist in the characterization of the ground and the pigment layers. The results show that the major elements in the pigment were Fe and Mn, indicating that it’s probably the Burnt Sienna pigment. The XRD and Raman analysis show that the substrate layer was made by calcium carbonate (calcite) and a binder material (probably rabbit glue).
+ER  - 

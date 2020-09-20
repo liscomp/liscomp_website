@@ -10,7 +10,16 @@
         v-bind:ano="ano"
         class="filtro-item"
       >
-        <router-link :to="'/producao/' + ano">{{ ano }}</router-link>
+        <router-link
+          :to="{
+            name: 'producaofiltro',
+            params: {
+              id: ano,
+              title: 'Produção -' + ano
+            }
+          }"
+          >{{ ano }}</router-link
+        >
       </div>
     </div>
     <div class="categorias">

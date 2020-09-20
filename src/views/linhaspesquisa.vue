@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container class="linhas-de-pesquisa">
     <b-breadcrumb class="p-0">
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
