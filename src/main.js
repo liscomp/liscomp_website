@@ -13,17 +13,6 @@ router.beforeEach((to, from, next) => {
   next();
 });
 
-import $ from "jquery";
-
-$(document).ready(function() {
-  $(document).click(function(event) {
-    var clickover = $(event.target);
-    var _opened = $(".navbar-collapse").hasClass("navbar-collapse show");
-    if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-      $("button.navbar-toggle").click();
-    }
-  });
-});
 new Vue({
   router,
   store,

@@ -24,7 +24,7 @@
           }
         }"
       >
-        <div class="article-last-title text-center">
+        <div class="article-last-title">
           {{ propriedades.title }}
         </div>
       </router-link>

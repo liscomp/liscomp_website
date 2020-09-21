@@ -1,6 +1,6 @@
 <template>
   <b-container id="equipe">
-    <b-breadcrumb class="p-0">
+    <b-breadcrumb>
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
         Home
@@ -8,25 +8,24 @@
       <span class="divisoria">></span>
       <router-link class="active" :to="{ name: 'equipe' }">Equipe</router-link>
     </b-breadcrumb>
-    <div class="sessao">
+    <h2 class="titulo">
       Equipe
-    </div>
-    <div class="posicao">
+    </h2>
+    <h3 class="titulo cargo">
       Pesquisadores
-    </div>
+    </h3>
     <Pesquisador
       v-for="professor in pesquisadores"
       v-bind:key="professor.nome"
       v-bind:nome="professor.nome"
       v-bind:contato="professor.contato"
       v-bind:foto="professor.foto"
-      v-bind:cargo="professor.cargo"
       v-bind:educacao="professor.educacao"
       v-bind:pesquisas="professor.pesquisas"
     />
-    <div class="posicao">
+    <h3 class="titulo cargo">
       Alunos de Doutorado
-    </div>
+    </h3>
     <div class="row">
       <Aluno
         v-for="aluno in alunosDoutorado"
@@ -38,9 +37,9 @@
         v-bind:faculdade="aluno.faculdade"
       />
     </div>
-    <div class="posicao">
+    <h3 class="titulo cargo">
       Alunos de Mestrado
-    </div>
+    </h3>
     <div class="row">
       <Aluno
         v-for="aluno in alunosMestrado"
@@ -52,9 +51,9 @@
         v-bind:faculdade="aluno.faculdade"
       />
     </div>
-    <div class="posicao">
+    <h3 class="titulo cargo">
       Alunos de Iniciação Científica
-    </div>
+    </h3>
     <div class="row">
       <Aluno
         v-for="aluno in alunosInicicao"
@@ -107,9 +106,15 @@ export default {
 .avatar {
   width: 250px;
   height: 250px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
   object-fit: cover;
   background-color: gray;
+}
+
+h6.cargo {
+  color: rgb(0, 0, 0);
 }
 
 ul.network-icon {
@@ -124,21 +129,11 @@ ul.network-icon {
 
 .profile {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .about {
   padding-left: 10px;
-}
-
-.name {
-  font-size: 1.5em;
-  color: #000000;
-  margin: 20px 0 10px 0;
-}
-
-.cargo {
-  color: rgba(0, 0, 0, 0.54);
-  margin: 0px 0 10px 0;
 }
 
 ul.ul-edu li .description p {
@@ -165,13 +160,8 @@ ul.ul-edu li .description p.institution {
   margin-bottom: 50px;
 }
 
-.posicao {
-  font-size: 2em;
-  margin-bottom: 50px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border-bottom: 2px solid black;
-  font-weight: 700;
+.cargo {
+  margin-left: 10px;
 }
 .breadcrumb .active {
   color: #6c757d;

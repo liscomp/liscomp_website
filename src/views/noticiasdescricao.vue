@@ -9,19 +9,22 @@
       <router-link :to="{ name: 'noticias' }">Notícias</router-link>
       <span class="divisoria">></span>
       <router-link
-        :to="
-          '/noticias/' +
-            noticiaEspecifico.titulo.toLowerCase().replace(/\s/g, '-')
-        "
+        :to="{
+          name: 'producaoresumo',
+          params: {
+            id: noticiaEspecifico.title.toLowerCase().replace(/\s/g, '-'),
+            title: noticiaEspecifico.title
+          }
+        }"
         class="active"
       >
-        {{ noticiaEspecifico.titulo }}
+        {{ noticiaEspecifico.title }}
       </router-link>
     </b-breadcrumb>
     <div class="noticia">
       <b-col sm="12">
-        <div class="noticia-descricao-titulo">
-          {{ noticiaEspecifico.titulo }}
+        <div class="noticia-descricao-title">
+          {{ noticiaEspecifico.title }}
         </div>
       </b-col>
       <b-col sm="12">
@@ -86,7 +89,7 @@ export default {
   background-color: gray;
   margin-bottom: 20px;
 }
-.noticia-descricao-titulo {
+.noticia-descricao-title {
   font-weight: 700;
   font-size: 2.2em;
   margin-bottom: 20px;

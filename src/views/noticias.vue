@@ -1,5 +1,5 @@
 <template>
-  <b-container class="noticias">
+  <b-container id="noticias" class="noticias">
     <b-breadcrumb class="p-0">
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
@@ -16,10 +16,10 @@
         sm="12"
         md="6"
         v-for="noticia in noticiasOrdenados.slice(0, 3)"
-        v-bind:key="noticia.titulo"
+        v-bind:key="noticia.title"
       >
         <Noticiaspainel
-          v-bind:titulo="noticia.titulo"
+          v-bind:title="noticia.title"
           v-bind:foto="noticia.foto"
           v-bind:data="noticia.data"
         />

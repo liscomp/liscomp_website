@@ -5,9 +5,9 @@
       class="fa-li fas"
     ></font-awesome-icon>
     <div class="description">
-      <p class="course">
+      <h6 class="titulo nome">
         {{ curso_termino }}
-      </p>
+      </h6>
       <p class="institution">
         {{ instituto_completo }}
       </p>

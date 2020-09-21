@@ -1,6 +1,6 @@
 <template>
   <b-container id="laboratorio-movel">
-    <b-breadcrumb class="p-0">
+    <b-breadcrumb>
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
         Home

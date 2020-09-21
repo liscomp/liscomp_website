@@ -1,12 +1,12 @@
 <template>
   <footer id="footer">
     <b-container>
-      <b-row class="justify-content-center">
-        <b-col sm="12" md="6" lg="4" class="footer">
+      <b-row class="justify-content-center m-0">
+        <b-col sm="12" md="6" lg="4" class="footer-item">
           <div class="font-weight-bolder ">Contato:</div>
           <div class="contato-email">
-            <font-awesome-icon icon="envelope" class="far fa-1x" />
             <a href="mailto:%20douglas.ferreira@ifrj.edu.br">
+              <font-awesome-icon icon="envelope" class="far fa-1x" />
               douglas.ferreira@ifrj.edu.br</a
             >
           </div>
@@ -23,7 +23,7 @@
           md="6"
           lg="4"
           id="IFRJ"
-          class="align-items-center d-flex footer"
+          class="align-items-center d-flex footer-item"
         >
           <a
             href="https://ifrj.edu.br"
@@ -52,7 +52,7 @@
             />
           </a>
         </b-col>
-        <b-col md="12" lg="4" class="text-center footer">
+        <b-col md="12" lg="4" class="text-center footer-item">
           <div class="w-100">
             <b-embed
               frameborder="0"
@@ -87,11 +87,8 @@ export default {
 a.paulinho {
   color: #007bff !important;
 }
-#footer {
-  padding-right: 8px;
-  padding-left: 8px;
-}
-.footer {
+
+.footer-item {
   padding: 0;
   margin-bottom: 10px;
   padding-top: 5px;
@@ -103,5 +100,11 @@ a.paulinho {
 }
 .contato-email {
   margin-bottom: 3px;
+  font-weight: 550;
+}
+
+footer {
+  background-color: #eee;
+  border-top: 1px solid #ccc;
 }
 </style>

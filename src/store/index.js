@@ -7,7 +7,10 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   getters: {
     projetoEspecifico: state => identidade => {
-      return state.projetos.find(projetos => projetos.id === identidade);
+      return state.projetos.find(
+        projetos =>
+          projetos.title.toLowerCase().replace(/\s/g, "-") === identidade
+      );
     },
     artigoEspecifico: state => label => {
       return state.artigos.find(
@@ -17,7 +20,7 @@ export default new Vuex.Store({
     },
     noticiaEspecifico: state => label => {
       return state.noticias.find(
-        noticias => noticias.titulo.toLowerCase().replace(/\s/g, "-") === label
+        noticias => noticias.title.toLowerCase().replace(/\s/g, "-") === label
       );
     },
     pesquisadoresOrdenados: state => {
@@ -70,10 +73,10 @@ export default new Vuex.Store({
     },
     noticiasOrdenados: state => {
       return state.noticias.sort(function(a, b) {
-        if (moment(a.data, "DD MM YYYY") > moment(b.data, "DD MM YYYY")) {
+        if (moment(a.data, "DD/MM/YYYY") > moment(b.data, "DD/MM/YYYY")) {
           return -1;
         }
-        if (moment(a.data, "DD MM YYYY") < moment(b.data, "DD MM YYYY")) {
+        if (moment(a.data, "DD/MM/YYYY") < moment(b.data, "DD/MM/YYYY")) {
           return 1;
         }
         // a must be equal to b
@@ -151,23 +154,20 @@ export default new Vuex.Store({
     projetos: [
       {
         title: "Projeto1",
-        id: "projeto1",
+        short_title: "",
         foto: "projeto1.png",
-        abstract: "abstract",
         descricao: "Descricao"
       },
       {
         title: "Projeto2",
-        id: "projeto2",
+        short_title: "",
         foto: "projeto2.png",
-        abstract: "abstract",
         descricao: "Descricao"
       },
       {
         title: "Projeto3",
-        id: "projeto3",
+        short_title: "",
         foto: "projeto3.png",
-        abstract: "abstract",
         descricao: "Descricao"
       }
     ],
@@ -492,17 +492,17 @@ export default new Vuex.Store({
     ],
     noticias: [
       {
-        titulo: "Aquele que tem um cabelo maravilhoso",
+        title: "Aquele que tem um cabelo maravilhoso",
         foto: "andre.png",
         data: "05/09/2020"
       },
       {
-        titulo: "Aquela que coloca Forrest Gump no chinelo",
+        title: "Aquela que coloca Forrest Gump no chinelo",
         foto: "jrsconceicao.png",
         data: "26/08/2020"
       },
       {
-        titulo: "O homem mais lindo do IFRJ",
+        title: "O homem mais lindo do IFRJ",
         foto: "Douglas.png",
         data: "16/09/2020"
       }
@@ -555,10 +555,10 @@ export default new Vuex.Store({
     ],
     equipamentos: [
       {
-        nome: "Equipamento 1",
+        nome: "Parque Computacional",
         foto: "background-image.svg",
         descricao:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum eleifend purus. Mauris volutpat nunc quis eros condimentum, vitae lobortis lacus imperdiet. Maecenas ut quam pulvinar, condimentum dolor sit amet, dignissim velit. Etiam accumsan congue velit, eget rhoncus nibh hendrerit ut. Sed sagittis lectus at felis bibendum tempor. Integer ornare faucibus lacus vitae congue. Donec eget ipsum velit. Etiam vel ante consectetur, vestibulum urna sed, eleifend libero. Proin a imperdiet leo, at rutrum massa."
+          "1 computador do tipo desktop com configurações de 64Gb de RAM,8Gb de memória de vídeo dedicada, e processadores Intel i9 octa-core 5.0GHz; 1 computador do tipo desktop com configurações de 64Gb de RAM, 2Gb de memória de vídeo dedicada, e processadores Intel i9 octa-core 5.0GHz; 2 computadores do tipo macbook com configurações de 16Gb de RAM, 4Gb de memória de vídeo dedicada, processadores Intel i9 octa-core 2.3GHz; 5 computadores do tipo desktop com configurações de 16Gb de RAM,  2Gb de memória de vídeo dedicada, e processadores Intel i7 quad-core 3.6GHz; 3 computadores do tipo notebook com configurações de 16Gb de RAM,  2Gb de memória de vídeo dedicada, processadores Intel i7 quad-core 2.5GHz; 2 computadores do tipo iMac, Retina 4K, 21.5'', 8Gb de RAM, e processadores Intel i5 dual-core 2.3GHz; 2 computadores do tipo notebook com configurações de 8Gb de RAM, e processadores Intel i3 quad-core 2.5GHz."
       },
       {
         nome: "Equipamento 2",

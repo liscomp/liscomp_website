@@ -1,6 +1,6 @@
 <template>
   <b-container id="producao-resumo">
-    <b-breadcrumb class="p-0">
+    <b-breadcrumb>
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
         Home
@@ -9,21 +9,26 @@
       <router-link :to="{ name: 'producao' }">Produção Científica</router-link>
       <span class="divisoria">></span>
       <router-link
-        :to="
-          '/producao/resumo/' +
-            artigoEspecifico.properties.title.toLowerCase().replace(/\s/g, '-')
-        "
+        :to="{
+          name: 'producaoresumo',
+          params: {
+            id: artigoEspecifico.properties.title
+              .toLowerCase()
+              .replace(/\s/g, '-'),
+            title: artigoEspecifico.properties.title
+          }
+        }"
         class="active"
       >
         {{ artigoEspecifico.properties.title }}
       </router-link>
     </b-breadcrumb>
-    <div class="sessao">
+    <h2 class="titulo">
       {{ artigoEspecifico.properties.title }}
-    </div>
+    </h2>
     <b-row>
       <b-col sm="12" md="8">
-        <p class="resume-title">Resumo</p>
+        <h4 class="titulo">Resumo</h4>
         <div class="text-justify">
           {{ artigoEspecifico.properties.abstract }}
         </div>
@@ -31,19 +36,19 @@
       <b-col class="info-quadro" sm="12" md="4">
         <div class="info">
           <div class="info-items">
-            <div class="info-items-title">Autores</div>
+            <h5 class="titulo nome">Autores</h5>
             <div>{{ artigoEspecifico.properties.author }}</div>
           </div>
           <div class="info-items">
-            <div class="info-items-title">Data da Publicação</div>
+            <h5 class="titulo nome">Data da Publicação</h5>
             <div>{{ artigoEspecifico.properties.date }}</div>
           </div>
           <div class="info-items">
-            <div class="info-items-title">Revista</div>
+            <h5 class="titulo nome">Revista</h5>
             <div>{{ artigoEspecifico.properties.journal }}</div>
           </div>
           <div class="info-items last-line">
-            <div class="info-items-title">Tópico</div>
+            <h5 class="titulo nome">Tópico</h5>
             <div>
               <router-link
                 :to="'/producao/' + artigoEspecifico.properties.topic"
@@ -54,7 +59,7 @@
         </div>
         <div class="info">
           <div class="info-items last-line">
-            <div class="info-items-title">Links</div>
+            <h5 class="titulo nome">Links</h5>
             <a
               :href="artigoEspecifico.properties.url"
               class="info-link"

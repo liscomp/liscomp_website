@@ -37,7 +37,7 @@
     <b-container>
       <b-row class="home">
         <b-col sm="12" md="7">
-          <div class="about-us">Quem somos</div>
+          <h4 class="about-us titulo">Quem somos</h4>
           <div class="text-justify about-us-text">
             <p>
               O Laboratório de Instrumentação e Simulação Computacional
@@ -53,20 +53,24 @@
             </p>
           </div>
         </b-col>
-        <b-col sm="12" md="5">
-          <b-row class="noticia">
-            <div class="about-us w-100">Notícias</div>
-            <Noticiaspainel
-              v-for="noticia in noticiasOrdenados.slice(0, 3)"
-              v-bind:key="noticia.titulo"
-              v-bind:titulo="noticia.titulo"
-              v-bind:foto="noticia.foto"
-              v-bind:data="noticia.data"
-            />
-            <router-link :to="'/noticias'" class="w-100 ver-mais">
-              Ver mais</router-link
-            >
-          </b-row>
+        <b-col sm="12" md="5" class="noticia">
+          <h4 class="titulo">Notícias</h4>
+          <Noticiaspainel
+            v-for="noticia in noticiasOrdenados.slice(0, 3)"
+            v-bind:key="noticia.title"
+            v-bind:title="noticia.title"
+            v-bind:foto="noticia.foto"
+            v-bind:data="noticia.data"
+          />
+          <router-link
+            :to="{
+              name: 'noticias',
+              hash: '#app'
+            }"
+            class="w-100 ver-mais"
+          >
+            Ver mais</router-link
+          >
         </b-col>
       </b-row>
     </b-container>
@@ -119,13 +123,6 @@ export default {
   font-size: 1.5em;
   padding-left: 7px;
 }
-.about-us {
-  font-weight: 700px;
-  border-bottom: 2px solid black;
-  margin-bottom: 15px;
-  font-size: 1.5em;
-  padding-left: 7px;
-}
 .about-us-text {
   padding-left: 10px;
   padding-right: 10px;
@@ -152,10 +149,21 @@ export default {
   max-height: 600px;
   object-fit: cover;
 }
+a.ver-mais:hover,
 .ver-mais {
   font-weight: 700;
   text-decoration: underline;
   font-size: 1.2em;
   padding-left: 15px;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 1s, transform 1s;
+}
+.slide-enter,
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(-30%);
 }
 </style>

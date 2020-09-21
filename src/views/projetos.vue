@@ -1,6 +1,6 @@
 <template>
   <b-container id="projetos">
-    <b-breadcrumb class="p-0">
+    <b-breadcrumb>
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
         Home
@@ -10,17 +10,16 @@
         >Projetos</router-link
       >
     </b-breadcrumb>
-    <div class="sessao">
+    <h2 class="titulo">
       Projetos
-    </div>
+    </h2>
     <b-card-group columns>
       <ProjetoCards
         v-for="projeto in projetos"
         v-bind:key="projeto.title"
-        v-bind:titulo="projeto.title"
+        v-bind:title="projeto.title"
         v-bind:foto="projeto.foto"
         v-bind:descricao="projeto.descricao"
-        v-bind:abstract="projeto.abstract"
       />
     </b-card-group>
   </b-container>

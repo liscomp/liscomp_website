@@ -1,6 +1,6 @@
 <template>
   <b-container id="infraestrutura">
-    <b-breadcrumb class="p-0">
+    <b-breadcrumb>
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
         Home
@@ -10,9 +10,9 @@
         >Infraestrutura</router-link
       >
     </b-breadcrumb>
-    <div class="sessao">
+    <h2 class="titulo">
       Equipamentos
-    </div>
+    </h2>
     <Equipamento
       v-for="equipamento in equipamentos"
       v-bind:key="equipamento.nome"

@@ -2,13 +2,13 @@
   <div class="col-12 col-lg-4 aluno">
     <div class="profile">
       <img
-        class="avatar avatar-circle img-thumbnail"
+        class="avatar avatar-circle"
         v-bind:src="require(`@/assets/${foto}`)"
       />
       <div class="portrait-title">
-        <p class="name">{{ nome }}</p>
-        <p class="cargo">{{ cargo }}</p>
-        <p class="cargo">{{ faculdade }}</p>
+        <h4 class="titulo nome">{{ nome }}</h4>
+        <h6 class="cargo">{{ cargo }}</h6>
+        <h6 class="cargo">{{ faculdade }}</h6>
         <ul class="network-icon" aria-hidden="true">
           <li>
             <a :href="email_completo">

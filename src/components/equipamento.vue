@@ -1,34 +1,43 @@
 <template>
-  <b-row class="equipamento">
-    <b-col cols="12" lg="5">
-      <div class="profile">
+  <div class="overflow-hidden equipamento">
+    <b-row class="no-gutters">
+      <b-col md="4">
         <img
-          width="400px"
-          height="300px"
-          class="equip avatar-circle"
-          style="background-color: gray; border-radius: 10%"
-          :src="foto_completa"
+          :src="require(`@/assets/${foto}`)"
+          alt="Image"
+          class="rounded-0 equipamento-imagem"
         />
-        <p class="name-equip">{{ nome }}</p>
-      </div>
-    </b-col>
-    <b-col cols="12" lg="7">
-      <div class="descricao">Descrição</div>
-      <div class="text-justify pl-2 descricao-text">{{ descricao }}</div>
-    </b-col>
-  </b-row>
+      </b-col>
+      <b-col md="8">
+        <div class="equipamento-corpo">
+          <h4 class="equipamento-nome titulo nome">{{ nome }}</h4>
+          <div class="equipamento-descricao">
+            {{ descricao }}
+          </div>
+        </div>
+      </b-col>
+    </b-row>
+  </div>
 </template>
 
 <script>
 export default {
   name: "Equipamento",
-  props: ["nome", "foto", "descricao"],
-  data: function() {
-    return {
-      foto_completa: require("../assets/" + this.foto)
-    };
-  }
+  props: ["nome", "foto", "descricao"]
 };
 </script>
 
-<style></style>
+<style>
+.equipamento {
+  border: 2px solid #036365;
+}
+.equipamento-imagem {
+  width: 100%;
+  object-fit: cover;
+}
+.equipamento-corpo {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 10px;
+}
+</style>

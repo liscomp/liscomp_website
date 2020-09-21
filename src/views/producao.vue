@@ -1,7 +1,7 @@
 <template>
   <div id="producao">
     <b-container v-if="nao_vazio_ano">
-      <b-breadcrumb class="p-0">
+      <b-breadcrumb>
         <router-link :to="{ name: 'home' }">
           <font-awesome-icon icon="house-user" class="fas" />
           Home
@@ -24,7 +24,7 @@
     </b-container>
 
     <b-container v-else-if="nao_vazio_topico">
-      <b-breadcrumb class="p-0">
+      <b-breadcrumb>
         <router-link :to="{ name: 'home' }">
           <font-awesome-icon icon="house-user" class="fas" />
           Home
@@ -47,7 +47,7 @@
     </b-container>
 
     <b-container v-else>
-      <b-breadcrumb class="p-0">
+      <b-breadcrumb>
         <router-link :to="{ name: 'home' }">
           <font-awesome-icon icon="house-user" class="fas" />
           Home
@@ -57,9 +57,9 @@
           >Produção Científica</router-link
         >
       </b-breadcrumb>
-      <div class="sessao">
+      <h2 class="titulo">
         Artigos
-      </div>
+      </h2>
       <Producaoconteudo
         :artigos="artigosOrdenados"
         :anosPublicacao="anosPublicacao"

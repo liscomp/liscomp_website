@@ -4,12 +4,12 @@
       <div class="profile">
         <div>
           <img
-            class="avatar avatar-circle img-thumbnail"
+            class="avatar avatar-circle"
             v-bind:src="require(`@/assets/${foto}`)"
           />
         </div>
         <div class="portrait-title">
-          <p class="name">{{ nome }}</p>
+          <h4 class="titulo nome">{{ nome }}</h4>
         </div>
         <ul class="network-icon" aria-hidden="true">
           <li>
@@ -31,7 +31,7 @@
     <div class="col-12 col-lg-8">
       <div class="row about">
         <div class="col-md-5">
-          <h5>Formação</h5>
+          <h5 class="titulo nome">Formação</h5>
           <ul id="educacao" class="ul-edu fa-ul">
             <Educacao
               v-for="formacao in formacoes"
@@ -45,7 +45,7 @@
           </ul>
         </div>
         <div class="col-md-7">
-          <h5>Experiência</h5>
+          <h5 class="titulo nome">Experiência</h5>
           <div class="text-justify">
             <span v-for="linha in linhasPesquisa" v-bind:key="linha.pesquisa">
               {{ linha.pesquisa

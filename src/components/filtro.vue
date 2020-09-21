@@ -1,15 +1,10 @@
 <template>
   <div>
     <div class="categorias">
-      <div class="filtro-titulo">
+      <h4 class="titulo">
         Anos
-      </div>
-      <div
-        v-for="ano in anos"
-        v-bind:key="ano"
-        v-bind:ano="ano"
-        class="filtro-item"
-      >
+      </h4>
+      <div v-for="ano in anos" v-bind:key="ano" class="filtro-item">
         <router-link
           :to="{
             name: 'producaofiltro',
@@ -24,15 +19,10 @@
       </div>
     </div>
     <div class="categorias">
-      <div class="filtro-titulo">
+      <h4 class="titulo">
         Tópicos
-      </div>
-      <div
-        v-for="topico in topicos"
-        v-bind:key="topico"
-        v-bind:ano="topico"
-        class="filtro-item"
-      >
+      </h4>
+      <div v-for="topico in topicos" v-bind:key="topico" class="filtro-item">
         <router-link
           :to="{
             name: 'producaofiltro',

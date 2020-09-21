@@ -1,26 +1,41 @@
 <template>
   <header>
-    <b-navbar toggleable="md" id="navbar-main" class=" justify-content-center">
-      <b-container fluid class="flex-wrap justify-content-center">
+    <b-navbar
+      toggleable="md"
+      id="navbar-main"
+      class=" justify-content-center p-0"
+    >
+      <b-container fluid class="justify-content-center flex-wrap p-0">
         <div
-          class="align-items-center row flex-nowrap justify-content-center"
+          class="align-items-center w-100 flex-nowrap justify-content-center d-flex"
           id="navbar-header"
         >
           <b-navbar-brand href="/" class="">
             <img
               width="250px"
-              class="rounded"
-              :src="require('../assets/site-banner-nobg.png')"
+              class="logo d-none d-lg-flex"
+              :src="require('@/assets/site-banner-nobg.png')"
+              alt="Item"
+            />
+            <img
+              width="450px"
+              class="logo d-none d-sm-flex d-lg-none"
+              :src="require('@/assets/1800x500-nobg.png')"
+              alt="Item"
+            />
+            <img
+              width="100px"
+              class="logo d-flex d-sm-none"
+              :src="require('@/assets/icone-liscomp-nobg.png')"
               alt="Item"
             />
           </b-navbar-brand>
-          <b-navbar-brand
-            class="d-none d-lg-block text-wrap text-center font-weight-bolder p-0 m-0"
-            href="/"
-          >
-            Laboratório de Instrumentação e Simulação Computacional Científicas
-            Aplicadas
-          </b-navbar-brand>
+          <a class="d-none d-lg-block text-center lab-nome" href="/"
+            ><h1 class="titulo">
+              Laboratório de Instrumentação e Simulação Computacional
+              Científicas Aplicadas
+            </h1>
+          </a>
 
           <b-navbar-toggle
             id="navbarToggle"
@@ -29,7 +44,7 @@
         </div>
 
         <b-collapse
-          class="justify-content-md-center row"
+          class="justify-content-md-center w-100"
           id="navbar-content"
           is-nav
         >
@@ -37,42 +52,46 @@
             class="flex-wrap justify-content-sm-center"
             id="nav-list"
           >
-            <router-link class="p-2" :to="{ name: 'home' }"
+            <!-- <router-link class="navegador-item" :to="{ name: 'home' }"
               ><font-awesome-icon icon="house-user" class="fas"
-            /></router-link>
-            <!-- <router-link class="p-2" :to="{ name: 'linhaspesquisa' }"
+            /></router-link> -->
+            <!-- <router-link class="navegador-item" :to="{ name: 'linhaspesquisa' }"
               >Linhas de Pesquisa</router-link
             > -->
 
-            <router-link class="p-2" :to="{ name: 'equipe' }"
+            <router-link class="navegador-item" :to="{ name: 'equipe' }"
               >Equipe</router-link
             >
 
-            <router-link class="p-2" :to="{ name: 'infraestrutura' }"
+            <router-link class="navegador-item" :to="{ name: 'infraestrutura' }"
               >Infraestrutura</router-link
             >
 
-            <router-link class="p-2" :to="{ name: 'labmovel' }"
+            <router-link class="navegador-item" :to="{ name: 'labmovel' }"
               >Laboratório Móvel</router-link
             >
 
-            <!-- <router-link class="p-2" :to="{ name: 'noticias' }"
+            <!-- <router-link class="navegador-item" :to="{ name: 'noticias' }"
               >Notícias</router-link
             > -->
 
-            <router-link class="p-2" :to="{ name: 'producao' }"
+            <router-link class="navegador-item" :to="{ name: 'producao' }"
               >Produção Científica</router-link
             >
 
-            <router-link class="p-2" :to="{ name: 'projetos' }"
+            <router-link class="navegador-item" :to="{ name: 'projetos' }"
               >Projetos</router-link
             >
 
-            <router-link class="p-2" :to="{ name: 'prestacaoservico' }"
+            <router-link
+              class="navegador-item"
+              :to="{ name: 'prestacaoservico' }"
               >Prestação de Serviços</router-link
             >
 
-            <router-link class="p-2" :to="{ name: 'parinternacionais' }"
+            <router-link
+              class="navegador-item"
+              :to="{ name: 'parinternacionais' }"
               >Parcerias Internacionais</router-link
             >
           </b-navbar-nav>
@@ -89,29 +108,47 @@ export default {
 </script>
 
 <style>
-.row .navbar-brand {
-  font-size: 2.1em;
+#navbar-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+a.lab-nome:hover {
+  color: black;
+  text-decoration: none;
 }
 .navbar-toggler {
   position: absolute;
   border-style: none;
   line-height: 0.5;
+  margin-left: 10px;
   padding: 20px;
-  top: 50px;
-  right: 10px;
+  right: 5px;
 }
 #navbar-header > button.navbar-toggler.not-collapsed {
   background-color: white;
 }
-
-.navbar-collapse {
-  padding-top: 0.5rem;
-}
-ul.navbar-nav a {
-  font-size: 1.1em;
-  font-weight: 700;
-}
 .navbar-light .navbar-toggler-icon {
   background-image: url("../assets/menu.png");
+}
+a.navegador-item {
+  padding: 10px 10px;
+  font-size: 20px;
+  color: #036365;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a:focus,
+.navbar-nav a.router-link-exact-active {
+  color: white;
+  background-color: #036365;
+  transition: background 500ms;
+}
+.navbar-collapse {
+  background-color: #f4f6f7;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 </style>

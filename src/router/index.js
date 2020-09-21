@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import Vue from "vue";
 import VueRouter from "vue-router";
-import store from "@/store";
+import store from "../store";
 
 Vue.use(VueRouter);
 
@@ -75,18 +75,18 @@ const routes = [
       import(/* webpackChunkName: "producao" */ "@/views/producao.vue")
   },
   {
-    path: "/producao/:id",
+    path: "/producao-cientifica/:id",
     name: "producaofiltro",
     component: () =>
-      import(/* webpackChunkName: "producao" */ "@/views/producao.vue"),
+      import(/* webpackChunkName: "producao-filtro" */ "@/views/producao.vue"),
     beforeEnter: (to, from, next) => {
-      const artigosAno = store.state.artigos.find(
-        artigos => artigos.properties.year === to.params.id
-      );
       const artigosTopico = store.state.artigos.find(
         artigos => artigos.properties.topic === to.params.id
       );
-      document.title = "Produção - "+ artigosAno.properties.year || "Produção -"+ artigosTopico.properties.topic;
+      const artigosAno = store.state.artigos.find(
+        artigos => artigos.properties.year === to.params.id
+      );
+      document.title = "Produção - " + to.params.id;
       if (artigosAno || artigosTopico) {
         next();
       } else {
@@ -168,7 +168,18 @@ const routes = [
     component: () =>
       import(
         /* webpackChunkName: "noticiasdescricao" */ "@/views/noticiasdescricao.vue"
-      )
+      ),
+    beforeEnter: (to, from, next) => {
+      const exists = store.state.noticias.find(
+        noticias => noticias.title.toLowerCase().replace(/\s/g, '-') === to.params.id
+      );
+      document.title = exists.title;
+      if (exists) {
+        next();
+      } else {
+        next({ name: "naoEcontrada" });
+      }
+    }
   },
   {
     path: "*",
@@ -190,17 +201,15 @@ const router = new VueRouter({
   // eslint-disable-next-line no-unused-vars
   scrollBehavior(to,from,savedPosition){
     const position = {};
-      if (to.hash) {
-        position.selector = to.hash;
-        if (to.hash === "#producao") {
-          position.offset = { y: 100 };
-        }
-        if (document.querySelector(to.hash)) {
-          return position;
-        }
-
-        return false;
+    if (to.hash) {
+      position.selector = to.hash;
+      position.offset = { y: 100 };
+      if (document.querySelector(to.hash)) {
+        return position;
       }
+
+      return false;
+    }
   },
   routes
 });

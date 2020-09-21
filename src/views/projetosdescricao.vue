@@ -1,6 +1,6 @@
 <template>
   <b-container id="projetos-descricao">
-    <b-breadcrumb class="p-0">
+    <b-breadcrumb>
       <router-link :to="{ name: 'home' }">
         <font-awesome-icon icon="house-user" class="fas" />
         Home
@@ -16,12 +16,12 @@
             title: projetoEspecifico.title
           }
         }"
-        >{{ this.projetoEspecifico.title }}</router-link
+        class="active"
+        >{{ projetoEspecifico.title }}</router-link
       >
     </b-breadcrumb>
+    <h3 class="titulo">{{ projetoEspecifico.title }}</h3>
     <b-row>
-      <b-col sm="12" class="titulo">{{ projetoEspecifico.title }}</b-col>
-      <b-col sm="12"><hr /></b-col>
       <b-col sm="12" class="Descricao">{{ projetoEspecifico.descricao }}</b-col>
     </b-row>
   </b-container>

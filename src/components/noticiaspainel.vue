@@ -3,7 +3,11 @@
     <router-link
       :to="{
         name: 'noticiasdescricao',
-        params: { id: titulo.toLowerCase().replace(/\s/g, '-'), title: titulo }
+        params: {
+          id: title.toLowerCase().replace(/\s/g, '-'),
+          title: title
+        },
+        hash: '#app'
       }"
     >
       <b-col sm="12">
@@ -13,19 +17,19 @@
         />
       </b-col>
       <b-col sm="12">
-        <div class="noticia-titulo">{{ titulo }}</div>
+        <div class="noticia-titulo">{{ title }}</div>
       </b-col>
-      <b-col sm="12"
-        ><div class="noticia-data">{{ data }}</div></b-col
-      >
     </router-link>
+    <b-col sm="12"
+      ><div class="noticia-data">{{ data }}</div></b-col
+    >
   </div>
 </template>
 
 <script>
 export default {
   name: "noticias",
-  props: ["titulo", "foto", "data"]
+  props: ["title", "foto", "data"]
 };
 </script>
 
