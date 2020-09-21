@@ -6,17 +6,11 @@
           class="align-items-center row flex-nowrap justify-content-center"
           id="navbar-header"
         >
-          <b-navbar-brand href="/" class="p-0 m-0">
+          <b-navbar-brand href="/" class="">
             <img
               width="250px"
-              class="rounded d-none d-md-flex"
-              :src="require('../assets/logo_liscomp.png')"
-              alt="Item"
-            />
-            <img
-              width="200px"
-              class="rounded d-md-none d-sm-flex"
-              :src="require('../assets/logo_liscomp.png')"
+              class="rounded"
+              :src="require('../assets/site-banner-nobg.png')"
               alt="Item"
             />
           </b-navbar-brand>
@@ -28,9 +22,10 @@
             Aplicadas
           </b-navbar-brand>
 
-          <b-navbar-toggle target="navbar-content">
-            <Botao />
-          </b-navbar-toggle>
+          <b-navbar-toggle
+            id="navbarToggle"
+            target="navbar-content"
+          ></b-navbar-toggle>
         </div>
 
         <b-collapse
@@ -88,13 +83,8 @@
 </template>
 
 <script>
-import Botao from "@/components/botao.vue";
-
 export default {
-  name: "Navegador",
-  components: {
-    Botao
-  }
+  name: "Navegador"
 };
 </script>
 
@@ -103,32 +93,25 @@ export default {
   font-size: 2.1em;
 }
 .navbar-toggler {
-  margin-top: 8px;
-  margin-bottom: 8px;
   position: absolute;
   border-style: none;
-  top: 0;
-  right: 0;
+  line-height: 0.5;
+  padding: 20px;
+  top: 50px;
+  right: 10px;
 }
-.navbar svg {
-  height: 1.5em;
-  fill: rgb(0, 0, 0);
-}
-#navbar-header {
-  padding: 15px 0px 15px 0px;
-}
-#navbar-content {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-ul.navbar-nav span {
-  font-size: 1.2em;
-  color: #cbd3da !important;
+#navbar-header > button.navbar-toggler.not-collapsed {
+  background-color: white;
 }
 
+.navbar-collapse {
+  padding-top: 0.5rem;
+}
 ul.navbar-nav a {
   font-size: 1.1em;
   font-weight: 700;
-  margin-right: 7px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../assets/menu.png");
 }
 </style>

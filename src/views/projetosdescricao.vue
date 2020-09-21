@@ -8,18 +8,19 @@
       <span class="divisoria">></span>
       <router-link :to="{ name: 'projetos' }">Projetos</router-link>
       <span class="divisoria">></span>
-      <router-link :to="{
+      <router-link
+        :to="{
           name: 'projetosdescricao',
           params: {
-            id: projetoEspecifico.nome.toLowerCase().replace(/\s/g, '-'),
-            title: projetoEspecifico.nome
+            id: projetoEspecifico.title.toLowerCase().replace(/\s/g, '-'),
+            title: projetoEspecifico.title
           }
         }"
-        >{{ this.projetoEspecifico.nome }}</router-link
+        >{{ this.projetoEspecifico.title }}</router-link
       >
     </b-breadcrumb>
     <b-row>
-      <b-col sm="12" class="titulo">{{ projetoEspecifico.nome }}</b-col>
+      <b-col sm="12" class="titulo">{{ projetoEspecifico.title }}</b-col>
       <b-col sm="12"><hr /></b-col>
       <b-col sm="12" class="Descricao">{{ projetoEspecifico.descricao }}</b-col>
     </b-row>

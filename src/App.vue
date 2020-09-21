@@ -1,10 +1,16 @@
 <template>
   <div id="app">
-    <go-top :size="50" :bottom="50" :bg-color="'black'" />
+    <go-top
+      :size="50"
+      :bottom="50"
+      :right="10"
+      :bg-color="'black'"
+      :max-width="10"
+    />
     <Navegador />
-    <div id="conteudo">
-      <router-view />
-    </div>
+    <transition name="slide" mode="out-in">
+      <router-view :key="$route.path" />
+    </transition>
     <Rodape />
   </div>
 </template>
@@ -72,5 +78,15 @@ ol.breadcrumb a.active {
 ol.breadcrumb a {
   color: #1f442f !important;
   font-weight: 700;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 1s, transform 1s;
+}
+.slide-enter,
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(-30%);
 }
 </style>

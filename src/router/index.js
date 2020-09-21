@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import Vue from "vue";
 import VueRouter from "vue-router";
+import store from "@/store";
 
 Vue.use(VueRouter);
 
@@ -14,7 +15,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "home" */ "@/views/home.vue")
   },
   {
-    path: "/labmovel",
+    path: "/laboratorio-movel",
     name: "labmovel",
     meta: {
       title: "Laboratório Móvel"
@@ -34,7 +35,7 @@ const routes = [
       )
   },
   {
-    path: "/prestacaoservico",
+    path: "/prestacao-de-servico",
     name: "prestacaoservico",
     meta: {
       title: "Prestação de Serviços"
@@ -65,7 +66,7 @@ const routes = [
       import(/* webpackChunkName: "equipe" */ "@/views/equipe.vue")
   },
   {
-    path: "/producao",
+    path: "/producao-cientifica",
     name: "producao",
     meta: {
       title: "Produções"
@@ -77,13 +78,38 @@ const routes = [
     path: "/producao/:id",
     name: "producaofiltro",
     component: () =>
-      import(/* webpackChunkName: "producao" */ "@/views/producao.vue")
+      import(/* webpackChunkName: "producao" */ "@/views/producao.vue"),
+    beforeEnter: (to, from, next) => {
+      const artigosAno = store.state.artigos.find(
+        artigos => artigos.properties.year === to.params.id
+      );
+      const artigosTopico = store.state.artigos.find(
+        artigos => artigos.properties.topic === to.params.id
+      );
+      document.title = "Produção - "+ artigosAno.properties.year || "Produção -"+ artigosTopico.properties.topic;
+      if (artigosAno || artigosTopico) {
+        next();
+      } else {
+        next({ name: "naoEcontrada" });
+      }
+    }
   },
   {
     path: "/producao/resumo/:id",
     name: "producaoresumo",
     component: () =>
-      import(/* webpackChunkName: "producao" */ "@/views/producaoresumo.vue")
+      import(/* webpackChunkName: "producao" */ "@/views/producaoresumo.vue"),
+    beforeEnter: (to, from, next) => {
+      const exists = store.state.artigos.find(
+        artigos => artigos.properties.title.toLowerCase().replace(/\s/g, "-") === to.params.id
+      );
+      document.title = exists.properties.title;
+      if (exists) {
+        next();
+      } else {
+        next({ name: "naoEcontrada" });
+      }
+    }
   },
   {
     path: "/projetos",
@@ -98,13 +124,24 @@ const routes = [
       ]
   },
   {
-    path: ":id",
+    path: "/projetos/:id",
     name: "projetosdescricao",
     component: () =>
-      import(/* webpackChunkName: "projetos" */ "@/views/projetosdescricao.vue")
+      import(/* webpackChunkName: "projetos" */ "@/views/projetosdescricao.vue"),
+    beforeEnter: (to, from, next) => {
+      const exists = store.state.projetos.find(
+        projetos => projetos.title.toLowerCase().replace(/\s/g, '-') === to.params.id
+      );
+      document.title = exists.title;
+      if (exists) {
+        next();
+      } else {
+        next({ name: "naoEcontrada" });
+      }
+    }
   },
   {
-    path: "/parinternacionais",
+    path: "/parcerias-internacionais",
     name: "parinternacionais",
     meta: {
       title: "Parcerias Internacionais"
@@ -135,7 +172,7 @@ const routes = [
   },
   {
     path: "*",
-    name: "pagenotfound",
+    name: "naoEcontrada",
     meta: {
       title: "Página Não Encontra"
     },
@@ -150,6 +187,21 @@ const router = new VueRouter({
   mode: "history",
   fallback: true,
   base: process.env.BASE_URL,
+  // eslint-disable-next-line no-unused-vars
+  scrollBehavior(to,from,savedPosition){
+    const position = {};
+      if (to.hash) {
+        position.selector = to.hash;
+        if (to.hash === "#producao") {
+          position.offset = { y: 100 };
+        }
+        if (document.querySelector(to.hash)) {
+          return position;
+        }
+
+        return false;
+      }
+  },
   routes
 });
 

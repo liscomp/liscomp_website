@@ -109,8 +109,8 @@ export default {
 
 <style>
 .home {
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 .last-pub-title {
   font-weight: 700px;

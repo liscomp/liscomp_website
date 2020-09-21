@@ -15,8 +15,9 @@
             name: 'producaofiltro',
             params: {
               id: ano,
-              title: 'Produção -' + ano
-            }
+              title: 'Produção - ' + ano
+            },
+            hash: '#producao'
           }"
           >{{ ano }}</router-link
         >
@@ -32,7 +33,17 @@
         v-bind:ano="topico"
         class="filtro-item"
       >
-        <router-link :to="'/producao/' + topico">{{ topico }}</router-link>
+        <router-link
+          :to="{
+            name: 'producaofiltro',
+            params: {
+              id: topico,
+              title: 'Produção - ' + topico
+            },
+            hash: '#producao'
+          }"
+          >{{ topico }}</router-link
+        >
       </div>
     </div>
   </div>

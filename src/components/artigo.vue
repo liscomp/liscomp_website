@@ -29,7 +29,12 @@
         <div class="article-title">{{ propriedades.title }}</div>
       </router-link>
       <div class="article-autores">{{ propriedades.author }}.</div>
-      <div>{{ propriedades.journal }}, {{ propriedades.date }}.</div>
+      <div>
+        <span v-if="propriedades.journal">{{ propriedades.journal }},</span>
+        <span v-if="propriedades.volume"> v. {{ propriedades.volume }},</span>
+        <span v-if="propriedades.pages"> p.{{ propriedades.pages }},</span>
+        <span v-if="this.data"> {{ this.data }}.</span>
+      </div>
     </b-col>
   </b-row>
 </template>
@@ -38,8 +43,15 @@
 export default {
   name: "Artigo",
   props: ["propriedades", "label"],
-  mounted() {
-    this.$route.meta.title = this.propriedades.title;
+  data() {
+    return {
+      data:
+        this.propriedades.day +
+        "/" +
+        this.propriedades.month +
+        "/" +
+        this.propriedades.year
+    };
   }
 };
 </script>

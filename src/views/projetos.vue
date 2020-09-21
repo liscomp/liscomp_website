@@ -16,9 +16,8 @@
     <b-card-group columns>
       <ProjetoCards
         v-for="projeto in projetos"
-        v-bind:key="projeto.id"
-        v-bind:identidade="projeto.id"
-        v-bind:nome="projeto.nome"
+        v-bind:key="projeto.title"
+        v-bind:titulo="projeto.title"
         v-bind:foto="projeto.foto"
         v-bind:descricao="projeto.descricao"
         v-bind:abstract="projeto.abstract"

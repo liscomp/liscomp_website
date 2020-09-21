@@ -1,77 +1,79 @@
 <template>
-  <b-container id="producao-ano" v-if="nao_vazio_ano">
-    <b-breadcrumb class="p-0">
-      <router-link :to="{ name: 'home' }">
-        <font-awesome-icon icon="house-user" class="fas" />
-        Home
-      </router-link>
-      <span class="divisoria">></span>
-      <router-link class="active" :to="{ name: 'producao' }"
-        >Produção Científica</router-link
-      >
-      <span class="divisoria">></span>
-      <router-link :to="'/producao/' + this.$route.params.id">
-        {{ this.$route.params.id }}
-      </router-link>
-    </b-breadcrumb>
-    <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
-    <Producaoconteudo
-      :artigos="artigosAno"
-      :anosPublicacao="anosPublicacao"
-      :topicosPublicacao="topicosPublicacao"
-    />
-  </b-container>
+  <div id="producao">
+    <b-container v-if="nao_vazio_ano">
+      <b-breadcrumb class="p-0">
+        <router-link :to="{ name: 'home' }">
+          <font-awesome-icon icon="house-user" class="fas" />
+          Home
+        </router-link>
+        <span class="divisoria">></span>
+        <router-link :to="{ name: 'producao' }"
+          >Produção Científica</router-link
+        >
+        <span class="divisoria">></span>
+        <router-link class="active" :to="'/producao/' + this.$route.params.id">
+          {{ this.$route.params.id }}
+        </router-link>
+      </b-breadcrumb>
+      <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
+      <Producaoconteudo
+        :artigos="artigosAno"
+        :anosPublicacao="anosPublicacao"
+        :topicosPublicacao="topicosPublicacao"
+      />
+    </b-container>
 
-  <b-container id="producao-topico" v-else-if="nao_vazio_topico">
-    <b-breadcrumb class="p-0">
-      <router-link :to="{ name: 'home' }">
-        <font-awesome-icon icon="house-user" class="fas" />
-        Home
-      </router-link>
-      <span class="divisoria">></span>
-      <router-link class="active" :to="{ name: 'producao' }"
-        >Produção Científica</router-link
-      >
-      <span class="divisoria">></span>
-      <router-link :to="'/producao/' + this.$route.params.id">
-        {{ this.$route.params.id }}
-      </router-link>
-    </b-breadcrumb>
-    <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
-    <Producaoconteudo
-      :artigos="artigosTopico"
-      :anosPublicacao="anosPublicacao"
-      :topicosPublicacao="topicosPublicacao"
-    />
-  </b-container>
+    <b-container v-else-if="nao_vazio_topico">
+      <b-breadcrumb class="p-0">
+        <router-link :to="{ name: 'home' }">
+          <font-awesome-icon icon="house-user" class="fas" />
+          Home
+        </router-link>
+        <span class="divisoria">></span>
+        <router-link :to="{ name: 'producao' }"
+          >Produção Científica</router-link
+        >
+        <span class="divisoria">></span>
+        <router-link class="active" :to="'/producao/' + this.$route.params.id">
+          {{ this.$route.params.id }}
+        </router-link>
+      </b-breadcrumb>
+      <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
+      <Producaoconteudo
+        :artigos="artigosTopico"
+        :anosPublicacao="anosPublicacao"
+        :topicosPublicacao="topicosPublicacao"
+      />
+    </b-container>
 
-  <b-container id="producao" v-else>
-    <b-breadcrumb class="p-0">
-      <router-link :to="{ name: 'home' }">
-        <font-awesome-icon icon="house-user" class="fas" />
-        Home
-      </router-link>
-      <span class="divisoria">></span>
-      <router-link class="active" :to="{ name: 'producao' }"
-        >Produção Científica</router-link
-      >
-    </b-breadcrumb>
-    <div class="sessao">
-      Artigos
-    </div>
-    <Producaoconteudo
-      :artigos="artigosOrdenados"
-      :anosPublicacao="anosPublicacao"
-      :topicosPublicacao="topicosPublicacao"
-    />
-  </b-container>
+    <b-container v-else>
+      <b-breadcrumb class="p-0">
+        <router-link :to="{ name: 'home' }">
+          <font-awesome-icon icon="house-user" class="fas" />
+          Home
+        </router-link>
+        <span class="divisoria">></span>
+        <router-link class="active" :to="{ name: 'producao' }"
+          >Produção Científica</router-link
+        >
+      </b-breadcrumb>
+      <div class="sessao">
+        Artigos
+      </div>
+      <Producaoconteudo
+        :artigos="artigosOrdenados"
+        :anosPublicacao="anosPublicacao"
+        :topicosPublicacao="topicosPublicacao"
+      />
+    </b-container>
+  </div>
 </template>
 
 <script>
 import Producaoconteudo from "@/components/producaoconteudo.vue";
 
 export default {
-  name: "Producao",
+  name: "producao",
   components: {
     Producaoconteudo
   },

@@ -99,12 +99,44 @@ export default new Vuex.Store({
       });
     },
     artigosAnos: state => year => {
-      return state.artigos.filter(artigos => artigos.properties.year === year);
+      return state.artigos
+        .filter(artigos => artigos.properties.year === year)
+        .sort(function(a, b) {
+          if (
+            moment(a.properties.date, "YYYY-MM-DD") >
+            moment(b.properties.date, "YYYY-MM-DD")
+          ) {
+            return -1;
+          }
+          if (
+            moment(a.properties.date, "YYYY-MM-DD") <
+            moment(b.properties.date, "YYYY-MM-DD")
+          ) {
+            return 1;
+          }
+          // a must be equal to b
+          return 0;
+        });
     },
     artigosTopico: state => topico => {
-      return state.artigos.filter(
-        artigos => artigos.properties.topic === topico
-      );
+      return state.artigos
+        .filter(artigos => artigos.properties.topic === topico)
+        .sort(function(a, b) {
+          if (
+            moment(a.properties.date, "YYYY-MM-DD") >
+            moment(b.properties.date, "YYYY-MM-DD")
+          ) {
+            return -1;
+          }
+          if (
+            moment(a.properties.date, "YYYY-MM-DD") <
+            moment(b.properties.date, "YYYY-MM-DD")
+          ) {
+            return 1;
+          }
+          // a must be equal to b
+          return 0;
+        });
     },
     pegarAnos: state => {
       return new Set(state.artigos.map(artigos => artigos.properties.year));
@@ -113,27 +145,26 @@ export default new Vuex.Store({
       return new Set(state.artigos.map(artigos => artigos.properties.topic));
     }
   },
-  mutations: {},
   actions: {},
   modules: {},
   state: {
     projetos: [
       {
-        nome: "Projeto1",
+        title: "Projeto1",
         id: "projeto1",
         foto: "projeto1.png",
         abstract: "abstract",
         descricao: "Descricao"
       },
       {
-        nome: "Projeto2",
+        title: "Projeto2",
         id: "projeto2",
         foto: "projeto2.png",
         abstract: "abstract",
         descricao: "Descricao"
       },
       {
-        nome: "Projeto3",
+        title: "Projeto3",
         id: "projeto3",
         foto: "projeto3.png",
         abstract: "abstract",
@@ -538,22 +569,26 @@ export default new Vuex.Store({
     ],
     artigos: [
       {
-        label: "ali2020probing",
+        label: "Ali:20",
         type: "article",
         properties: {
-          journal: "arXiv preprint arXiv:2006.03851",
+          journal: "J. Opt. Soc. Am. B",
           title:
             "Probing the optical chiral response of single nanoparticles with optical tweezers",
           author:
-            "Ali, R and Pinheiro, FA and Dutra, RS and Rosa, FSS and Neto, PA",
-          date: "2020-06-06",
+            "Rfaqat Ali and F. A. Pinheiro and R. S. Dutra and F. S. S. Rosa and P. A. Maia Neto",
+          url: "http://josab.osa.org/abstract.cfm?URI=josab-37-9-2796",
+          doi: "https://doi.org/10.1364/JOSAB.398934",
+          pages: "2796--2803",
+          volume: "37",
+          date: "2020-09-01",
           year: "2020",
-          month: "6",
-          day: "6",
+          month: "09",
+          day: "01",
           topic: "SemTopico",
           foto: "background-image.svg",
           abstract:
-            "We propose an enantioselective scheme to sort homogeneous chiral particles using optical tweezers. For a certain range of material parameters, we show that a highly focused circularly-polarized laser beam traps particles of a specific chirality selected by the handedness of the trapping beam. Furthermore, by applying a transverse Stokes drag force that displaces the trapped particle off-axis, we allow for the rotation of the particle center-of-mass around the trapping beam axis. The rotation angle is highly dependent on the handedness of the trapped particle and is easily measurable with standard video-microscopy techniques, allowing for an alternative mechanism for chiral resolution. Our platform not only allows for enantioselection of particles dispersed in solution but also paves the way to the characterization of the chiral parameter of individual, homogeneous chiral microspheres using optical tweezing."
+            "We propose an enantioselective scheme to sort homogeneous chiral particles using optical tweezers. For a certain range of material parameters, we show that a highly focused circularly polarized laser beam traps particles of a specific chirality selected by the handedness of the trapping beam. Furthermore, by applying a transverse Stokes drag force that displaces the trapped particle off-axis, we allow for the rotation of the particle center-of-mass around the trapping beam axis. The rotation angle is highly dependent on the handedness of the trapped particle and is easily measurable with standard video-microscopy techniques, allowing for an alternative mechanism for chiral resolution. Our platform not only allows for enantio selection of particles dispersed in solution but also paves the way to characterization of the chiral parameter of individual, homogeneous chiral microspheres using optical tweezing."
         }
       },
       {
@@ -873,7 +908,7 @@ export default new Vuex.Store({
         type: "article",
         properties: {
           journal: "Nanoscale",
-          doi: "10.1039/C9NR09736H",
+          doi: "https://doi.org/10.1039/C9NR09736H",
           issn: "2040-3364",
           number: "8",
           publisher: "The Royal Society of Chemistry",
@@ -1013,7 +1048,7 @@ export default new Vuex.Store({
         type: "article",
         properties: {
           journal: "Physical Review A",
-          doi: "10.1103/PhysRevA.98.053804",
+          doi: "https://doi.org/10.1103/PhysRevA.98.053804",
           number: "5",
           publisher: "American Physical Society",
           title:
@@ -1025,6 +1060,8 @@ export default new Vuex.Store({
           pages: "053804",
           date: "2018-11-05",
           year: "2018",
+          month: "11",
+          day: "05",
           topic: "SemTopico",
           foto: "background-image.svg",
           abstract:
@@ -1320,6 +1357,8 @@ export default new Vuex.Store({
             "Gonçalves, Elicardo A. de S. and Gomes, Celio S. and Lopes, Ricardo T. and Oliveira, Luis F. de and Anjos, Marcelino J. dos and Oliveira, Davi F.",
           date: "2017-10-27",
           year: "2017",
+          month: "10",
+          day: "27",
           topic: "SemTopico",
           foto: "background-image.svg",
           abstract:
