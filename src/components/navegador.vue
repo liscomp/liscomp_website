@@ -15,19 +15,19 @@
               width="250px"
               class="logo d-none d-lg-flex"
               :src="require('@/assets/site-banner-nobg.png')"
-              alt="Item"
+              alt="banner-liscomp-1"
             />
             <img
               width="450px"
               class="logo d-none d-sm-flex d-lg-none"
               :src="require('@/assets/1800x500-nobg.png')"
-              alt="Item"
+              alt="banner-liscomp-2"
             />
             <img
               width="100px"
               class="logo d-flex d-sm-none"
               :src="require('@/assets/icone-liscomp-nobg.png')"
-              alt="Item"
+              alt="logo-liscomp"
             />
           </b-navbar-brand>
           <a class="d-none d-lg-block text-center lab-nome" href="/"
@@ -108,6 +108,10 @@ export default {
 </script>
 
 <style>
+#navbar-main {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
 #navbar-header {
   padding-top: 10px;
   padding-bottom: 10px;

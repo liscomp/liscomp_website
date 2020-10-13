@@ -18,6 +18,7 @@
         v-for="projeto in projetos"
         v-bind:key="projeto.title"
         v-bind:title="projeto.title"
+        v-bind:short_title="projeto.short_title"
         v-bind:foto="projeto.foto"
         v-bind:descricao="projeto.descricao"
       />
@@ -41,4 +42,35 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+@media (min-width: 576px) {
+  .card-columns {
+    -moz-column-count: 1;
+    column-count: 1;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+}
+@media (min-width: 768px) {
+  .card-columns {
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+}
+@media (min-width: 992px) {
+  .card-columns {
+    -moz-column-count: 23;
+    column-count: 3;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+}
+</style>

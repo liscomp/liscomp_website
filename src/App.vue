@@ -27,6 +27,7 @@ export default {
     Rodape,
     GoTop
   }
+  
 };
 </script>
 <style>
@@ -34,13 +35,24 @@ body {
   color: black;
   background-color: #ffffff;
 }
-
 a {
-  color: #028f8f;
-}
-a:hover {
-  color: black;
+  color: #000000;
   text-decoration: none;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+a:hover {
+  color: #028f8f;
+  text-decoration: none;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  transition: all .3s linear;
 }
 .sessao {
   font-size: 2.5em;
@@ -76,25 +88,25 @@ ol.breadcrumb a {
   color: #036365;
 }
 h1.titulo {
-  font-size: 2.5em;
+  font-size: 2em;
   border-bottom: none;
   margin: 0px;
   padding: 0px;
 }
 h2.titulo {
-  font-size: 2.2em;
+  font-size: 1.8em;
   margin-bottom: 40px;
 }
 h3.titulo {
-  font-size: 1.9em;
+  font-size: 1.6em;
   margin-bottom: 30px;
 }
 h4.titulo {
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin-bottom: 20px;
 }
 h5.titulo {
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-bottom: 15px;
 }
 h6.titulo {

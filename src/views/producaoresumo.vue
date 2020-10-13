@@ -118,7 +118,7 @@ export default {
   margin-bottom: 15px;
 }
 .info-quadro {
-  margin-top: 65px;
+  margin-top: 26px;
 }
 .info-items {
   border-bottom: 1px solid #e1e1e1;

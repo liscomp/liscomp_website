@@ -1,31 +1,29 @@
 <template>
-  <div>
-    <b-card
-      :title="title"
-      img-src="https://placekitten.com/g/400/450"
-      img-alt="Image"
-      img-top
+  <b-card
+    :title="short_title"
+    img-src="https://placekitten.com/g/400/450"
+    img-alt="Image"
+    img-top
+  >
+    <router-link
+      :to="{
+        name: 'projetosresumo',
+        params: {
+          id: title.toLowerCase().replace(/\s/g, '-'),
+          title: title
+        }
+      }"
+      tag="button"
+      class="button"
+      >Mais sobre nosso projeto</router-link
     >
-      <router-link
-        :to="{
-          name: 'projetosdescricao',
-          params: {
-            id: title.toLowerCase().replace(/\s/g, '-'),
-            title: title
-          }
-        }"
-        tag="button"
-        class="button"
-        >Mais sobre nosso projeto</router-link
-      >
-    </b-card>
-  </div>
+  </b-card>
 </template>
 
 <script>
 export default {
   name: "ProjetoCards",
-  props: ["title", "foto", "descricao"]
+  props: ["title","short_title", "foto", "resumo"]
 };
 </script>
 
@@ -44,6 +42,7 @@ export default {
 .card {
   background-color: #f4f6f7;
   border: 2px solid #036365;
+  box-shadow: 5x 5px 10px rgba(0, 0, 0, 0.2);
 }
 .button:hover {
   transform: translateY(-2px);

@@ -153,22 +153,57 @@ export default new Vuex.Store({
   state: {
     projetos: [
       {
-        title: "Projeto1",
-        short_title: "",
+        title:
+          "Criação de um Laboratório Móvel Para Realizar Análises Físico-Químicas em Obras de Artes de Museus Brasileiros",
+        short_title: "Criação de um Laboratório Móvel",
         foto: "projeto1.png",
-        descricao: "Descricao"
+        periodo: "2019 - 2022",
+        financiadores:
+          "Conselho Federal Gestor do Fundo de Defesa dos Direitos Difusos (CFDD)",
+        edital: "08000.012661/2019-13",
+        autores:
+          "Renato Pereira de Freitas, Douglas Santos Rodrigues Ferreira, Andre Rocha Pimenta, Valter de Sousa Felix, Ronaldo Vicente Pereira, Elicardo Alves de Souza Gonçalves",
+        resumo:
+          "O fomento adquirido neste projeto, será aplicado na implementação de um laboratório móvel, composto por instrumentos de análises físico-químicas, para realizar investigações in situ e não destrutivas em obras de artes, assim como profissionais com expertise, neste campo trabalho. Este laboratório ficará à disposição de museus Brasileiros, para realizar estudos científicos em obras de artes. Os resultados obtidos, na investigação, serão úteis principalmente para o processo de conservação, restauração e catalogação das obras analisadas, além disso, os dados obtidos nas análises farão parte de um banco de dados, que será disponibilizado ao Instituto Brasileiro de Museus (IBRAM), cuja uma das funcionalidades será de comparar os resultados com a de obras de arte de autores Brasileiros suspeita de falsificação, permitindo assim realizar perícias direcionadas."
       },
       {
-        title: "Projeto2",
-        short_title: "",
+        title:
+          "Construção de um sistema portátil de macro mapeamento elementar por Fluorescência de Raios X para ser aplicado em obras de arte",
+        short_title: "Sistema Portátil de Macro Mapeamento",
         foto: "projeto2.png",
-        descricao: "Descricao"
+        periodo: "2018 - 2021",
+        financiadores:
+          "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ (FAPERJ); Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro (IFRJ)",
+        edital: "Jovem Cientista 2018 (número: E-26/202.672/2018)",
+        autores: "Renato Pereira de Freitas, Marcelo Oliveira Pereira, Elicardo Alves de Souza Gonçalves,/ Cristiano Carvalho, Fabricio Silva.",
+        resumo:
+          "Neste projeto será desenvolvido um sistema portátil de mapeamento macro elementar por Fluorescência de Raios (macro-XRF), para ser empregado no mapeamento elementar 2D, in situ de uma área de aproximadamente 1 x 1 m² de obras de arte de diferentes museus do estado do Rio de Janeiro. Os resultados obtidos por este tipo de técnica são extremamente úteis para avaliar camadas subjacentes de pigmentos em obras de arte. Logo, a partir dos resultados é possível obter informações ocultas acerca da pintura, como modificações feitas pelo próprio artista, sobreposições de pigmentos e restaurações na superfície, fornecendo uma perspectiva única sobre o processo criativo do artista e a história da conservação e restauro da pintura."
       },
       {
-        title: "Projeto3",
-        short_title: "",
+        title: "Análise estatística multivariada de dados de XRF obtidos de artefatos arqueológicas utilizando Python",
+        short_title: "Análise estatística multivariada de dados de XRF",
         foto: "projeto3.png",
-        descricao: "Descricao"
+        periodo: "2019 - 2021",
+        financiadores: "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ (FAPERJ)",
+        edital: "IC- Bolsa de Iniciação Científica- 2019/1 (número: E-26/201.956/2019)",
+        autores: "Renato Pereira de Freitas, Douglas Santos Rodrigues Ferreira, Elicardo Alves de Souza Gonçalves, Andre Rocha Pimenta, Bárbara Lorrane Oliveira Gonçalves",
+        resumo: "Este projeto, tem como objetivo aplicar códigos computacionais baseados na linguagem Python, para realizar investigações estatísticas multivariadas em dados de XRF obtidos de artefatos arqueológicos. A partir dos códigos, também será possível automatizar os processos de pré-tratamento de dados, reduzindo assim o tempo desta etapa."
+      },
+      {
+        title:
+          "Desenvolvimento De Métodos Que Auxiliem A Identificação De Roubos, Furtos E Adulterações De Obras De Arte E Veículos ",
+        short_title:
+          "Identificação de Roubos, Furtos e Adulterações de Obras de Arte e Veículos",
+        foto: "projeto3.png",
+        periodo: "2019 - 2021",
+        financiadores:
+          "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ (FAPERJ)",
+        edital:
+          "Programa de Apoio a Projetos de Inovação no Campo da Ciência Forense 2018 (número: E-26/290.066/2018)",
+        autores:
+          "Renato Pereira de Freitas, Valter de Sousa Felix, Marcelo Oliveira Pereira, Ana Luísa de Queiroz Baddini Ramos, Elicardo Alves de Souza Gonçalves, Douglas Santos Rodrigues Ferreira, Andre Rocha Pimenta, Hiram Araujo",
+        resumo:
+          "O Brasil possui um vasto patrimônio histórico cultural, possuindo obras de artes de pintores famosos mundialmente. Crimes, que envolvem furtos e falsificações de obras de arte aumentou muito nos últimos anos no Brasil, além disso, obras de arte tem sido utilizado, com uma forma de lavagem de dinheiro. Este projeto, que conta com o apoio da FAPERJ, tem como um dos objetivos desenvolver metodologias, que permitam verificar a autenticidade de uma de arte, utilizando dados acerca dos materiais, que foram empregados no processo de criação de uma determinada pintura. As telas estudadas neste projeto serão analisadas por técnicas físico-químicas não destrutivas. Os resultados obtidos neste projeto, auxiliarão as autoridades de segurança pública, na investigação de crimes que envolvem obras de arte. Além de desenvolver metodologias que auxiliarão na perícia de pinturas o projeto também conta, com estudos que auxiliarão em Perícias em Veículos Clonados e Identificação e Mapeamento de Roubos e Furtos."
       }
     ],
     pesquisadores: [

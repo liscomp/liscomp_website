@@ -125,9 +125,9 @@ const routes = [
   },
   {
     path: "/projetos/:id",
-    name: "projetosdescricao",
+    name: "projetosresumo",
     component: () =>
-      import(/* webpackChunkName: "projetos" */ "@/views/projetosdescricao.vue"),
+      import(/* webpackChunkName: "projetos" */ "@/views/projetosresumo.vue"),
     beforeEnter: (to, from, next) => {
       const exists = store.state.projetos.find(
         projetos => projetos.title.toLowerCase().replace(/\s/g, '-') === to.params.id
