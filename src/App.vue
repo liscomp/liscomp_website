@@ -27,7 +27,6 @@ export default {
     Rodape,
     GoTop
   }
-  
 };
 </script>
 <style>
@@ -38,21 +37,21 @@ body {
 a {
   color: #000000;
   text-decoration: none;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 a:hover {
   color: #028f8f;
   text-decoration: none;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .sessao {
   font-size: 2.5em;

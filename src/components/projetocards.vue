@@ -23,7 +23,7 @@
 <script>
 export default {
   name: "ProjetoCards",
-  props: ["title","short_title", "foto", "resumo"]
+  props: ["title", "short_title", "foto", "resumo"]
 };
 </script>
 
