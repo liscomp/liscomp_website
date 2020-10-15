@@ -176,7 +176,7 @@ export default new Vuex.Store({
           "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ (FAPERJ); Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro (IFRJ)",
         edital: "Jovem Cientista 2018 (número: E-26/202.672/2018)",
         autores:
-          "Renato Pereira de Freitas, Marcelo Oliveira Pereira, Elicardo Alves de Souza Gonçalves,/ Cristiano Carvalho, Fabricio Silva.",
+          "Renato Pereira de Freitas, Marcelo Oliveira Pereira, Elicardo Alves de Souza Gonçalves, Cristiano Carvalho, Fabricio Silva.",
         resumo:
           "Neste projeto será desenvolvido um sistema portátil de mapeamento macro elementar por Fluorescência de Raios (macro-XRF), para ser empregado no mapeamento elementar 2D, in situ de uma área de aproximadamente 1 x 1 m² de obras de arte de diferentes museus do estado do Rio de Janeiro. Os resultados obtidos por este tipo de técnica são extremamente úteis para avaliar camadas subjacentes de pigmentos em obras de arte. Logo, a partir dos resultados é possível obter informações ocultas acerca da pintura, como modificações feitas pelo próprio artista, sobreposições de pigmentos e restaurações na superfície, fornecendo uma perspectiva única sobre o processo criativo do artista e a história da conservação e restauro da pintura."
       },

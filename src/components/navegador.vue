@@ -76,7 +76,7 @@
             > -->
 
             <router-link class="navegador-item" :to="{ name: 'producao' }"
-              >Produção Científica</router-link
+              >Publicações</router-link
             >
 
             <router-link class="navegador-item" :to="{ name: 'projetos' }"
@@ -86,13 +86,13 @@
             <router-link
               class="navegador-item"
               :to="{ name: 'prestacaoservico' }"
-              >Prestação de Serviços</router-link
+              >Serviços</router-link
             >
 
             <router-link
               class="navegador-item"
               :to="{ name: 'parinternacionais' }"
-              >Parcerias Internacionais</router-link
+              >Parcerias</router-link
             >
           </b-navbar-nav>
         </b-collapse>
@@ -111,14 +111,12 @@ export default {
 #navbar-main {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
 }
-
 #navbar-header {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 20px;
   padding-left: 20px;
 }
-
 a.lab-nome:hover {
   color: black;
   text-decoration: none;
@@ -142,7 +140,6 @@ a.navegador-item {
   font-size: 20px;
   color: #036365;
 }
-
 .navbar-nav a:hover,
 .navbar-nav a:focus,
 .navbar-nav a.router-link-exact-active {
