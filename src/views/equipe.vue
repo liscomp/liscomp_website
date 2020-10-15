@@ -163,7 +163,4 @@ ul.ul-edu li .description p.institution {
 .cargo {
   margin-left: 10px;
 }
-.breadcrumb .active {
-  color: #6c757d;
-}
 </style>

@@ -71,6 +71,18 @@ export default new Vuex.Store({
         return 0;
       });
     },
+    parceriasOrdenados: state => {
+      return state.parcerias.sort(function(a, b) {
+        if (a.nome > b.nome) {
+          return 1;
+        }
+        if (a.nome < b.nome) {
+          return -1;
+        }
+        // a must be equal to b
+        return 0;
+      });
+    },
     noticiasOrdenados: state => {
       return state.noticias.sort(function(a, b) {
         if (moment(a.data, "DD/MM/YYYY") > moment(b.data, "DD/MM/YYYY")) {
@@ -143,6 +155,9 @@ export default new Vuex.Store({
     },
     pegarAnos: state => {
       return new Set(state.artigos.map(artigos => artigos.properties.year));
+    },
+    pegarfaculdade: state => {
+      return new Set(state.parcerias.map(parcerias => parcerias.faculdade));
     },
     pegarTopicos: state => {
       return new Set(state.artigos.map(artigos => artigos.properties.topic));
@@ -531,23 +546,6 @@ export default new Vuex.Store({
         ]
       }
     ],
-    noticias: [
-      {
-        title: "Aquele que tem um cabelo maravilhoso",
-        foto: "andre.png",
-        data: "05/09/2020"
-      },
-      {
-        title: "Aquela que coloca Forrest Gump no chinelo",
-        foto: "jrsconceicao.png",
-        data: "26/08/2020"
-      },
-      {
-        title: "O homem mais lindo do IFRJ",
-        foto: "Douglas.png",
-        data: "16/09/2020"
-      }
-    ],
     alunosDoutorado: [
       {
         nome: "Paulo S. L. de Oliveira Jr.",
@@ -592,6 +590,65 @@ export default new Vuex.Store({
           lattes: "http://lattes.cnpq.br/7344849643725280"
         },
         faculdade: "Universidade Federal Rural do Rio de Janeiro"
+      }
+    ],
+    parcerias: [
+      {
+        nome: "Paulo S. L. de Oliveira Jr.",
+        cargo: "Bolsista CNPq",
+        foto: "psloliveirajr.png",
+        email: "paulo.oliveira@ifrj.edu.br",
+        faculdade: {
+          nome: "Universidade Federal Fluminense",
+          sigla: "uff",
+          url: "http://www.uff.br"
+        },
+        sobre:
+          "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus nterry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa esciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore VHS."
+      },
+      {
+        nome: "Jennifer R. S. da Conceição",
+        cargo: "Bolsista FAPERJ",
+        foto: "jrsconceicao.png",
+        email: "jennifer.@ifrj.edu.br",
+        faculdade: {
+          nome: "Universidade Federal Rural do Rio de Janeiro",
+          sigla: "uffrj",
+          url: "https://portal.ufrrj.br"
+        },
+        sobre:
+          "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus nterry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa esciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore VHS."
+      },
+      {
+        nome: "Douglas Santo Rodrigues Ferreira",
+        cargo: "Professor Associado (D-402)",
+        foto: "Douglas.png",
+        email: "douglas.ferreira@ifrj.edu.br",
+        faculdade: {
+          nome:
+            "Instituto Federal de Educação Ciência e Tecnologia do Rio de Janeiro",
+          sigla: "ifrj",
+          url: "https://ifrj.edu.br/"
+        },
+        sobre:
+          "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus nterry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa esciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore VHS."
+      }
+    ],
+    noticias: [
+      {
+        title: "Aquele que tem um cabelo maravilhoso",
+        foto: "andre.png",
+        data: "05/09/2020"
+      },
+      {
+        title: "Aquela que coloca Forrest Gump no chinelo",
+        foto: "jrsconceicao.png",
+        data: "26/08/2020"
+      },
+      {
+        title: "O homem mais lindo do IFRJ",
+        foto: "Douglas.png",
+        data: "16/09/2020"
       }
     ],
     equipamentos: [
