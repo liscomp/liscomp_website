@@ -8,9 +8,11 @@
       :max-width="10"
     />
     <Navegador />
-    <transition name="slide" mode="out-in">
-      <router-view :key="$route.path" />
-    </transition>
+    <main>
+      <transition name="slide" mode="out-in">
+        <router-view :key="$route.path" />
+      </transition>
+    </main>
     <Rodape />
   </div>
 </template>
@@ -43,7 +45,6 @@ a {
   -ms-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-
 a:hover {
   color: #028f8f;
   text-decoration: none;
@@ -87,7 +88,7 @@ ol.breadcrumb a {
   color: #036365;
 }
 h1.titulo {
-  font-size: 2em;
+  font-size: 1.5em;
   border-bottom: none;
   margin: 0px;
   padding: 0px;

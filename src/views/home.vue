@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <b-container id="home">
     <b-carousel
       id="carousel"
       v-model="slide"
@@ -34,47 +34,45 @@
         </p>
       </b-carousel-slide>
     </b-carousel>
-    <b-container>
-      <b-row class="home">
-        <b-col sm="12" md="7">
-          <h4 class="about-us titulo">Quem somos</h4>
-          <div class="text-justify about-us-text">
-            <p>
-              O Laboratório de Instrumentação e Simulação Computacional
-              Científicas Aplicadas possui natureza fortemente multidisciplinar
-              em sua composição, formação e atuação, utilizando técnicas de
-              instrumentação em conjunto com métodos de simulação e modelagem
-              computacional para a realização de pesquisas científicas em
-              ciências puras e aplicadas. O LISComp atua principalmente nos
-              temas de: física nuclear aplicada à arqueometria, física
-              estatística aplicada à sistemas críticos, estudos de redes
-              complexas, radiações ionizantes, microscopia ótica e eletrónica,
-              estudos de análise de falhas e ciências dos materiais.
-            </p>
-          </div>
-        </b-col>
-        <b-col sm="12" md="5" class="noticia">
-          <h4 class="titulo">Notícias</h4>
-          <Noticiaspainel
-            v-for="noticia in noticiasOrdenados.slice(0, 3)"
-            v-bind:key="noticia.title"
-            v-bind:title="noticia.title"
-            v-bind:foto="noticia.foto"
-            v-bind:data="noticia.data"
-          />
-          <router-link
-            :to="{
-              name: 'noticias',
-              hash: '#app'
-            }"
-            class="w-100 ver-mais"
-          >
-            Ver mais</router-link
-          >
-        </b-col>
-      </b-row>
-    </b-container>
-  </div>
+    <b-row class="home">
+      <b-col sm="12" md="7">
+        <h4 class="about-us titulo">Quem somos</h4>
+        <div class="text-justify about-us-text">
+          <p>
+            O Laboratório de Instrumentação e Simulação Computacional
+            Científicas Aplicadas possui natureza fortemente multidisciplinar em
+            sua composição, formação e atuação, utilizando técnicas de
+            instrumentação em conjunto com métodos de simulação e modelagem
+            computacional para a realização de pesquisas científicas em ciências
+            puras e aplicadas. O LISComp atua principalmente nos temas de:
+            física nuclear aplicada à arqueometria, física estatística aplicada
+            à sistemas críticos, estudos de redes complexas, radiações
+            ionizantes, microscopia ótica e eletrónica, estudos de análise de
+            falhas e ciências dos materiais.
+          </p>
+        </div>
+      </b-col>
+      <b-col sm="12" md="5" class="noticia">
+        <h4 class="titulo">Notícias</h4>
+        <Noticiaspainel
+          v-for="noticia in noticiasOrdenados.slice(0, 3)"
+          v-bind:key="noticia.title"
+          v-bind:title="noticia.title"
+          v-bind:foto="noticia.foto"
+          v-bind:data="noticia.data"
+        />
+        <router-link
+          :to="{
+            name: 'noticias',
+            hash: '#app'
+          }"
+          class="w-100 ver-mais"
+        >
+          Ver mais</router-link
+        >
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
@@ -112,7 +110,7 @@ export default {
 </script>
 
 <style>
-.home {
+#home {
   margin-bottom: 30px;
   margin-top: 30px;
 }

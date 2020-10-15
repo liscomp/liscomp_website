@@ -1,38 +1,42 @@
 <template>
   <header>
     <b-navbar
-      toggleable="md"
+      toggleable="xl"
       id="navbar-main"
       class=" justify-content-center p-0"
     >
-      <b-container fluid class="justify-content-center flex-wrap p-0">
+      <b-container
+        fluid
+        class="justify-content-center flex-wrap p-0 align-items-end"
+      >
         <div
-          class="align-items-center w-100 flex-nowrap justify-content-center d-flex"
+          class="justify-content-center d-flex align-items-end"
           id="navbar-header"
         >
           <b-navbar-brand href="/" class="">
             <img
-              width="250px"
-              class="logo d-none d-lg-flex"
+              width="200px"
+              class="logo d-none d-md-flex"
               :src="require('@/assets/site-banner-nobg.png')"
               alt="banner-liscomp-1"
             />
             <img
-              width="450px"
-              class="logo d-none d-sm-flex d-lg-none"
+              height="80px"
+              class="logo d-none d-sm-flex d-md-none"
               :src="require('@/assets/1800x500-nobg.png')"
-              alt="banner-liscomp-2"
+              alt="banner-liscomp-1"
             />
             <img
-              width="100px"
+              height="55px"
               class="logo d-flex d-sm-none"
-              :src="require('@/assets/icone-liscomp-nobg.png')"
-              alt="logo-liscomp"
+              :src="require('@/assets/1800x500-nobg.png')"
+              alt="banner-liscomp-1"
             />
           </b-navbar-brand>
-          <a class="d-none d-lg-block text-center lab-nome" href="/"
-            ><h1 class="titulo">
-              Laboratório de Instrumentação e Simulação Computacional
+          <a class="d-none d-md-block text-center lab-nome" href="/"
+            ><h1 class="titulo text-left">
+              Laboratório de Instrumentação <br />
+              e Simulação Computacional <br />
               Científicas Aplicadas
             </h1>
           </a>
@@ -40,11 +44,11 @@
           <b-navbar-toggle
             id="navbarToggle"
             target="navbar-content"
+            class="align-self-center"
           ></b-navbar-toggle>
         </div>
-
         <b-collapse
-          class="justify-content-md-center w-100"
+          class="justify-content-md-center "
           id="navbar-content"
           is-nav
         >
@@ -52,13 +56,6 @@
             class="flex-wrap justify-content-sm-center"
             id="nav-list"
           >
-            <!-- <router-link class="navegador-item" :to="{ name: 'home' }"
-              ><font-awesome-icon icon="house-user" class="fas"
-            /></router-link> -->
-            <!-- <router-link class="navegador-item" :to="{ name: 'linhaspesquisa' }"
-              >Linhas de Pesquisa</router-link
-            > -->
-
             <router-link class="navegador-item" :to="{ name: 'equipe' }"
               >Equipe</router-link
             >
@@ -70,10 +67,6 @@
             <router-link class="navegador-item" :to="{ name: 'labmovel' }"
               >Laboratório Móvel</router-link
             >
-
-            <!-- <router-link class="navegador-item" :to="{ name: 'noticias' }"
-              >Notícias</router-link
-            > -->
 
             <router-link class="navegador-item" :to="{ name: 'producao' }"
               >Publicações</router-link
@@ -110,12 +103,15 @@ export default {
 <style>
 #navbar-main {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  background-color: whitesmoke;
+  min-height: 130px;
 }
 #navbar-header {
-  padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 20px;
-  padding-left: 20px;
+}
+.lab-nome {
+  min-width: 420px !important;
 }
 a.lab-nome:hover {
   color: black;
@@ -126,8 +122,11 @@ a.lab-nome:hover {
   border-style: none;
   line-height: 0.5;
   margin-left: 10px;
-  padding: 20px;
+  padding: 10px;
   right: 5px;
+}
+.navbar-collapse {
+  flex-grow: 0;
 }
 #navbar-header > button.navbar-toggler.not-collapsed {
   background-color: white;
@@ -137,8 +136,11 @@ a.lab-nome:hover {
 }
 a.navegador-item {
   padding: 10px 10px;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 700;
   color: #036365;
+  text-transform: uppercase;
+  text-align: center;
 }
 .navbar-nav a:hover,
 .navbar-nav a:focus,
@@ -146,10 +148,5 @@ a.navegador-item {
   color: white;
   background-color: #036365;
   transition: background 500ms;
-}
-.navbar-collapse {
-  background-color: #f4f6f7;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
 }
 </style>
