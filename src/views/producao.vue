@@ -15,7 +15,7 @@
           {{ this.$route.params.id }}
         </router-link>
       </b-breadcrumb>
-      <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
+      <h2 class="titulo">Artigos: {{ this.$route.params.id }}</h2>
       <Producaoconteudo
         :artigos="artigosAno"
         :anosPublicacao="anosPublicacao"
@@ -38,7 +38,7 @@
           {{ this.$route.params.id }}
         </router-link>
       </b-breadcrumb>
-      <div class="sessao">Artigos: {{ this.$route.params.id }}</div>
+      <h2 class="titulo">Artigos: {{ this.$route.params.id }}</h2>
       <Producaoconteudo
         :artigos="artigosTopico"
         :anosPublicacao="anosPublicacao"
