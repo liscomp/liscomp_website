@@ -1,14 +1,7 @@
+// vue.config.js file to be place in the root of your repository
+
 module.exports = {
-  publicPath: "/",
-  configureWebpack: {
-    performance: {
-      hints: false
-    },
-    optimization: {
-      splitChunks: {
-        minSize: 10000,
-        maxSize: 250000
-      }
-    }
-  }
-};
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/liscomp/liscomp_vuejs.git'
+    : '/'
+} 
