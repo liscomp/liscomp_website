@@ -1,4 +1,4 @@
-# liscomp
+# vue2
 
 ## Project setup
 ```

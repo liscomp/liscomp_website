@@ -114,6 +114,10 @@ export default {
   margin-bottom: 30px;
   margin-top: 30px;
 }
+.home {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 .last-pub-title {
   font-weight: 700px;
   border-bottom: 2px solid black;

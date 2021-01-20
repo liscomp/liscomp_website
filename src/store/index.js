@@ -275,6 +275,49 @@ export default new Vuex.Store({
         ]
       },
       {
+        nome: "Renato P. de Freitas",
+        cargo:
+          "Professor Associado (D-402) do Instituto Federal do Rio de Janeiro (IFRJ)",
+        foto: "RPFreitas.jpeg",
+        contato: {
+          email: "renato.freitas@ifrj.edu.br ",
+          lattes: "http://lattes.cnpq.br/2412070302741470"
+        },
+
+        educacao: [
+          {
+            curso: "Doutorado em Engenharia Nuclear",
+            termino: "2014",
+            instituicao: "Universidade Federal do Rio de Janeiro",
+            sigla: "UFRJ",
+            pais: "Brasil"
+          },
+          {
+            curso: "Mestrado em Engenharia Nuclear",
+            termino: "2009",
+            instituicao: "Universidade Federal do Rio de Janeiro",
+            sigla: "UFRJ",
+            pais: "Brasil"
+          },
+
+          {
+            curso: "Graduação em fisica",
+            termino: "2007",
+            instituicao: "Universidade do Estado do Rio de Janeiro",
+            sigla: "UERJ",
+            pais: "Brasil"
+          }
+        ],
+        pesquisas: [
+          { pesquisa: "Arqueometria" },
+          {
+            pesquisa: "Analise Multivariada"
+          },
+          { pesquisa: "Técnicas Nucleares" },
+          { pesquisa: "Espectrometria Molecular" }
+        ]
+      },
+      {
         nome: "Douglas Santo Rodrigues Ferreira",
         cargo:
           "Professor Associado (D-402) do Instituto Federal do Rio de Janeiro (IFRJ)",

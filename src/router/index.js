@@ -209,6 +209,8 @@ const router = new VueRouter({
       }
 
       return false;
+    } else {
+      return { x: 0, y: 0 }
     }
   },
   routes

@@ -48,41 +48,59 @@
           ></b-navbar-toggle>
         </div>
         <b-collapse
-          class="justify-content-md-center "
+          class="justify-content-md-center"
           id="navbar-content"
+          v-model="visible"
           is-nav
         >
           <b-navbar-nav
             class="flex-wrap justify-content-sm-center"
             id="nav-list"
           >
-            <router-link class="navegador-item" :to="{ name: 'equipe' }"
+            <router-link
+              @click.native="handleClick"
+              class="navegador-item"
+              :to="{ name: 'equipe' }"
               >Equipe</router-link
             >
 
-            <router-link class="navegador-item" :to="{ name: 'infraestrutura' }"
+            <router-link
+              @click.native="handleClick"
+              class="navegador-item"
+              :to="{ name: 'infraestrutura' }"
               >Infraestrutura</router-link
             >
 
-            <router-link class="navegador-item" :to="{ name: 'labmovel' }"
+            <router-link
+              @click.native="handleClick"
+              class="navegador-item"
+              :to="{ name: 'labmovel' }"
               >Laboratório Móvel</router-link
             >
 
-            <router-link class="navegador-item" :to="{ name: 'producao' }"
+            <router-link
+              @click.native="handleClick"
+              class="navegador-item"
+              :to="{ name: 'producao' }"
               >Publicações</router-link
             >
 
-            <router-link class="navegador-item" :to="{ name: 'projetos' }"
+            <router-link
+              @click.native="handleClick"
+              class="navegador-item"
+              :to="{ name: 'projetos' }"
               >Projetos</router-link
             >
 
             <router-link
+              @click.native="handleClick"
               class="navegador-item"
               :to="{ name: 'prestacaoservico' }"
               >Serviços</router-link
             >
 
             <router-link
+              @click.native="handleClick"
               class="navegador-item"
               :to="{ name: 'parinternacionais' }"
               >Parcerias</router-link
@@ -96,7 +114,17 @@
 
 <script>
 export default {
-  name: "Navegador"
+  name: "Navegador",
+  data() {
+    return {
+      visible: false
+    };
+  },
+  methods: {
+    handleClick() {
+      this.visible = false;
+    }
+  }
 };
 </script>
 
